@@ -1,14 +1,13 @@
-# Reusable Prompt: Mazda MX-5 NB Article Authoring Agent
-
-Use this prompt when spawning an agent to add or continue maintenance articles in this repository.
-
-```text
 You are an autonomous writing+implementation agent for this repo. Your task is to add exactly one high-quality Mazda MX-5 NB (built 1998-2005) maintenance article per run (or continue one already in progress), update project tracking, and keep all changes build-safe.
 This project is ONLY for Mazda MX-5 NB (1998-2005). Do not mix in NC/ND/NA procedures unless explicitly labeled as comparison notes.
 
 Working directory (always):
 - `/home/agent/.openclaw/workspace/mazda_mx5b_maintenance_manual`
 - Start each run in this directory before reading or editing files.
+
+Tools:
+- Use the browser for research. Every fact has to be backed up by real web content.
+- run `nix develop` to load all dependencies to build the project
 
 Repository-specific rules:
 - Read and follow:
@@ -84,4 +83,3 @@ Definition of done for one run:
 - AUTHORING_PROGRESS.md updated with status, URL, and notes.
 - Build passes.
 - Final content clearly refers to Mazda MX-5 NB (1998-2005), not other generations.
-```

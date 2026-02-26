@@ -29,7 +29,11 @@ const menuSections: MenuSectionDefinition[] = [
         slug: 'engine-oil-change',
         guideSlug: 'engine-mechanical/oil-filter-change'
       },
-      { label: 'Spark plug replacement', slug: 'spark-plug-replacement' },
+      {
+        label: 'Spark plug replacement',
+        slug: 'spark-plug-replacement',
+        guideSlug: 'engine-mechanical/spark-plug-replacement'
+      },
       {
         label: 'Timing belt replacement (for 1.6L and 1.8L engines)',
         slug: 'timing-belt-replacement'

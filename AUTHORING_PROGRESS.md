@@ -18,7 +18,7 @@ Generation guardrail:
 ## A) Engine Mechanical
 
 - [x] Engine oil change (Oil & Filter) | Owner: TBD | Status: Published | URL: `/guides/engine-mechanical/oil-filter-change/` | Notes: Example guide complete
-- [ ] Spark plug replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Spark plug replacement | Owner: article-agent | Status: In Review | URL: `/guides/engine-mechanical/spark-plug-replacement/` | Notes: 2026-02-26: Continued and strengthened draft with additional high-risk quote coverage (Champion turn-angle fallback + Miata.net ignition lead mis-wiring caution), while retaining manual/spec + how-to + forum source mix. Cross-checked torque range (Apex NA/NB compilation vs NGK seat/thread ranges) and called out market/VIN variability for exact plug PNs and intervals. Browser-based source verification performed (Miata.net snapshot successful; some sources still partially limited by anti-bot/cookie walls). Images not added (no clearly reusable licensed NB-specific procedural assets retrieved). Build command could not be executed in this environment because `nix` is unavailable on PATH.
 - [ ] Timing belt replacement (for 1.6L and 1.8L engines) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Valve cover gasket replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Engine compression test (periodic check) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
