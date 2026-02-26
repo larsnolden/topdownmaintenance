@@ -131,7 +131,8 @@ export const menuSections: MenuSectionDefinition[] = [
       },
       {
         label: 'Transmission fluid change (manual transmission)',
-        slug: 'transmission-fluid-change'
+        slug: 'transmission-fluid-change',
+        guideSlug: 'clutch-transmission/transmission-fluid-change'
       },
       { label: 'Clutch pedal free play adjustment', slug: 'clutch-pedal-free-play-adjustment' },
       { label: 'CV boot inspection & replacement', slug: 'cv-boot-inspection-replacement' }
