@@ -44,7 +44,7 @@ Generation guardrail:
 
 ## Clutch & Transmission
 
-- [ ] Clutch fluid check & top-up | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Clutch fluid check & top-up | Owner: article-agent | Status: Ready | URL: `/guides/clutch-transmission/clutch-fluid-check-top-up/` | Notes: 2026-02-26: Claimed and completed in this run. Added NB1/NB2 clutch-fluid check/top-up guide centered on contamination control, correct-fluid verification, and leak triage when level repeatedly drops. Source mix includes official/manual source (Mellens NB factory manual index), independent how-to references (CarCareKiosk NB-specific brake-fluid add procedure with fluid-handling warnings and ScegliAuto MX-5 clutch tutorial index context), and two NB community sources (Miata.net threads 728667 and 10948928). Cross-check finding: consensus that repeated fluid loss is diagnostic (often slave/master leakage) and should not be treated as routine top-up only; uncertainty remains on extracting one definitive NB reservoir capacity figure and universal market-specific DOT label wording from machine-readable manual text in this environment, so guide defers to cap/owner-manual year-market spec. No reusable licensed NB-specific images were found/added.
 - [ ] Transmission fluid change (manual transmission) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Clutch pedal free play adjustment | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] CV boot inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:

@@ -124,7 +124,11 @@ export const menuSections: MenuSectionDefinition[] = [
     label: 'Clutch & Transmission',
     slug: 'clutch-transmission',
     items: [
-      { label: 'Clutch fluid check & top-up', slug: 'clutch-fluid-check-top-up' },
+      {
+        label: 'Clutch fluid check & top-up',
+        slug: 'clutch-fluid-check-top-up',
+        guideSlug: 'clutch-transmission/clutch-fluid-check-top-up'
+      },
       {
         label: 'Transmission fluid change (manual transmission)',
         slug: 'transmission-fluid-change'
