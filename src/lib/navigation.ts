@@ -97,7 +97,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'throttle-body-cleaning',
         guideSlug: 'intake-fuel-system/throttle-body-cleaning'
       },
-      { label: 'Spark plug inspection (ensure proper firing)', slug: 'spark-plug-inspection' }
+      {
+        label: 'Spark plug inspection (ensure proper firing)',
+        slug: 'spark-plug-inspection',
+        guideSlug: 'intake-fuel-system/spark-plug-inspection'
+      }
     ]
   },
   {
