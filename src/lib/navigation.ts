@@ -61,11 +61,20 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'coolant-flush-refill',
         guideSlug: 'cooling-system/coolant-flush-refill'
       },
-      { label: 'Radiator inspection (fins, tanks, leaks)', slug: 'radiator-inspection' },
-      { label: 'Thermostat replacement', slug: 'thermostat-replacement' },
+      {
+        label: 'Radiator inspection (fins, tanks, leaks)',
+        slug: 'radiator-inspection',
+        guideSlug: 'cooling-system/radiator-inspection'
+      },
+      {
+        label: 'Thermostat replacement',
+        slug: 'thermostat-replacement',
+        guideSlug: 'cooling-system/thermostat-replacement'
+      },
       {
         label: 'Coolant hose inspection & replacement',
-        slug: 'coolant-hose-inspection-replacement'
+        slug: 'coolant-hose-inspection-replacement',
+        guideSlug: 'cooling-system/coolant-hose-inspection-replacement'
       }
     ]
   },
@@ -73,7 +82,11 @@ export const menuSections: MenuSectionDefinition[] = [
     label: 'Intake & Fuel System',
     slug: 'intake-fuel-system',
     items: [
-      { label: 'Air filter replacement', slug: 'air-filter-replacement' },
+      {
+        label: 'Air filter replacement',
+        slug: 'air-filter-replacement',
+        guideSlug: 'intake-fuel-system/air-filter-replacement'
+      },
       { label: 'Fuel filter replacement', slug: 'fuel-filter-replacement' },
       { label: 'Throttle body cleaning', slug: 'throttle-body-cleaning' },
       { label: 'Spark plug inspection (ensure proper firing)', slug: 'spark-plug-inspection' }
