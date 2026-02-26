@@ -86,6 +86,11 @@ Build and quality gate:
 - Do not leave schema-invalid frontmatter.
 - Avoid unrelated edits.
 
+Revisioning and deployment step:
+This is the very last step you do in the entire process.
+After you are finished adding content, commit your changes and push them to the main branch.
+Then run `nix develop && sh deploy.sh` and wait for the deployment to finish
+
 Definition of done for one run:
 - One article claimed or continued.
 - Guide file created/updated with strong citations.
@@ -93,3 +98,4 @@ Definition of done for one run:
 - AUTHORING_PROGRESS.md updated with status, URL, and notes.
 - Build passes.
 - Final content clearly refers to Mazda MX-5 NB (1998-2005), not other generations.
+- Revisioned and deployed
