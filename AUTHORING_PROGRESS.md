@@ -39,7 +39,7 @@ Generation guardrail:
 
 ## Ignition System
 
-- [ ] Ignition coil inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Ignition coil inspection | Owner: article-agent | Status: Ready | URL: `/guides/ignition-system/ignition-coil-inspection/` | Notes: 2026-02-26: Claimed and completed in this run. Added NB1/NB2 ignition-coil inspection guide with practical workflow: symptom triage, visual/connector checks, cylinder-linked misfire reading, spark-plug/wire condition cross-check, and replace-on-failure criteria. Source mix includes official/manual source (Mellens NB factory manual index), independent technical guides (AA1Car ignition-coil diagnosis/testing and NGK installation safety/torque-context for related ignition-side checks), plus two community corroboration sources (MX5Nutz ignition-coil thread + ignition-coil-fuse thread). Cross-check outcome: consistent guidance that misfire codes alone do not prove bad coils and that plugs/wires/connectors can overload or mimic coil faults; uncertainty remains on publishing one universal NB resistance spec because values differ by coil design/year and many public sources are generic, so guide directs readers to year/VIN workshop spec before resistance pass/fail judgments. No reusable licensed NB-specific images were found/added.
 - [ ] Ignition wire replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
 ## Clutch & Transmission

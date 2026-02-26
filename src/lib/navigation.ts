@@ -108,7 +108,11 @@ export const menuSections: MenuSectionDefinition[] = [
     label: 'Ignition System',
     slug: 'ignition-system',
     items: [
-      { label: 'Ignition coil inspection', slug: 'ignition-coil-inspection' },
+      {
+        label: 'Ignition coil inspection',
+        slug: 'ignition-coil-inspection',
+        guideSlug: 'ignition-system/ignition-coil-inspection'
+      },
       { label: 'Ignition wire replacement', slug: 'ignition-wire-replacement' }
     ]
   },
