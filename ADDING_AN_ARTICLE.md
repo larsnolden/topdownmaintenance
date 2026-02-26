@@ -72,6 +72,53 @@ Use normal Markdown headings and content. Prefer:
 
 `##` and `###` headings are used by the right-side table of contents.
 
+### Blockquote conventions
+
+Blockquotes are automatically classified and styled based on their text prefix. Use these prefixes at the start of each blockquote paragraph:
+
+| Prefix | Rendered as | Colour |
+|---|---|---|
+| `High-risk quote:` | **Safety** badge (red) | Red left border, pink background |
+| `Warning:` | **Safety** badge (red) | Red left border, pink background |
+| `Community quote:` or `Community confirmation quote:` | **Community** badge (blue) | Blue left border, blue background |
+| `Manual-reference quote:` | **Reference** badge (purple) | Purple left border, purple background |
+| *(anything else)* | **Note** badge (amber) | Amber left border, amber background |
+
+The prefix text is stripped from display and replaced with the badge label.
+
+**Important:** always append the source URL at the end of the blockquote line. GFM will auto-link it, and the reference system will match it to the corresponding item in the Sources section and replace it with a clickable superscript badge (e.g. `[3]`) that scrolls to the source.
+
+Example:
+
+```md
+> High-risk quote: "Torque is critical." (NGK, retrieved 2026-02-26) https://ngksparkplugs.com/en/resources/spark-plug-installation
+```
+
+### Sources section
+
+Every article with external references must end with a `## Sources` section containing a **numbered list** (`1.`, `2.`, etc.) of all cited sources. Each item should include:
+- Author/publisher name
+- Title (in italics)
+- Retrieval date
+- Full URL
+
+The reference system automatically:
+1. Wraps the Sources section in a visually distinct container
+2. Adds anchor IDs (`#ref-1`, `#ref-2`, ...) to each source item
+3. Matches URLs in blockquotes to source URLs and replaces them with clickable `[N]` superscript badges
+4. Adds back-links from each source to the blockquote that cites it
+
+For the URL matching to work, **the URL at the end of a blockquote must exactly match a URL in the Sources list** (path-level matching, trailing slashes are ignored).
+
+Example Sources section:
+
+```md
+## Sources
+
+1. NGK — *Spark Plug Installation*. Retrieved 2026-02-26. https://ngksparkplugs.com/en/resources/spark-plug-installation
+2. The Apex Drag — *MX-5 NA/NB Torque & Assembly Specs*. Retrieved 2026-02-26. https://theapexdrag.com/mx-5-na-nb-torque-assembly-specs/
+```
+
 ## 4. Run locally
 
 ```bash

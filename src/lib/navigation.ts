@@ -1,4 +1,5 @@
 import type { CollectionEntry } from 'astro:content';
+import type { GuideCategory } from '@lib/categories';
 
 export interface NavItem {
   label: string;
@@ -15,13 +16,13 @@ interface MenuItemDefinition {
 
 interface MenuSectionDefinition {
   label: string;
-  slug: string;
+  slug: GuideCategory;
   items: MenuItemDefinition[];
 }
 
-const menuSections: MenuSectionDefinition[] = [
+export const menuSections: MenuSectionDefinition[] = [
   {
-    label: 'A) Engine Mechanical',
+    label: 'Engine Mechanical',
     slug: 'engine-mechanical',
     items: [
       {
@@ -36,17 +37,30 @@ const menuSections: MenuSectionDefinition[] = [
       },
       {
         label: 'Timing belt replacement (for 1.6L and 1.8L engines)',
-        slug: 'timing-belt-replacement'
+        slug: 'timing-belt-replacement',
+        guideSlug: 'engine-mechanical/timing-belt-replacement'
       },
-      { label: 'Valve cover gasket replacement', slug: 'valve-cover-gasket-replacement' },
-      { label: 'Engine compression test (periodic check)', slug: 'engine-compression-test' }
+      {
+        label: 'Valve cover gasket replacement',
+        slug: 'valve-cover-gasket-replacement',
+        guideSlug: 'engine-mechanical/valve-cover-gasket-replacement'
+      },
+      {
+        label: 'Engine compression test (periodic check)',
+        slug: 'engine-compression-test',
+        guideSlug: 'engine-mechanical/engine-compression-test'
+      }
     ]
   },
   {
-    label: 'B) Cooling System',
+    label: 'Cooling System',
     slug: 'cooling-system',
     items: [
-      { label: 'Coolant flush & refill', slug: 'coolant-flush-refill' },
+      {
+        label: 'Coolant flush & refill',
+        slug: 'coolant-flush-refill',
+        guideSlug: 'cooling-system/coolant-flush-refill'
+      },
       { label: 'Radiator inspection (fins, tanks, leaks)', slug: 'radiator-inspection' },
       { label: 'Thermostat replacement', slug: 'thermostat-replacement' },
       {
@@ -56,7 +70,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'C) Intake & Fuel System',
+    label: 'Intake & Fuel System',
     slug: 'intake-fuel-system',
     items: [
       { label: 'Air filter replacement', slug: 'air-filter-replacement' },
@@ -66,7 +80,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'D) Ignition System',
+    label: 'Ignition System',
     slug: 'ignition-system',
     items: [
       { label: 'Ignition coil inspection', slug: 'ignition-coil-inspection' },
@@ -74,7 +88,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'E) Clutch & Transmission',
+    label: 'Clutch & Transmission',
     slug: 'clutch-transmission',
     items: [
       { label: 'Clutch fluid check & top-up', slug: 'clutch-fluid-check-top-up' },
@@ -87,7 +101,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'F) Brakes',
+    label: 'Brakes',
     slug: 'brakes',
     items: [
       { label: 'Brake pad inspection & replacement', slug: 'brake-pad-inspection-replacement' },
@@ -96,7 +110,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'G) Suspension',
+    label: 'Suspension',
     slug: 'suspension',
     items: [
       { label: 'Shock absorber inspection', slug: 'shock-absorber-inspection' },
@@ -106,7 +120,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'H) Steering & Alignment',
+    label: 'Steering & Alignment',
     slug: 'steering-alignment',
     items: [
       { label: 'Power steering fluid check', slug: 'power-steering-fluid-check' },
@@ -118,7 +132,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'I) Electrical System',
+    label: 'Electrical System',
     slug: 'electrical-system',
     items: [
       { label: 'Battery health check & cleaning', slug: 'battery-health-check-cleaning' },
@@ -127,7 +141,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'J) Tires & Wheels',
+    label: 'Tires & Wheels',
     slug: 'tires-wheels',
     items: [
       { label: 'Tire pressure check', slug: 'tire-pressure-check' },
@@ -136,7 +150,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'K) Convertible Top & Exterior Trim (For soft-top models)',
+    label: 'Convertible Top & Exterior Trim (For soft-top models)',
     slug: 'convertible-top-exterior-trim',
     items: [
       { label: 'Soft top cleaning & waterproofing', slug: 'soft-top-cleaning-waterproofing' },
@@ -145,7 +159,7 @@ const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
-    label: 'L) Rust Prevention',
+    label: 'Rust Prevention',
     slug: 'rust-prevention',
     items: [
       {
@@ -165,21 +179,23 @@ const menuSections: MenuSectionDefinition[] = [
   }
 ];
 
-function getFallbackHref(sectionSlug: string, itemSlug: string): string {
-  return `/guides/#${sectionSlug}-${itemSlug}`;
+function getFallbackHref(sectionSlug: GuideCategory, itemSlug: string): string {
+  return `/guides/${sectionSlug}/${itemSlug}/`;
 }
 
 export function buildNavTree(guides: CollectionEntry<'guides'>[]): NavItem[] {
   const guideHrefBySlug = new Map(guides.map((guide) => [guide.slug, `/guides/${guide.slug}/`]));
+  const resolveGuideSlug = (sectionSlug: GuideCategory, item: MenuItemDefinition) =>
+    item.guideSlug ?? `${sectionSlug}/${item.slug}`;
 
   return menuSections.map((section) => ({
     label: section.label,
     href: `/guides/${section.slug}/`,
     children: section.items.map((item) => ({
       label: item.label,
-      href: item.guideSlug
-        ? (guideHrefBySlug.get(item.guideSlug) ?? getFallbackHref(section.slug, item.slug))
-        : getFallbackHref(section.slug, item.slug)
+      href:
+        guideHrefBySlug.get(resolveGuideSlug(section.slug, item)) ??
+        getFallbackHref(section.slug, item.slug)
     }))
   }));
 }

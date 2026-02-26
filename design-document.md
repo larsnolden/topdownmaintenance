@@ -190,19 +190,43 @@ When a step (or a standalone section) requires multiple images:
 
 ### 4.5 Quotes & References
 
-```mdx
-<Quote source="Mazda MX-5 NB Workshop Manual, Section 04-12" url="/reference/workshop-manual#04-12">
-  Tighten the caliper bracket bolts to 49–69 Nm.
-</Quote>
+Quotes use standard Markdown blockquotes with a **prefix convention** that controls their visual classification. A client-side script processes each blockquote, strips the prefix, and renders a styled badge label.
+
+**Prefix → badge mapping:**
+
+| Blockquote prefix | Badge label | Style |
+|---|---|---|
+| `High-risk quote:` | Safety | Red (danger) |
+| `Warning:` | Safety | Red (danger) |
+| `Community quote:` | Community | Blue (info) |
+| `Community confirmation quote:` | Community | Blue (info) |
+| `Manual-reference quote:` | Reference | Purple (info) |
+| *(other)* | Note | Amber (warning) |
+
+**Example:**
+
+```md
+> High-risk quote: "Torque is critical." (NGK, retrieved 2026-02-26) https://ngksparkplugs.com/en/resources/spark-plug-installation
 ```
 
-Rendered as a styled blockquote with a linked citation footer. References can point to:
+The URL at the end of each blockquote is automatically matched to the numbered `## Sources` list at the bottom of the article. When a match is found, the inline URL is replaced with a clickable superscript reference badge (e.g. `[3]`) that smooth-scrolls to the corresponding source item and highlights it. Each source item also receives a back-link arrow that scrolls back to the citing blockquote.
+
+**Sources section format:**
+
+```md
+## Sources
+
+1. NGK — *Spark Plug Installation*. Retrieved 2026-02-26. https://ngksparkplugs.com/en/resources/spark-plug-installation
+2. The Apex Drag — *MX-5 NA/NB Torque Specs*. Retrieved 2026-02-26. https://theapexdrag.com/mx-5-na-nb-torque-assembly-specs/
+```
+
+The Sources section is automatically wrapped in a visually distinct container (`sources-wrapper` class) with a different background, border, and heading style. Each `<li>` receives an anchor ID (`#ref-1`, `#ref-2`, etc.) for deep-linking.
+
+References can point to:
 
 - Internal reference pages (torque specs, wiring diagrams).
 - External URLs (forum threads, YouTube videos).
 - Official Mazda documentation sections.
-
-A `<ReferenceList>` component at the bottom of each guide aggregates all citations.
 
 ### 4.6 Side Navigation
 
@@ -307,8 +331,8 @@ All custom components are Astro components (`.astro` files). They accept props a
 | `<Gallery>` | Multi-image grid with lightbox |
 | `<GalleryImage>` | Single image inside a gallery |
 | `<Callout>` | Warning / tip / info / danger block |
-| `<Quote>` | Styled blockquote with source link |
-| `<ReferenceList>` | Aggregated citations at page bottom |
+| `<Quote>` | *(Not a component — uses Markdown blockquotes with prefix conventions; see §4.5)* |
+| `<ReferenceList>` | *(Not a component — uses `## Sources` numbered list with client-side enhancement; see §4.5)* |
 | `<TorqueSpec>` | Highlighted inline torque value |
 | `<PartNumber>` | Styled OEM/aftermarket part number |
 | `<Breadcrumb>` | Navigation breadcrumb |
@@ -328,73 +352,72 @@ Guides are written in **MDX** inside an Astro content collection. Frontmatter pr
 
 ```mdx
 ---
-title: "Brake Pad Replacement"
-slug: "brake-pad-replacement"
+title: "Brake pad replacement"
 category: "brakes"
-difficulty: 2          # 1-5
+difficulty: 2
 difficultyLabel: "Beginner"
-estimatedTime: "45–60 min"
-applicableModels: ["NB1", "NB2"]
+estimatedTime: "45-60 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
 summary: "Replace worn front brake pads with new ones."
-heroImage: "./img/brake-pad-hero.jpg"
-tags: ["brakes", "pads", "beginner", "safety"]
-relatedGuides: ["brake-fluid-flush", "rotor-replacement"]
+tags:
+  - "brakes"
+  - "pads"
+relatedGuides: []
+order: 1
+updatedAt: "2026-02-26"
 ---
 
-import { RequirementsList, Tools, Materials } from '@components/RequirementsList'
-import { StepList, Step } from '@components/StepList'
-import { Gallery, GalleryImage } from '@components/Gallery'
-import { Callout } from '@components/Callout'
-import { Quote } from '@components/Quote'
-import { TorqueSpec } from '@components/TorqueSpec'
+## Before You Start / Safety
 
-<RequirementsList>
-  <Tools>
-    - 14mm socket
-    - Torque wrench
-    - Jack and axle stands
-    - Brake caliper piston tool
-  </Tools>
-  <Materials>
-    - Front brake pads (OEM: SHB-S261-33-28Z)
-    - Brake cleaner spray
-    - High-temp brake grease
-  </Materials>
-</RequirementsList>
+- Work on a level, stable surface.
+- Ensure the car is securely supported before getting underneath.
 
-<StepList>
-  <Step title="Loosen the wheel bolts">
-    With the car on the ground, use the 19mm socket to crack
-    the wheel bolts loose (1/4 turn).
+> Warning: Never work under a car supported only by a jack. https://example.com/safety-source
 
-    ![Loosening wheel bolts](./img/step1-loosen.jpg)
-  </Step>
+## Required Tools
 
-  <Step title="Jack up the car">
-    Place the jack under the front jacking point and raise until
-    the wheel is off the ground. Place an axle stand under the
-    subframe.
+- 14mm socket and ratchet
+- Torque wrench
+- Jack and axle stands
+- Brake caliper piston tool
 
-    <Callout type="danger">
-      Never work under a car supported only by a jack.
-    </Callout>
-  </Step>
+## Required Parts / Fluids
 
-  <Step title="Remove the caliper">
-    Remove the two 14mm sliding-pin bolts.
+- Front brake pads (OEM: SHB-S261-33-28Z or equivalent)
+- Brake cleaner spray
+- High-temp brake grease
 
-    <Gallery columns={2}>
-      <GalleryImage src="./img/step3-bolt1.jpg" alt="Upper bolt" />
-      <GalleryImage src="./img/step3-bolt2.jpg" alt="Lower bolt" />
-    </Gallery>
+## Step-by-Step Procedure
 
-    <Quote source="Workshop Manual §04-12" url="/reference/torque-specs#brakes">
-      Caliper bracket bolts: <TorqueSpec value="49–69 Nm" />
-    </Quote>
-  </Step>
+### 1) Loosen the wheel bolts
 
-  <!-- … more steps … -->
-</StepList>
+With the car on the ground, use the 19mm socket to crack the wheel bolts loose (1/4 turn).
+
+### 2) Jack up the car
+
+Place the jack under the front jacking point and raise until the wheel is off the ground. Place an axle stand under the subframe.
+
+### 3) Remove the caliper
+
+Remove the two 14mm sliding-pin bolts.
+
+> High-risk quote: "Caliper bracket bolts: 49–69 Nm." (Workshop Manual §04-12, retrieved 2026-02-26) https://example.com/workshop-manual
+
+## Torque Specs / Capacities
+
+- **Caliper bracket bolts:** 49–69 Nm
+
+## Verification / Post-service checks
+
+- Confirm no leaks at caliper
+- Test brake pedal feel before driving
+
+## Sources
+
+1. Example Safety Source — *Workshop Safety Guidelines*. Retrieved 2026-02-26. https://example.com/safety-source
+2. Workshop Manual — *Section 04-12: Brakes*. Retrieved 2026-02-26. https://example.com/workshop-manual
 ```
 
 ---
@@ -597,7 +620,7 @@ mazda_mx5b_maintenance_manual/
 3. **Show, don't just tell.** Every step should ideally have a photo or diagram.
 4. **Call out safety.** Use `<Callout type="danger">` for anything that could cause injury. Use `<Callout type="warning">` for things that could damage the car.
 5. **Include torque specs.** Always use `<TorqueSpec>` so values are visually distinct and searchable.
-6. **Cite sources.** Use `<Quote>` to reference the official workshop manual, Mazda TSBs, or trusted community knowledge.
+6. **Cite sources.** Use Markdown blockquotes with the appropriate prefix (`High-risk quote:`, `Community quote:`, etc.) and append the source URL. Add a `## Sources` numbered list at the end of each guide. The site automatically links inline citations to the matching source (see §4.5).
 7. **Test the guide.** Ideally, follow your own guide while performing the task and revise any unclear steps.
 
 ---

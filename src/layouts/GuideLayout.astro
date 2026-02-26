@@ -51,7 +51,7 @@ const stars = '★'.repeat(difficulty) + '☆'.repeat(Math.max(0, 5 - difficulty
     <div class="guide-grid grid gap-8">
       <SideNav tree={navTree} currentPath={currentPath} />
 
-      <main id="main-content" class="min-w-0 space-y-6">
+      <main id="main-content" class="min-w-0 space-y-8">
         <Breadcrumb
           items={[
             { label: 'Home', href: '/' },
@@ -86,7 +86,7 @@ const stars = '★'.repeat(difficulty) + '☆'.repeat(Math.max(0, 5 - difficulty
           </dl>
         </header>
 
-        <article class="prose prose-slate max-w-none rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <article class="prose max-w-none rounded-xl border border-slate-200 bg-white p-6 sm:p-8 lg:p-10 shadow-sm">
           <slot />
         </article>
       </main>
@@ -141,4 +141,161 @@ const stars = '★'.repeat(difficulty) + '☆'.repeat(Math.max(0, 5 - difficulty
       }
     });
   }
+</script>
+
+<script is:inline>
+  /* ── Reference linking system ── */
+  (function () {
+    var article = document.querySelector('article');
+    if (!article) return;
+
+    /* ── 1. Find the Sources heading and its <ol> ── */
+    var sourcesH2 = null;
+    var allH2s = article.querySelectorAll('h2');
+    for (var i = 0; i < allH2s.length; i++) {
+      if (allH2s[i].textContent.trim() === 'Sources') {
+        sourcesH2 = allH2s[i];
+        break;
+      }
+    }
+    if (!sourcesH2) return;
+
+    var sourcesList = sourcesH2.nextElementSibling;
+    while (sourcesList && sourcesList.tagName !== 'OL') {
+      sourcesList = sourcesList.nextElementSibling;
+    }
+    if (!sourcesList) return;
+
+    /* ── 2. Wrap in styled container ── */
+    var wrapper = document.createElement('section');
+    wrapper.className = 'sources-wrapper';
+    wrapper.setAttribute('aria-label', 'References');
+    sourcesH2.parentNode.insertBefore(wrapper, sourcesH2);
+    wrapper.appendChild(sourcesH2);
+    wrapper.appendChild(sourcesList);
+
+    /* ── 3. Build URL → source-number map + add IDs ── */
+    var urlToRef = {};
+    var items = sourcesList.querySelectorAll(':scope > li');
+
+    items.forEach(function (li, idx) {
+      var num = idx + 1;
+      li.id = 'ref-' + num;
+
+      li.querySelectorAll('a').forEach(function (a) {
+        var key = normalizeUrl(a.href);
+        if (key) urlToRef[key] = num;
+      });
+    });
+
+    /* ── 4. Classify & enhance blockquotes ── */
+    var backRefMap = {};
+
+    article.querySelectorAll('blockquote').forEach(function (bq, bqIdx) {
+      var text = bq.textContent.trim();
+      var type = 'note';
+      var label = 'Note';
+
+      if (/^High-risk quote/i.test(text) || /^Warning/i.test(text)) {
+        type = 'danger'; label = 'Safety';
+      } else if (/^Community/i.test(text)) {
+        type = 'community'; label = 'Community';
+      } else if (/^Manual-reference/i.test(text)) {
+        type = 'info'; label = 'Reference';
+      }
+
+      bq.classList.add('bq-' + type);
+
+      /* Add label badge */
+      var badge = document.createElement('span');
+      badge.className = 'bq-label';
+      badge.textContent = label;
+      bq.insertBefore(badge, bq.firstChild);
+
+      /* Strip known prefixes from each <p> */
+      bq.querySelectorAll('p').forEach(function (p) {
+        stripPrefix(p);
+      });
+
+      /* Replace source-URL links with superscript ref badges */
+      var links = Array.from(bq.querySelectorAll('a:not(.ref-sup):not(.bq-label)'));
+      links.forEach(function (a) {
+        var key = normalizeUrl(a.href);
+        if (!key) return;
+        var refNum = urlToRef[key];
+        if (!refNum) return;
+
+        /* Set a back-reference anchor on this blockquote */
+        if (!bq.id) bq.id = 'backref-' + bqIdx;
+        if (!backRefMap[refNum]) backRefMap[refNum] = bq.id;
+
+        /* Build the superscript badge */
+        var sup = document.createElement('a');
+        sup.href = '#ref-' + refNum;
+        sup.className = 'ref-sup';
+        sup.textContent = refNum;
+        sup.title = 'Jump to source ' + refNum;
+        sup.setAttribute('aria-label', 'Reference ' + refNum);
+        a.replaceWith(sup);
+      });
+    });
+
+    /* ── 5. Add back-links to source items ── */
+    items.forEach(function (li, idx) {
+      var num = idx + 1;
+      var backId = backRefMap[num];
+      if (!backId) return;
+
+      var back = document.createElement('a');
+      back.href = '#' + backId;
+      back.className = 'ref-back';
+      back.textContent = '\u21a9';
+      back.title = 'Back to reference';
+      li.appendChild(back);
+    });
+
+    /* ── 6. Highlight animation on navigation ── */
+    function highlightTarget() {
+      var hash = window.location.hash;
+      if (!hash) return;
+      var el = document.getElementById(hash.slice(1));
+      if (!el) return;
+      el.classList.remove('ref-highlight');
+      void el.offsetWidth;
+      el.classList.add('ref-highlight');
+    }
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('.ref-sup, .ref-back');
+      if (link) setTimeout(highlightTarget, 100);
+    });
+
+    /* ── Helpers ── */
+    function normalizeUrl(url) {
+      try {
+        var u = new URL(url);
+        return (u.origin + u.pathname).replace(/\/$/, '');
+      } catch (e) { return null; }
+    }
+
+    function stripPrefix(p) {
+      var node = p.firstChild;
+      if (!node || node.nodeType !== Node.TEXT_NODE) return;
+      var t = node.textContent;
+      var prefixes = [
+        /^High-risk quote:\s*/,
+        /^Community confirmation quote[^:]*:\s*/i,
+        /^Community quote[^:]*:\s*/i,
+        /^Manual-reference quote:\s*/i,
+        /^Warning:\s*/i
+      ];
+      for (var i = 0; i < prefixes.length; i++) {
+        var m = t.match(prefixes[i]);
+        if (m) {
+          node.textContent = t.slice(m[0].length);
+          return;
+        }
+      }
+    }
+  })();
 </script>

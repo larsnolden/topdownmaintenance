@@ -1,0 +1,123 @@
+---
+title: "Engine compression test (periodic check)"
+category: "engine-mechanical"
+difficulty: 3
+difficultyLabel: "Intermediate"
+estimatedTime: "45-90 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "How to run a repeatable compression test on Mazda MX-5 NB engines and interpret results conservatively before deeper diagnosis."
+tags:
+  - "engine"
+  - "diagnostics"
+  - "compression"
+relatedGuides:
+  - "engine-mechanical/spark-plug-replacement"
+order: 5
+updatedAt: "2026-02-26"
+---
+
+## Before You Start / Safety
+
+- Perform this test with the engine warm (not overheating), then shut it off before disassembly.
+- Disable fuel and ignition before cranking for measurements.
+- Keep battery voltage stable while testing to avoid false low readings.
+
+> Warning: "Always wear gloves to protect yourself from burns." (wikiHow compression test guide, retrieved 2026-02-26) https://www.wikihow.com/Do-a-Compression-Test
+
+## Required Tools
+
+- Compression tester with the correct spark-plug thread adapter
+- Spark plug socket + extensions + ratchet
+- Battery charger/booster (recommended for repeatable cranking speed)
+- Notebook/phone for recording each cylinder value
+- Optional: leak-down tester for follow-up diagnosis
+
+## Required Parts / Fluids
+
+- No replacement parts are strictly required for a dry compression test.
+- Optional: small amount of engine oil for a wet re-test on weak cylinders.
+- Optional but recommended: replacement spark plugs if current plugs are near service limit.
+
+## Model-specific notes (NB1 vs NB2)
+
+- This guide applies to NB1 (1998-2000) and NB2 (2001-2005) petrol engines.
+- Exact published compression standards/minimums vary by year/engine/calibration. Use your year-specific factory manual as final authority.
+
+> Manual-reference quote: "1999-2001 Mazda Miata Service Repair Manual" and "2005 Mazda Miata Service Repair Manual" are listed in the Miata FSM repository. (Mellens, retrieved 2026-02-26) https://www.mellens.net/mazda/
+
+## Step-by-Step Procedure
+
+### 1) Warm engine, then disable fuel and ignition
+
+A warm engine gives more meaningful ring/valve sealing results than a cold engine. After shutdown, disable fuel delivery and ignition output before any cranking test sequence.
+
+> Community quote: "Disconnect the coil pack connections." (MX5Nutz forum, retrieved 2026-02-26) https://www.mx5nutz.com/threads/compression-test.145824/
+
+### 2) Remove all spark plugs and inspect condition
+
+Remove all four spark plugs so the starter can spin the engine evenly and quickly. Label plug positions if reusing them.
+
+### 3) Install tester in cylinder 1
+
+Thread the adapter by hand first to avoid cross-threading. Seat the hose/seal fully, but do not overtighten.
+
+### 4) Crank with throttle wide open and record pressure
+
+Crank for a consistent duration/cycle count on every cylinder (for example ~5-10 seconds or a fixed number of compression pulses).
+
+> Community quote: "For the compression test, you will want to effectively turn over the car with the throttle wide open..." (MX5Nutz forum, retrieved 2026-02-26) https://www.mx5nutz.com/threads/compression-test.145824/
+
+### 5) Repeat for cylinders 2-4 using the exact same method
+
+Use identical test conditions each time (same battery state, same cranking duration, same gauge).
+
+### 6) Compare cylinder balance first, then absolute numbers
+
+Uniformity across cylinders is often more useful than any single absolute number from one gauge.
+
+> High-risk quote: "More important than the absolute compression numbers, though, is the variance between cylinders." (Did-It-Myself, retrieved 2026-02-26) https://did-it-myself.com/compression-testing-a-mazda-miata/
+
+### 7) If one cylinder is low, run a wet re-test and plan leak-down follow-up
+
+Add a small measured amount of oil to the suspect cylinder only, retest, and compare. If uncertainty remains, perform a leak-down test to localize leakage path.
+
+## Torque Specs / Capacities
+
+- No special torque-only fasteners are part of the compression measurement itself.
+- If reinstalling used spark plugs after testing, torque to your engine/year specification from the factory manual.
+- One independent Miata how-to reports **11-17 ft-lb** for spark plug reinstall; treat this as secondary guidance, not a substitute for your exact NB FSM spec.
+
+> Manual-reference quote: "The procedure and numbers for your year Miata are in the appropriate free to download FSM." (Miata.net NB forum, retrieved 2026-02-26) https://forum.miata.net/vb/showthread.php?t=647049
+
+## Verification / Post-service checks
+
+- Engine starts cleanly after reconnecting ignition/fuel components.
+- No warning lights/misfire introduced by reconnect work.
+- Compression readings are documented with date, mileage, and test method for future trend comparison.
+
+## Uncertainty / Open Questions
+
+- In this environment, direct extraction of year-specific FSM compression tables was limited; this guide therefore avoids publishing one universal NB numeric threshold.
+- Community and independent guides agree strongly on **method** (warm engine, disable fuel/ignition, WOT cranking, compare cylinders), but exact acceptable PSI depends on engine variant, gauge, altitude, and cranking speed.
+
+> Community confirmation quote: "What you need to do is to get the manual ... for your year Miata. The procedure and numbers for your year Miata are in the appropriate ... FSM." (Miata.net NB forum, retrieved 2026-02-26) https://forum.miata.net/vb/showthread.php?t=647049
+
+## Images
+
+No reusable images were added in this run. Available sources were either forum-hosted user media without clear reuse terms or general guides without explicit reuse licensing.
+
+## Image Credits
+
+- No images used.
+
+## Sources
+
+1. Mellens (community-hosted Mazda documentation index) — *Mazda Miata Factory Service Manuals*. Retrieved 2026-02-26. https://www.mellens.net/mazda/
+2. Mellens — *Mazda Miata 2005 Factory Service Manuals* (section index page). Retrieved 2026-02-26. https://www.mellens.net/mazda/Mazda-Miata-2005/
+3. Flyin' Miata Help Center — *How to perform an engine compression test on your Miata*. Retrieved 2026-02-26. https://help.flyinmiata.com/how-to-perform-an-engine-compression-test-on-your-miata-HJrIlAggh
+4. Did It Myself — *Compression Testing a Mazda Miata*. Retrieved 2026-02-26. https://did-it-myself.com/compression-testing-a-mazda-miata/
+5. wikiHow — *How to Do a Compression Test: 15 Steps (with Pictures)*. Retrieved 2026-02-26. https://www.wikihow.com/Do-a-Compression-Test
+6. MX-5 Miata Forum — *Compression Test* (NB 1999-2005 General Discussion). Retrieved 2026-02-26. https://forum.miata.net/vb/showthread.php?t=647049
+7. MX5Nutz Forum — *Compression Test* (thread). Retrieved 2026-02-26. https://www.mx5nutz.com/threads/compression-test.145824/

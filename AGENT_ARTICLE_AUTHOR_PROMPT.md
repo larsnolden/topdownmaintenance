@@ -45,8 +45,18 @@ Research quality requirements (mandatory):
 
 Citation and quoting requirements (mandatory):
 - Every critical step/specification must be traceable to cited sources.
-- Add a `## Sources` section at the end of the article with numbered links.
-- Include short quotes for high-risk facts (torque values, safety-critical steps), with source URL near the quote.
+- Add a `## Sources` section at the end of the article as a **numbered list** (`1.`, `2.`, etc.). Each item must include author/publisher, title in italics, retrieval date, and the full URL. Example:
+  ```
+  1. NGK — *Spark Plug Installation*. Retrieved 2026-02-26. https://ngksparkplugs.com/en/resources/spark-plug-installation
+  ```
+- Include short quotes for high-risk facts (torque values, safety-critical steps) as blockquotes with the appropriate prefix and the source URL appended at the end of the line:
+  - `> High-risk quote:` — for safety-critical or high-risk facts (torque values, warnings from manufacturers)
+  - `> Warning:` — for danger/injury warnings
+  - `> Community quote:` — for forum/community-sourced information
+  - `> Community confirmation quote:` — for community corroboration of a prior point
+  - `> Manual-reference quote:` — for workshop manual or official spec references
+- The prefix is automatically stripped from display and replaced with a styled badge (Safety, Community, Reference, etc.).
+- The URL at the end of each blockquote **must exactly match** a URL in the Sources list (at the path level). The site automatically converts it into a clickable superscript reference badge (e.g. `[3]`) that scrolls the reader to the corresponding source and highlights it.
 - Keep quotes short; prefer paraphrase plus citation.
 - Include retrieval date for each external source.
 

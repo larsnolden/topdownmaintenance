@@ -15,78 +15,78 @@ Generation guardrail:
 - every tracked article must target Mazda MX-5 NB (1998-2005) specifically
 - if a procedure differs by generation or market, note uncertainty/conflict in `Notes`
 
-## A) Engine Mechanical
+## Engine Mechanical
 
 - [x] Engine oil change (Oil & Filter) | Owner: TBD | Status: Published | URL: `/guides/engine-mechanical/oil-filter-change/` | Notes: Example guide complete
-- [ ] Spark plug replacement | Owner: article-agent | Status: In Review | URL: `/guides/engine-mechanical/spark-plug-replacement/` | Notes: 2026-02-26: Continued and strengthened draft with additional high-risk quote coverage (Champion turn-angle fallback + Miata.net ignition lead mis-wiring caution), while retaining manual/spec + how-to + forum source mix. Cross-checked torque range (Apex NA/NB compilation vs NGK seat/thread ranges) and called out market/VIN variability for exact plug PNs and intervals. Browser-based source verification performed (Miata.net snapshot successful; some sources still partially limited by anti-bot/cookie walls). Images not added (no clearly reusable licensed NB-specific procedural assets retrieved). Build command could not be executed in this environment because `nix` is unavailable on PATH.
-- [ ] Timing belt replacement (for 1.6L and 1.8L engines) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
-- [ ] Valve cover gasket replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
-- [ ] Engine compression test (periodic check) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Spark plug replacement | Owner: article-agent | Status: Ready | URL: `/guides/engine-mechanical/spark-plug-replacement/` | Notes: 2026-02-26: Continued and strengthened draft with additional high-risk quote coverage (Champion turn-angle fallback + Miata.net ignition lead mis-wiring caution), while retaining manual/spec + how-to + forum source mix. Cross-checked torque range (Apex NA/NB compilation vs NGK seat/thread ranges) and called out market/VIN variability for exact plug PNs and intervals. Browser-based source verification performed (Miata.net snapshot successful; some sources still partially limited by anti-bot/cookie walls). Images not added (no clearly reusable licensed NB-specific procedural assets retrieved). 2026-02-26: Build gate passed using absolute-path tool invocation (`/run/current-system/sw/bin/nix develop -c /run/current-system/sw/bin/npm run build`).
+- [ ] Timing belt replacement (for 1.6L and 1.8L engines) | Owner: article-agent | Status: Ready | URL: `/guides/engine-mechanical/timing-belt-replacement/` | Notes: 2026-02-26: Added full NB1/NB2 timing-belt guide with safety-critical emphasis on timing alignment, crank pulley removal caution, and post-service no-start diagnostics. Source mix includes manual/spec index (BOFI workshop manual index), 2 independent how-to sources (MX-5 Unleashed, ScegliAuto), and 2 Miata forum/community threads (NB timing-belt process and NB no-start after snapped belt). Cross-checked public torque-table reliability and explicitly flagged uncertainty due non-factory compiled values; instructed VIN-specific manual confirmation. No images added (no clearly reusable licensed NB-specific procedural images retrieved). Build passed with `/run/current-system/sw/bin/nix develop -c /run/current-system/sw/bin/npm run build`.
+- [ ] Valve cover gasket replacement | Owner: article-agent | Status: Ready | URL: `/guides/engine-mechanical/valve-cover-gasket-replacement/` | Notes: 2026-02-26: Added NB1/NB2 valve cover gasket guide with explicit leak-source verification, careful sealing-surface prep, and conservative fastener/torque handling. Source mix: manual/spec source (BOFI NB workshop manual index), two independent how-to references (MiataMechanic + two NB-focused YouTube how-to references), and two Miata.net NB forum threads (gasket reuse risk tradeoff, corner sealant/OEM-quality guidance, while-you-are-there checks). Uncertainty explicitly documented: exact torque value not published due inaccessible/partial primary references in this environment; guide instructs VIN-specific manual confirmation. Images not added (no clearly reusable licensed NB-specific procedural images retrieved). Build passed with `/run/current-system/sw/bin/nix develop -c /run/current-system/sw/bin/npm run build`.
+- [ ] Engine compression test (periodic check) | Owner: article-agent | Status: Ready | URL: `/guides/engine-mechanical/engine-compression-test/` | Notes: 2026-02-26: Claimed and completed in one run. Added NB1/NB2 compression-test guide with explicit safety and repeatability workflow (warm engine, disable fuel/ignition, WOT cranking, cylinder-balance-first interpretation), plus wet-test/leak-down follow-up logic. Source mix includes manual/spec references (Mellens FSM indexes), independent how-tos (Flyin' Miata help center, Did-It-Myself, wikiHow), and community forums (Miata.net NB + MX5Nutz). Key uncertainty documented: exact year/engine compression threshold values could not be reliably extracted from factory tables in this environment, so guide defers final numeric limits to year-specific FSM. Images not added (no clearly reusable licensed NB-specific procedural images retrieved).
 
-## B) Cooling System
+## Cooling System
 
-- [ ] Coolant flush & refill | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Coolant flush & refill | Owner: article-agent | Status: Ready | URL: `/guides/cooling-system/coolant-flush-refill/` | Notes: 2026-02-26: Claimed and completed this run. Added NB1/NB2 coolant flush/refill guide with safety/disposal emphasis, repeated flush logic, trapped-water concentration planning, and post-service bleed verification. Source mix: manual/spec archive reference (Mellens), independent how-to guides (TechGuys, wikiHow, plus BOFI coolant-type guidance), and forum/community corroboration (Miata.net NB threads + MX5Nutz). Cross-check result: sources broadly agree on ~6 L/6.2 qt system capacity and that radiator-only drain is partial; uncertainty remains on exact region/climate concentration guidance and year-specific FSM tables not fully extractable in this environment. Images not added (no clearly reusable licensed NB-specific assets retrieved).
 - [ ] Radiator inspection (fins, tanks, leaks) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Thermostat replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Coolant hose inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## C) Intake & Fuel System
+## Intake & Fuel System
 
 - [ ] Air filter replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Fuel filter replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Throttle body cleaning | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Spark plug inspection (ensure proper firing) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## D) Ignition System
+## Ignition System
 
 - [ ] Ignition coil inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Ignition wire replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## E) Clutch & Transmission
+## Clutch & Transmission
 
 - [ ] Clutch fluid check & top-up | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Transmission fluid change (manual transmission) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Clutch pedal free play adjustment | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] CV boot inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## F) Brakes
+## Brakes
 
 - [ ] Brake pad inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Brake fluid flush & bleed | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Brake rotor inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## G) Suspension
+## Suspension
 
 - [ ] Shock absorber inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Ball joint inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Sway bar link inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Suspension bushing inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## H) Steering & Alignment
+## Steering & Alignment
 
 - [ ] Power steering fluid check | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Tie rod inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Wheel alignment check (as needed) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## I) Electrical System
+## Electrical System
 
 - [ ] Battery health check & cleaning | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Alternator output check | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Fuse inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## J) Tires & Wheels
+## Tires & Wheels
 
 - [ ] Tire pressure check | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Tire rotation (if non-directional setup) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Wheel lug nut torque check | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## K) Convertible Top & Exterior Trim (For soft-top models)
+## Convertible Top & Exterior Trim (For soft-top models)
 
 - [ ] Soft top cleaning & waterproofing | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Convertible top frame lubrication | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Drain clearing (ensure proper water flow) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
-## L) Rust Prevention
+## Rust Prevention
 
 - [ ] Underbody inspection for rust (especially sills & arches) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Underseal maintenance (reapply as necessary) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
