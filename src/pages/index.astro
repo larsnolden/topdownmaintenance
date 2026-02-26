@@ -1,0 +1,63 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { FULL_BRAND, SITE_NAME, TAGLINE } from '@lib/brand';
+
+const categories = [
+  { label: 'A) Engine Mechanical', href: '/guides/#engine-mechanical' },
+  { label: 'B) Cooling System', href: '/guides/#cooling-system' },
+  { label: 'C) Intake & Fuel System', href: '/guides/#intake-fuel-system' },
+  { label: 'D) Ignition System', href: '/guides/#ignition-system' },
+  { label: 'E) Clutch & Transmission', href: '/guides/#clutch-transmission' },
+  { label: 'F) Brakes', href: '/guides/#brakes' },
+  { label: 'G) Suspension', href: '/guides/#suspension' },
+  { label: 'H) Steering & Alignment', href: '/guides/#steering-alignment' },
+  { label: 'I) Electrical System', href: '/guides/#electrical-system' },
+  { label: 'J) Tires & Wheels', href: '/guides/#tires-wheels' },
+  {
+    label: 'K) Convertible Top & Exterior Trim',
+    href: '/guides/#convertible-top-exterior-trim'
+  },
+  { label: 'L) Rust Prevention', href: '/guides/#rust-prevention' },
+  { label: 'Appendices', href: '/guides/#appendices' }
+];
+---
+
+<BaseLayout title={FULL_BRAND}>
+  <main id="main-content" class="mx-auto max-w-screen-2xl space-y-12 px-4 py-10 lg:px-6">
+    <section class="grid items-center gap-6 rounded-2xl border border-slate-200 bg-surface-alt p-8 lg:grid-cols-[1.15fr_1fr]">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Mazda MX-5 NB (1998-2005)</p>
+        <h1 class="mt-3 text-4xl font-bold tracking-tight text-secondary">{SITE_NAME}</h1>
+        <p class="mt-1 text-lg font-semibold text-primary">{TAGLINE}</p>
+        <p class="mt-4 max-w-3xl text-slate-700">
+          Static-first workshop documentation focused on clear step-by-step guides, mobile-first layout, and
+          predictable navigation for garage use.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/guides/" class="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white">Browse Guides</a>
+          <a href="/guides/engine-mechanical/oil-filter-change/" class="rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold text-secondary">View Example Guide</a>
+        </div>
+      </div>
+      <img
+        src="/brand/logo.png"
+        alt={`${FULL_BRAND} logo art`}
+        width="1365"
+        height="768"
+        class="w-full rounded-xl border border-slate-200 bg-white object-cover"
+      />
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight text-secondary">Essential Routine Sections</h2>
+      <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          categories.map((category) => (
+            <a href={category.href} class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-secondary transition hover:border-primary hover:text-primary">
+              {category.label}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</BaseLayout>

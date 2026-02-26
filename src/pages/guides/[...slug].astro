@@ -1,0 +1,52 @@
+---
+import { getCollection, render } from 'astro:content';
+import GuideLayout from '@layouts/GuideLayout.astro';
+import { buildNavTree } from '@lib/navigation';
+
+const categoryLabels = {
+  'engine-mechanical': 'A) Engine Mechanical',
+  'cooling-system': 'B) Cooling System',
+  'intake-fuel-system': 'C) Intake & Fuel System',
+  'ignition-system': 'D) Ignition System',
+  'clutch-transmission': 'E) Clutch & Transmission',
+  brakes: 'F) Brakes',
+  suspension: 'G) Suspension',
+  'steering-alignment': 'H) Steering & Alignment',
+  'electrical-system': 'I) Electrical System',
+  'tires-wheels': 'J) Tires & Wheels',
+  'convertible-top-exterior-trim': 'K) Convertible Top & Exterior Trim',
+  'rust-prevention': 'L) Rust Prevention',
+  appendices: 'Appendices'
+} as const;
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+
+  return guides.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const allGuides = await getCollection('guides');
+const navTree = buildNavTree(allGuides);
+---
+
+<GuideLayout
+  title={entry.data.title}
+  summary={entry.data.summary}
+  categoryLabel={categoryLabels[entry.data.category]}
+  categoryPath={`/guides/${entry.data.category}/`}
+  navTree={navTree}
+  currentPath={`/guides/${entry.slug}/`}
+  headings={headings}
+  difficulty={entry.data.difficulty}
+  difficultyLabel={entry.data.difficultyLabel}
+  estimatedTime={entry.data.estimatedTime}
+  applicableModels={entry.data.applicableModels}
+  updatedAt={entry.data.updatedAt}
+>
+  <Content />
+</GuideLayout>

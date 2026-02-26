@@ -1,0 +1,187 @@
+---
+import type { NavItem } from '@lib/navigation';
+
+interface Props {
+  tree: NavItem[];
+  currentPath: string;
+}
+
+const { tree, currentPath } = Astro.props;
+
+const normalize = (path: string) => (path.endsWith('/') ? path : `${path}/`).toLowerCase();
+const current = normalize(currentPath || '/');
+
+const isCurrent = (href: string) => current === normalize(href);
+const isAncestor = (href: string) => current.startsWith(normalize(href));
+
+const isOpen = (item: NavItem) => {
+  if (isAncestor(item.href)) {
+    return true;
+  }
+  return (
+    item.children?.some((child) =>
+      isAncestor(child.href) || child.children?.some((grandChild) => isAncestor(grandChild.href))
+    ) ?? false
+  );
+};
+---
+
+<aside
+  id="side-nav"
+  data-side-nav
+  class="fixed inset-y-0 left-0 z-40 w-80 -translate-x-full overflow-y-auto border-r border-slate-200 bg-surface transition-transform duration-200 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)] lg:translate-x-0"
+>
+  <div class="space-y-4 p-4">
+    <div class="flex items-center justify-between lg:block">
+      <div>
+        <h2 class="text-sm font-bold text-secondary">Mazda MX-5 NB Maintenance Book</h2>
+        <p class="text-xs text-slate-500">Essential Routines</p>
+      </div>
+      <button type="button" data-nav-close class="rounded-md border border-slate-300 px-2.5 py-1 text-xs font-semibold lg:hidden">
+        Close
+      </button>
+    </div>
+
+    <label class="block">
+      <span class="sr-only">Filter navigation items</span>
+      <input
+        type="search"
+        data-nav-filter
+        placeholder="Search sidebar..."
+        class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm outline-none ring-primary/30 focus:ring"
+      />
+    </label>
+
+    <nav aria-label="Manual sections" class="text-sm">
+      <ul class="space-y-1">
+        {
+          tree.map((section) => (
+            <li data-nav-row data-nav-text={section.label.toLowerCase()}>
+              {
+                section.children && section.children.length > 0 ? (
+                  <details open={isOpen(section)} class="group">
+                    <summary
+                      data-nav-entry
+                      data-nav-text={section.label.toLowerCase()}
+                      class:list={[
+                        'cursor-pointer list-none rounded-md px-2 py-1.5 font-semibold text-secondary hover:bg-slate-100',
+                        isAncestor(section.href) && 'bg-primary/10 text-primary'
+                      ]}
+                    >
+                      {section.label}
+                    </summary>
+                    <ul class="mt-1 space-y-1 pl-2">
+                      {
+                        section.children.map((item) => (
+                          <li data-nav-row data-nav-text={item.label.toLowerCase()}>
+                            {
+                              item.children && item.children.length > 0 ? (
+                                <details open={isOpen(item)}>
+                                  <summary
+                                    data-nav-entry
+                                    data-nav-text={item.label.toLowerCase()}
+                                    class:list={[
+                                      'cursor-pointer list-none rounded-md px-2 py-1.5 font-medium text-slate-700 hover:bg-slate-100',
+                                      isAncestor(item.href) && 'text-primary'
+                                    ]}
+                                  >
+                                    {item.label}
+                                  </summary>
+                                  <ul class="mt-1 space-y-1 pl-2">
+                                    {
+                                      item.children.map((leaf) => (
+                                        <li data-nav-row data-nav-text={leaf.label.toLowerCase()}>
+                                          <a
+                                            href={leaf.href}
+                                            data-nav-entry
+                                            data-nav-text={leaf.label.toLowerCase()}
+                                            aria-current={isCurrent(leaf.href) ? 'page' : undefined}
+                                            class:list={[
+                                              'block rounded-md px-2 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-secondary',
+                                              isCurrent(leaf.href) && 'bg-primary/10 font-semibold text-primary'
+                                            ]}
+                                          >
+                                            {leaf.label}
+                                          </a>
+                                        </li>
+                                      ))
+                                    }
+                                  </ul>
+                                </details>
+                              ) : (
+                                <a
+                                  href={item.href}
+                                  data-nav-entry
+                                  data-nav-text={item.label.toLowerCase()}
+                                  aria-current={isCurrent(item.href) ? 'page' : undefined}
+                                  class:list={[
+                                    'block rounded-md px-2 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-secondary',
+                                    isCurrent(item.href) && 'bg-primary/10 font-semibold text-primary'
+                                  ]}
+                                >
+                                  {item.label}
+                                </a>
+                              )
+                            }
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </details>
+                ) : (
+                  <a
+                    href={section.href}
+                    data-nav-entry
+                    data-nav-text={section.label.toLowerCase()}
+                    aria-current={isCurrent(section.href) ? 'page' : undefined}
+                    class:list={[
+                      'block rounded-md px-2 py-1.5 font-semibold text-secondary hover:bg-slate-100',
+                      isCurrent(section.href) && 'bg-primary/10 text-primary'
+                    ]}
+                  >
+                    {section.label}
+                  </a>
+                )
+              }
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<script is:inline>
+  const navRoots = document.querySelectorAll('[data-side-nav]');
+
+  navRoots.forEach((navRoot) => {
+    const filterInput = navRoot.querySelector('[data-nav-filter]');
+    const navRows = [...navRoot.querySelectorAll('[data-nav-row]')];
+
+    if (!(filterInput instanceof HTMLInputElement)) {
+      return;
+    }
+
+    filterInput.addEventListener('input', () => {
+      const query = filterInput.value.trim().toLowerCase();
+
+      navRows.forEach((row) => {
+        const text = (row.getAttribute('data-nav-text') || '').toLowerCase();
+        const descendantRows = [...row.querySelectorAll('[data-nav-row]')];
+        const hasVisibleDescendant = descendantRows.some((childRow) => {
+          const childText = (childRow.getAttribute('data-nav-text') || '').toLowerCase();
+          return childText.includes(query);
+        });
+
+        const visible = query.length === 0 || text.includes(query) || hasVisibleDescendant;
+        row.classList.toggle('hidden', !visible);
+      });
+
+      if (query.length > 0) {
+        navRoot.querySelectorAll('details').forEach((detailsEl) => {
+          detailsEl.open = true;
+        });
+      }
+    });
+  });
+</script>
