@@ -134,7 +134,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'transmission-fluid-change',
         guideSlug: 'clutch-transmission/transmission-fluid-change'
       },
-      { label: 'Clutch pedal free play adjustment', slug: 'clutch-pedal-free-play-adjustment' },
+      {
+        label: 'Clutch pedal free play adjustment',
+        slug: 'clutch-pedal-free-play-adjustment',
+        guideSlug: 'clutch-transmission/clutch-pedal-free-play-adjustment'
+      },
       { label: 'CV boot inspection & replacement', slug: 'cv-boot-inspection-replacement' }
     ]
   },
