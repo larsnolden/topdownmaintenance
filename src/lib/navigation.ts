@@ -265,7 +265,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'soft-top-cleaning-waterproofing',
         guideSlug: 'convertible-top-exterior-trim/soft-top-cleaning-waterproofing'
       },
-      { label: 'Convertible top frame lubrication', slug: 'convertible-top-frame-lubrication' },
+      {
+        label: 'Convertible top frame lubrication',
+        slug: 'convertible-top-frame-lubrication',
+        guideSlug: 'convertible-top-exterior-trim/convertible-top-frame-lubrication'
+      },
       { label: 'Drain clearing (ensure proper water flow)', slug: 'drain-clearing' }
     ]
   },
