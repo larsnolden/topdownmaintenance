@@ -88,7 +88,7 @@ Generation guardrail:
 
 ## Rust Prevention
 
-- [ ] Underbody inspection for rust (especially sills & arches) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Underbody inspection for rust (especially sills & arches) | Owner: article-agent | Status: Ready | URL: `/guides/rust-prevention/underbody-inspection-rust/` | Notes: 2026-02-27: Claimed and completed in this run. Added NB1/NB2 underbody rust-inspection guide centered on sill/arch seam checks and moisture-path correlation via convertible drain health. Source mix includes official/manual source (Mellens NB factory manual index), independent how-to references (Flyin' Miata drain maintenance and MX5Parts roof-drain maintenance guidance), and community/forum sources (PistonHeads MX5 drain/rust-practical thread, MX5Nutz drain-tube repair thread, and Reddit NB rust-sill search context). Cross-check finding: strong agreement that trapped water/drain issues can accelerate localized corrosion and that aggressive probing/rodding can worsen damage; uncertainty remains on one fully extractable NB-only OEM rust-threshold map in this environment, so guide uses conservative triage and repeat photo-based monitoring. No reusable licensed NB-specific images were found/added. Browser control became unavailable during research; browser was used earlier in run and web-fetched sources were used for completion continuity.
 - [ ] Underseal maintenance (reapply as necessary) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
 ## Appendices

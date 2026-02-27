@@ -283,7 +283,8 @@ export const menuSections: MenuSectionDefinition[] = [
     items: [
       {
         label: 'Underbody inspection for rust (especially sills & arches)',
-        slug: 'underbody-inspection-rust'
+        slug: 'underbody-inspection-rust',
+        guideSlug: 'rust-prevention/underbody-inspection-rust'
       },
       { label: 'Underseal maintenance (reapply as necessary)', slug: 'underseal-maintenance' }
     ]
