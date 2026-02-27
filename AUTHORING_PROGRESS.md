@@ -82,7 +82,7 @@ Generation guardrail:
 
 ## Convertible Top & Exterior Trim (For soft-top models)
 
-- [ ] Soft top cleaning & waterproofing | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Soft top cleaning & waterproofing | Owner: article-agent | Status: Ready | URL: `/guides/convertible-top-exterior-trim/soft-top-cleaning-waterproofing/` | Notes: 2026-02-27: Claimed and completed in this run. Added NB1/NB2 soft-top cleaning & waterproofing guide with conservative process controls (material compatibility check, pre-rinse and pH-safe cleaning, controlled brush pressure, full drying before protectant, and post-cure water-bead verification). Source mix includes official/manual source (Mellens NB factory manual index), independent how-to references (Chemical Guys convertible-top care guide and Stoner Car Care convertible-top cleaning guide), and community sources (Reddit r/Miata NB soft-top cleaning and NB soft-top waterproofing search threads). Cross-check finding: strong agreement on avoiding harsh solvents, using gentle brushes, and applying waterproofing only after full dry-down; uncertainty remains on one universal OEM NB product recommendation because tops may be original vinyl or aftermarket cloth/canvas. No reusable licensed NB-specific images were found/added.
 - [ ] Convertible top frame lubrication | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Drain clearing (ensure proper water flow) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
