@@ -51,7 +51,7 @@ Generation guardrail:
 
 ## Brakes
 
-- [ ] Brake pad inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Brake pad inspection & replacement | Owner: article-agent | Status: Ready | URL: `/guides/brakes/brake-pad-inspection-replacement/` | Notes: 2026-02-27: Claimed and completed in this run. Added NB1/NB2 brake-pad inspection/replacement guide with front/rear differences, rear-caliper/pad-fitment caveats, fluid-overflow precaution during piston retraction, and bedding verification. Source mix includes official/manual source (Mellens NB factory manual index), independent how-to sources (AutoZone pad/rotor replacement procedure and PowerStop pad bedding procedure), and two Miata.net community threads (t=426617 and t=664233) for NB rear-pad fitment confusion and trim/package differences. Cross-check finding: broad agreement on safety setup, inspecting for uneven wear, and careful piston retraction; uncertainty remains on one universal NB pad part-number map and on publishing a single torque figure without year/VIN-specific FSM extraction, so article defers final torque values and exact pad SKU to model-year/manual and hardware identification. No reusable licensed NB-specific images were found/added.
 - [ ] Brake fluid flush & bleed | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Brake rotor inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
