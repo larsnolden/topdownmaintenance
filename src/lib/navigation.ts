@@ -228,7 +228,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'alternator-output-check',
         guideSlug: 'electrical-system/alternator-output-check'
       },
-      { label: 'Fuse inspection & replacement', slug: 'fuse-inspection-replacement' }
+      {
+        label: 'Fuse inspection & replacement',
+        slug: 'fuse-inspection-replacement',
+        guideSlug: 'electrical-system/fuse-inspection-replacement'
+      }
     ]
   },
   {
