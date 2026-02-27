@@ -181,7 +181,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'ball-joint-inspection',
         guideSlug: 'suspension/ball-joint-inspection'
       },
-      { label: 'Sway bar link inspection', slug: 'sway-bar-link-inspection' },
+      {
+        label: 'Sway bar link inspection',
+        slug: 'sway-bar-link-inspection',
+        guideSlug: 'suspension/sway-bar-link-inspection'
+      },
       { label: 'Suspension bushing inspection', slug: 'suspension-bushing-inspection' }
     ]
   },
