@@ -139,7 +139,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'clutch-pedal-free-play-adjustment',
         guideSlug: 'clutch-transmission/clutch-pedal-free-play-adjustment'
       },
-      { label: 'CV boot inspection & replacement', slug: 'cv-boot-inspection-replacement' }
+      {
+        label: 'CV boot inspection & replacement',
+        slug: 'cv-boot-inspection-replacement',
+        guideSlug: 'clutch-transmission/cv-boot-inspection-replacement'
+      }
     ]
   },
   {
