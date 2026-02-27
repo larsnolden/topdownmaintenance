@@ -155,7 +155,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'brake-pad-inspection-replacement',
         guideSlug: 'brakes/brake-pad-inspection-replacement'
       },
-      { label: 'Brake fluid flush & bleed', slug: 'brake-fluid-flush-bleed' },
+      {
+        label: 'Brake fluid flush & bleed',
+        slug: 'brake-fluid-flush-bleed',
+        guideSlug: 'brakes/brake-fluid-flush-bleed'
+      },
       { label: 'Brake rotor inspection & replacement', slug: 'brake-rotor-inspection-replacement' }
     ]
   },
