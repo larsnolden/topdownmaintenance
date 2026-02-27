@@ -57,7 +57,7 @@ Generation guardrail:
 
 ## Suspension
 
-- [ ] Shock absorber inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Shock absorber inspection | Owner: article-agent | Status: Ready | URL: `/guides/suspension/shock-absorber-inspection/` | Notes: 2026-02-27: Claimed and completed in this run. Added NB1/NB2 shock absorber inspection guide with structured triage flow (road symptoms, bounce test, visual leakage/damage checks, mount/bushing checks, and replacement threshold criteria). Source mix includes official/manual source (Mellens NB factory manual index), independent how-to references (AutoZone shock symptom guidance and additional safety workflow context from AutoZone procedural guidance), and two Miata.net community sources (t=799338 and t=627815) for practical NB suspension service observations. Cross-check finding: strong agreement on leakage/damage and uncontrolled rebound as replacement-level indicators; uncertainty remains on publishing one universal NB shock fastener torque set across all trim/packages without VIN/year-specific FSM extraction. No reusable licensed NB-specific images were found/added.
 - [ ] Ball joint inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Sway bar link inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Suspension bushing inspection | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:

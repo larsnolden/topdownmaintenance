@@ -171,7 +171,11 @@ export const menuSections: MenuSectionDefinition[] = [
     label: 'Suspension',
     slug: 'suspension',
     items: [
-      { label: 'Shock absorber inspection', slug: 'shock-absorber-inspection' },
+      {
+        label: 'Shock absorber inspection',
+        slug: 'shock-absorber-inspection',
+        guideSlug: 'suspension/shock-absorber-inspection'
+      },
       { label: 'Ball joint inspection', slug: 'ball-joint-inspection' },
       { label: 'Sway bar link inspection', slug: 'sway-bar-link-inspection' },
       { label: 'Suspension bushing inspection', slug: 'suspension-bushing-inspection' }
