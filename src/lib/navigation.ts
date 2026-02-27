@@ -204,7 +204,8 @@ export const menuSections: MenuSectionDefinition[] = [
       },
       {
         label: 'Tie rod inspection & replacement',
-        slug: 'tie-rod-inspection-replacement'
+        slug: 'tie-rod-inspection-replacement',
+        guideSlug: 'steering-alignment/tie-rod-inspection-replacement'
       },
       { label: 'Wheel alignment check (as needed)', slug: 'wheel-alignment-check' }
     ]
