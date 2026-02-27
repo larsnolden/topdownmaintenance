@@ -249,7 +249,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'tire-rotation',
         guideSlug: 'tires-wheels/tire-rotation'
       },
-      { label: 'Wheel lug nut torque check', slug: 'wheel-lug-nut-torque-check' }
+      {
+        label: 'Wheel lug nut torque check',
+        slug: 'wheel-lug-nut-torque-check',
+        guideSlug: 'tires-wheels/wheel-lug-nut-torque-check'
+      }
     ]
   },
   {
