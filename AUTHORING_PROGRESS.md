@@ -76,7 +76,7 @@ Generation guardrail:
 
 ## Tires & Wheels
 
-- [ ] Tire pressure check | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Tire pressure check | Owner: article-agent | Status: Ready | URL: `/guides/tires-wheels/tire-pressure-check/` | Notes: 2026-02-27: Claimed and completed in this run. Added NB1/NB2 tire-pressure-check guide focused on cold-pressure method, per-corner measurement discipline, hot-tire adjustment caution, and repeat-leak escalation. Source mix includes official/manual source (Mellens NB factory manual index), independent how-to references (Bridgestone tire-pressure method and Michelin tire-pressure safety/inflation guidance), and community sources (Reddit r/Miata NB tire-pressure and Miata tire-pressure door-jamb search threads). Cross-check finding: strong agreement on using cold PSI targets and avoiding visual-only checks; uncertainty remains on one universal NB pressure value because targets vary by wheel/tire size and market label, so final PSI is deferred to door-jamb/manual spec. No reusable licensed NB-specific images were found/added.
 - [ ] Tire rotation (if non-directional setup) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Wheel lug nut torque check | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
