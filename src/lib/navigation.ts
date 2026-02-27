@@ -270,7 +270,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'convertible-top-frame-lubrication',
         guideSlug: 'convertible-top-exterior-trim/convertible-top-frame-lubrication'
       },
-      { label: 'Drain clearing (ensure proper water flow)', slug: 'drain-clearing' }
+      {
+        label: 'Drain clearing (ensure proper water flow)',
+        slug: 'drain-clearing',
+        guideSlug: 'convertible-top-exterior-trim/drain-clearing'
+      }
     ]
   },
   {
