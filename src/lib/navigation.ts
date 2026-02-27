@@ -197,7 +197,11 @@ export const menuSections: MenuSectionDefinition[] = [
     label: 'Steering & Alignment',
     slug: 'steering-alignment',
     items: [
-      { label: 'Power steering fluid check', slug: 'power-steering-fluid-check' },
+      {
+        label: 'Power steering fluid check',
+        slug: 'power-steering-fluid-check',
+        guideSlug: 'steering-alignment/power-steering-fluid-check'
+      },
       {
         label: 'Tie rod inspection & replacement',
         slug: 'tie-rod-inspection-replacement'

@@ -64,7 +64,7 @@ Generation guardrail:
 
 ## Steering & Alignment
 
-- [ ] Power steering fluid check | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Power steering fluid check | Owner: article-agent | Status: Ready | URL: `/guides/steering-alignment/power-steering-fluid-check/` | Notes: 2026-02-27: Claimed and completed in this run. Added NB1/NB2 power steering fluid check guide with leak-aware workflow (clean cap area, correct level-reading method, incremental top-up, and recheck interval). Source mix includes official/manual source (Mellens NB factory manual index), independent how-to references (CarCareKiosk NB-specific 2001 Miata check procedure, wikiHow process/safety guidance, and 2CarPros general check/add workflow), plus two Miata.net community threads (t=549067 and t=720029) for NB-relevant fluid-spec compatibility discussion and reservoir-cap leak behavior. Cross-check finding: strong agreement on level-surface checks, avoiding overfill, and follow-up leak diagnosis if level drops again; uncertainty remains on publishing one universal NB fluid-spec shorthand across all year/market manuals, so guide defers final fluid match to exact manual spec + product compatibility statement. No reusable licensed NB-specific images were found/added.
 - [ ] Tie rod inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Wheel alignment check (as needed) | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
