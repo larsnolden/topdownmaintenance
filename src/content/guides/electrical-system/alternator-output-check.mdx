@@ -1,0 +1,125 @@
+---
+title: "Alternator output check"
+category: "electrical-system"
+difficulty: 2
+difficultyLabel: "Intermediate"
+estimatedTime: "30-60 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "Check Mazda MX-5 NB alternator charging behavior with a multimeter, load checks, and symptom-based diagnosis before replacing parts."
+tags:
+  - "alternator"
+  - "charging-system"
+  - "electrical"
+relatedGuides: []
+order: 2
+updatedAt: "2026-02-27"
+---
+
+## Before You Start / Safety
+
+- Work in a ventilated area with eye protection and gloves.
+- Keep hands/clothing clear of belts and pulleys when engine is running.
+- Do **not** disconnect battery terminals while the engine is running.
+
+> Warning: "Never disconnect the battery while the engine is running to check the charging system, this can cause a major electrical system damage." https://www.2carpros.com/articles/how-to-check-a-car-alternator
+
+## Required Tools
+
+- Digital multimeter (DC and AC voltage modes)
+- Basic hand tools for battery/ground checks
+- Flashlight
+- Optional: helper to hold RPM around 1,500-2,000
+
+## Required Parts / Fluids
+
+- None for inspection-only work
+- If faults are confirmed: alternator, belt/tensioning parts, battery, or wiring repair parts as needed
+
+## Model-specific notes (NB1 vs NB2)
+
+- NB1/NB2 charging-system hardware can differ by engine/year/market and prior swaps.
+- Confirm connector style and B+ wiring layout before condemning a replacement alternator as faulty.
+
+> Manual-reference quote: "Welcome to Mazda Miata Factory Service Manuals" https://www.mellens.net/mazda/
+
+> Community quote: "Is this alternator compatible to my 1.6 NB? I see only 1 connector, but where does the B+ go?" https://www.reddit.com/r/Miata/search/?q=NB+alternator&restrict_sr=1
+
+## Step-by-Step Procedure
+
+### 1) Baseline battery voltage (engine off)
+
+- Measure battery at rest.
+- A heavily discharged battery can skew alternator test results and should be charged/tested first.
+
+### 2) Charging voltage check (engine running)
+
+- Start engine, hold around 1,500 RPM.
+- Measure battery voltage again.
+- Charging voltage should rise above engine-off value.
+
+> High-risk quote: "When you read the voltmeter this time, the voltage should go up to at least 13. If varying the RPMs causes the voltage to fluctuate between 13 and 14.5 volts, your alternator is in good shape..." https://www.wikihow.com/Check-an-Alternator
+
+> High-risk quote: "It should read between 13.6 and 15.2 volts depending on battery condition and state of charge." https://www.2carpros.com/articles/how-to-check-a-car-alternator
+
+### 3) Loaded charging check
+
+- Turn on major loads (headlights, cabin fan, rear defogger if fitted).
+- Observe whether charging voltage remains stable or drops significantly.
+
+A large sustained drop under load suggests weak alternator output, high-resistance wiring, or poor grounds.
+
+### 4) AC ripple/diode sanity check
+
+- Set meter to AC volts and measure at battery with engine running.
+- Unexpected AC voltage can indicate failed alternator diodes.
+
+> High-risk quote: "To test for this condition switch the voltmeter to AC voltage ... the meter should read 0 volts. If any voltage is present one or more diodes has failed..." https://www.2carpros.com/articles/how-to-check-a-car-alternator
+
+### 5) Check simple external causes before replacement
+
+Inspect:
+- battery terminals for corrosion/looseness,
+- primary grounds,
+- alternator harness and B+ nut/cable,
+- relevant charging fuses.
+
+### 6) Decide next step: wiring/battery vs alternator
+
+If charging voltage remains low after terminal/ground checks and belt condition is good, alternator failure is more likely.
+
+> Community confirmation quote: "NB Miata alternator not charging the battery" https://www.reddit.com/r/Miata/search/?q=alternator+not+charging&restrict_sr=1
+
+## Torque Specs / Capacities
+
+- This check guide does not publish universal NB alternator mounting or B+ terminal torque values.
+- Use year/VIN-specific FSM data before final tightening of removed components.
+
+## Verification / Post-service checks
+
+- Re-test charging voltage at idle and ~1,500-2,000 RPM.
+- Confirm stable electrical behavior (lights, HVAC blower, gauges).
+- Recheck battery state after a short drive and next cold start.
+
+## Uncertainty / Open Questions
+
+- Public sources in this run agree on core test flow (engine-off baseline, running-voltage rise, loaded check, and diode/ripple sanity check).
+- One directly extractable NB-specific charging-voltage/tolerance table by year and ambient compensation strategy was not reliably available in this environment; confirm exact pass/fail thresholds in the year-specific NB workshop manual.
+
+## Images
+
+No reusable, clearly licensed NB-specific alternator diagnostic images were added in this run.
+
+## Image Credits
+
+- No images used.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-02-27. https://www.mellens.net/mazda/
+2. 2CarPros — *How to Check a Car Alternator*. Retrieved 2026-02-27. https://www.2carpros.com/articles/how-to-check-a-car-alternator
+3. wikiHow — *3 Ways to Check an Alternator*. Retrieved 2026-02-27. https://www.wikihow.com/Check-an-Alternator
+4. ScegliAuto — *Mazda Mx 5 Years 1998-2005 (MK 2, NB)*. Retrieved 2026-02-27. https://www.scegliauto.com/en/video/mazda/mx-5/1998/tutorial/
+5. Reddit r/Miata — *Search results: NB alternator*. Retrieved 2026-02-27. https://www.reddit.com/r/Miata/search/?q=NB+alternator&restrict_sr=1
+6. Reddit r/Miata — *Search results: alternator not charging*. Retrieved 2026-02-27. https://www.reddit.com/r/Miata/search/?q=alternator+not+charging&restrict_sr=1
