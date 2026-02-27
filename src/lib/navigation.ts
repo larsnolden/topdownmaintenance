@@ -218,7 +218,11 @@ export const menuSections: MenuSectionDefinition[] = [
     label: 'Electrical System',
     slug: 'electrical-system',
     items: [
-      { label: 'Battery health check & cleaning', slug: 'battery-health-check-cleaning' },
+      {
+        label: 'Battery health check & cleaning',
+        slug: 'battery-health-check-cleaning',
+        guideSlug: 'electrical-system/battery-health-check-cleaning'
+      },
       { label: 'Alternator output check', slug: 'alternator-output-check' },
       { label: 'Fuse inspection & replacement', slug: 'fuse-inspection-replacement' }
     ]

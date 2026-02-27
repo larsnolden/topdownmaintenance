@@ -70,7 +70,7 @@ Generation guardrail:
 
 ## Electrical System
 
-- [ ] Battery health check & cleaning | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
+- [ ] Battery health check & cleaning | Owner: article-agent | Status: Ready | URL: `/guides/electrical-system/battery-health-check-cleaning/` | Notes: 2026-02-27: Claimed and completed in this run. Added NB1/NB2 battery health/cleaning guide with safety-first workflow (terminal/cable inspection, neutralizing corrosion, reconnect order, and practical load-behavior validation). Source mix includes official/manual source (Mellens NB factory manual index), independent guides (Interstate corrosion-cleaning procedure + 2CarPros battery/terminal diagnostics and load-test workflow), and community sources (Reddit r/Miata NB battery terminal and ground-cable search threads). Cross-check finding: strong agreement on corrosion causing high-resistance no-start behavior and on baking soda/water cleaning method; uncertainty remains on publishing one universal NB terminal clamp torque and one definitive battery spec matrix across all markets/fitments without year-specific FSM and installed-battery confirmation. No reusable licensed NB-specific images were found/added. Note: browser tool became intermittently unavailable during run; web-fetched sources were used for evidence continuity.
 - [ ] Alternator output check | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 - [ ] Fuse inspection & replacement | Owner: TBD | Status: Not Started | URL: `TBD` | Notes:
 
