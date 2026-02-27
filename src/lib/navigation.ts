@@ -244,7 +244,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'tire-pressure-check',
         guideSlug: 'tires-wheels/tire-pressure-check'
       },
-      { label: 'Tire rotation (if non-directional setup)', slug: 'tire-rotation' },
+      {
+        label: 'Tire rotation (if non-directional setup)',
+        slug: 'tire-rotation',
+        guideSlug: 'tires-wheels/tire-rotation'
+      },
       { label: 'Wheel lug nut torque check', slug: 'wheel-lug-nut-torque-check' }
     ]
   },
