@@ -302,7 +302,11 @@ export const menuSections: MenuSectionDefinition[] = [
         slug: 'routine-log-sheets',
         guideSlug: 'appendices/routine-log-sheets'
       },
-      { label: 'Fluids & Consumables (with specifications)', slug: 'fluids-consumables' }
+      {
+        label: 'Fluids & Consumables (with specifications)',
+        slug: 'fluids-consumables',
+        guideSlug: 'appendices/fluids-consumables'
+      }
     ]
   }
 ];
