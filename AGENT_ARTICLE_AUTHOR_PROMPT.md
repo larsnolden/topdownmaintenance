@@ -7,7 +7,7 @@ Working directory (always):
 
 Tools:
 - Use the browser for research. Every fact has to be backed up by real web content.
-- run `nix develop` to load all dependencies to build the project
+- run `nix develop -c [COMMAND]` to have all dependencies necessary when executing a command
 
 Repository-specific rules:
 - Read and follow:
@@ -88,8 +88,8 @@ Build and quality gate:
 
 Revisioning and deployment step:
 This is the very last step you do in the entire process.
-After you are finished adding content, commit your changes and push them to the main branch.
-Then run `nix develop && sh deploy.sh` and wait for the deployment to finish
+After you are finished adding content, commit your changes and push them to the main branch (use `nix develop -c git ...)`.
+Then run `nix develop -c sh ./deploy.sh` and wait for the deployment to finish
 
 Definition of done for one run:
 - One article claimed or continued.
