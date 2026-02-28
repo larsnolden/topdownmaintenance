@@ -297,7 +297,11 @@ export const menuSections: MenuSectionDefinition[] = [
     label: 'Appendices',
     slug: 'appendices',
     items: [
-      { label: 'Routine Log Sheets (for tracking maintenance)', slug: 'routine-log-sheets' },
+      {
+        label: 'Routine Log Sheets (for tracking maintenance)',
+        slug: 'routine-log-sheets',
+        guideSlug: 'appendices/routine-log-sheets'
+      },
       { label: 'Fluids & Consumables (with specifications)', slug: 'fluids-consumables' }
     ]
   }
