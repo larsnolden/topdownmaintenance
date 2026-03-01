@@ -69,6 +69,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Crank pulley / harmonic balancer inspection & replacement',
         slug: 'crank-pulley-harmonic-balancer-inspection',
         guideSlug: 'engine-mechanical/crank-pulley-harmonic-balancer-inspection'
+      },
+      {
+        label: 'PCV valve replacement',
+        slug: 'pcv-valve-replacement',
+        guideSlug: 'engine-mechanical/pcv-valve-replacement'
       }
     ]
   },
