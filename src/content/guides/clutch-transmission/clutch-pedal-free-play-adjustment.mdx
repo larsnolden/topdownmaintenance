@@ -7,111 +7,113 @@ estimatedTime: "30-75 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "Adjust Mazda MX-5 NB clutch pedal free play and pedal height conservatively, then verify full release and no clutch slip or drag."
+summary: "NB clutch pedal free-play adjustment with under-dash adjuster location, small-step method, and post-adjustment drag/slip checks."
 tags:
   - "clutch pedal"
   - "free play"
   - "adjustment"
 relatedGuides: []
 order: 3
-updatedAt: "2026-02-28"
+updatedAt: "2026-03-01"
 ---
 
 ## Before You Start / Safety
 
-- Park on level ground, handbrake on, engine OFF for adjustment steps.
-- Do not force pedal-stop or pushrod locknuts; access is tight and threads can be damaged.
-- Confirm hydraulic condition first (fluid level, leaks) before changing adjustment.
-
-> Warning: “Adjusting a clutch pedal can also prevent slipping… testing a clutch pedal to see if you want to make adjustments is easy…” https://www.doityourself.com/stry/how-to-adjust-a-clutch-pedal
+- Park level, handbrake on, wheels chocked.
+- Do not adjust pedal geometry to “hide” hydraulic leaks or air in system.
+- Work with good lighting; under-dash access is tight and easy to mis-thread.
 
 ## Required Tools
 
-- Small spanners/wrenches for locknuts
+- 2 small open-end spanners (commonly 12 mm class for locknut area, verify on car)
 - Flashlight/headlamp
-- Ruler or caliper (for pedal free-play check)
-- Trim/panel tools if lower dash trim needs removal
+- Small ruler/caliper for top-of-pedal free-play measurement
+- Thin marker pen/tape (to mark baseline adjuster position)
 
 ## Required Parts / Fluids
 
-- None for adjustment itself
-- Optional: clutch fluid if hydraulic level is low
+- None for adjustment-only work
+- If level is low, correct clutch hydraulic fluid spec from cap/manual first
 
-## Model-specific notes (NB1 vs NB2)
+## Where the adjuster is on NB
 
-- NB1/NB2 pedal-box geometry is similar, but previous owner adjustments can leave non-standard settings.
-- Adjust in small increments, then verify engagement point and full release.
+The adjuster is at the **top of clutch pedal arm**, where pedal connects to the master-cylinder pushrod through the firewall.
 
-> Manual-reference quote: “The Manuals are in PDF format. You can use Adobe Reader to read or print them.” https://www.mellens.net/mazda/
+You’ll see:
+1. Pushrod threaded section
+2. Locknut
+3. Clevis/rod connection to pedal arm
+
+Access is from driver footwell under lower dash trim.
 
 ## Step-by-Step Procedure
 
-### 1) Baseline pedal behavior
+### 1) Baseline before touching anything
 
-Record current free play and engagement point before touching locknuts.
+Record:
+- current free play at pedal pad top,
+- current engagement point,
+- pedal height relative to brake pedal.
 
-Practical starting target used by many NB owners is about **3/8 in (~9-10 mm)** of top-of-pedal free play, then fine-tune for clean engagement.
+Mark locknut/rod with a paint pen so you can return to baseline if needed.
 
 ### 2) Confirm hydraulic health first
 
-If fluid is missing or pedal is inconsistent, repair leaks/air first; adjustment alone will not fix a failing master/slave setup.
+Before adjustment, verify:
+- reservoir not low,
+- no leaks at master/slave/line,
+- pedal feel not spongy.
 
-### 3) Access the pedal adjuster area
+If hydraulics are faulty, repair/bleed first.
 
-Work under the driver-side dash at the clutch pedal pushrod/locknut area.
+### 3) Measure free play
 
-### 4) Adjust free play in small steps
+At the top of clutch pedal travel, gently move pedal by hand until resistance is first felt.
+Measure that top deadband at pedal pad.
 
-Loosen locknut, rotate adjuster slightly (about 1/4 turn at a time), re-lock, and re-test pedal feel and shift engagement each time.
+Practical NB target often used by experienced owners: about **8-10 mm (~3/8")**.
 
-- Too little free play: clutch may not fully clamp (slip risk).
-- Too much free play: clutch may not fully release (drag/gear crunch risk).
+### 4) Loosen locknut and adjust in tiny steps
 
-> Community quote: “The manual says something like 3/8" of free play.” https://forum.miata.net/vb/showthread.php?t=159669
+- Hold pushrod/clevis and loosen locknut.
+- Rotate adjuster in **small increments** (about 1/4 turn per change).
+- Re-tighten locknut and recheck free play each step.
+
+Rule of thumb:
+- Too little free play → clutch may not fully clamp (slip risk)
+- Too much free play → clutch may not fully release (drag / hard 1st-reverse selection)
 
 ### 5) Check pedal height relationship
 
-Ensure clutch pedal sits in a sensible relationship to brake pedal and still has some free movement at the top.
+After adjustment, clutch pedal should still sit in a sensible relationship to brake pedal (not abnormally high or low).
 
-Practical check: if clutch pedal sits unusually high/low versus brake pedal after adjustment, re-baseline and re-adjust in smaller increments.
+If pedal height looks wrong after free-play setting, return toward baseline and repeat with smaller change.
 
-> Community confirmation quote: “There’s also a spec on the clutch pedal height… close to the height of the brake pedal…” https://forum.miata.net/vb/showthread.php?t=159669
+### 6) Functional verification (static then road)
 
-### 6) Verify no drag and no slip
+Static checks:
+- Engine on, select reverse and 1st at standstill; should engage cleanly.
 
-Road test after warm-up: confirm easy gear selection at standstill and no flare/slip under moderate acceleration.
+Road checks:
+- No slip flare in higher gear moderate throttle pull.
+- No drag symptoms (difficult reverse/1st when stationary).
 
-> Community confirmation quote: “A slave replacement six months later had no more freeplay in pedal.” https://forum.miata.net/vb/showthread.php?t=342162
+## Troubleshooting after adjustment
 
-## Torque Specs / Capacities
-
-- No published universal torque value is provided here for pedal adjuster locknuts (varies by hardware/access).
-- Tighten locknuts securely without over-torquing in confined pedal-box area.
+- **Still hard to get into reverse/1st at stop:** likely drag (increase release / reduce excessive free play), or hydraulic issue.
+- **RPM flares without acceleration under load:** likely slip (increase free play slightly / ensure full clamp), or worn clutch.
+- **Engagement point keeps moving over days:** suspect master/slave wear or air ingress.
 
 ## Verification / Post-service checks
 
-- Smooth 1st/reverse engagement at stop without crunch
+- Engagement point stable across 2-3 drives
+- No gear crunch at standstill selection
 - No clutch slip under load
-- Engagement point remains stable over several drives
-- No new pedal squeak/bind after adjustment
-
-## Uncertainty / Open Questions
-
-- This run could not reliably extract one NB-only official numeric free-play + pedal-height table row from machine-readable factory documents.
-- Community references consistently mention free-play targeting and pedal-height relationship, but exact preferred value can vary by driver and clutch wear state.
-
-## Images
-
-No reusable images were added in this run.
-
-## Image Credits
-
-- No images used.
+- Locknut remains tight and pedal movement smooth
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-02-27. https://www.mellens.net/mazda/
-2. DoItYourself — *Two Ways to Test a Clutch Pedal*. Retrieved 2026-02-27. https://www.doityourself.com/stry/how-to-adjust-a-clutch-pedal
-3. ScegliAuto — *Mazda Mx 5 - Clutch* (tutorial index). Retrieved 2026-02-27. https://www.scegliauto.com/en/video/mazda/mx-5/frizione/tutorial/
-4. Miata.net Forum — *Adjusting Clutch Pedal Free Play [Archive]*. Retrieved 2026-02-27. https://forum.miata.net/vb/showthread.php?t=159669
-5. Miata.net Forum — *Clutch pedal freeplay adjustment question [Archive]*. Retrieved 2026-02-27. https://forum.miata.net/vb/showthread.php?t=342162
+1. MELLENS — Mazda Miata factory service manual archive (NB clutch/pedal/hydraulic reference index). Retrieved 2026-03-01. https://www.mellens.net/mazda/
+2. BOFI Racing — MX-5/Miata workshop manual index (NB year-specific documentation path). Retrieved 2026-03-01. https://bofiracing.com/blog/mx5-miata-workshop-manuals/
+3. Miata.net Forum — Long-running NB/NA owner experience on free-play target and pedal-height relation (practical cross-check context). Retrieved 2026-03-01. https://forum.miata.net/vb/showthread.php?t=159669
+4. Miata.net Forum — Clutch free-play drift discussions linked to slave/master condition (diagnostic context). Retrieved 2026-03-01. https://forum.miata.net/vb/showthread.php?t=342162
