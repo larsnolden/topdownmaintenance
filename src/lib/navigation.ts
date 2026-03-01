@@ -84,6 +84,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Engine mount inspection & replacement',
         slug: 'engine-mount-inspection-replacement',
         guideSlug: 'engine-mechanical/engine-mount-inspection-replacement'
+      },
+      {
+        label: 'Oil leak inspection (common NB leak points)',
+        slug: 'oil-leak-inspection-common-sources',
+        guideSlug: 'engine-mechanical/oil-leak-inspection-common-sources'
       }
     ]
   },
