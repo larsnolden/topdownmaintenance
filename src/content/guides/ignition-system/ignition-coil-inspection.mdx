@@ -14,7 +14,7 @@ tags:
   - "misfire"
 relatedGuides: []
 order: 1
-updatedAt: "2026-02-26"
+updatedAt: "2026-03-01"
 ---
 
 ## Before You Start / Safety
@@ -32,6 +32,7 @@ updatedAt: "2026-02-26"
 - Basic socket set and screwdrivers
 - Insulation-safe light source
 - Contact cleaner (electrical)
+- Notebook/phone log for cylinder-specific findings (helps avoid random parts swapping)
 
 ## Required Parts / Fluids
 
@@ -56,11 +57,17 @@ Log if the issue happens at idle, under load, or only hot. Coil failures often w
 
 Read and note misfire and ignition-related DTCs before clearing anything.
 
+Common patterns:
+- **P0300** random misfire
+- **P0301-P0304** cylinder-specific misfire
+
+Record freeze-frame data (RPM/load/coolant temp) to see if misfire appears at idle, cruise, or high load.
+
 > High-risk quote: “On 1996 and newer engines with OBD II… a coil failure will usually set a P030X misfire code… But a misfire code can be caused by an ignition problem, a fuel problem or a compression problem…” https://www.aa1car.com/library/ignition_coils.htm
 
 ### 3) Visual inspection first (engine OFF)
 
-Check coil housing for cracks, carbon tracking, melted spots, and connector looseness/corrosion.
+On NB engines, the coil pack is mounted at the rear/top side of the engine bay area with plug leads running to each cylinder. Check coil housing for cracks, carbon tracking, melted spots, and connector looseness/corrosion.
 
 ### 4) Check related components before condemning coil
 
@@ -85,6 +92,8 @@ On modified or ECU-updated cars, verify the correct ignition/engine fuse path an
 - If coil body is damaged or no-output fault is confirmed with proper feed/trigger, replace coil.
 - If feed/trigger is unstable, repair wiring/connector/ECU-side issue first.
 - If plugs/wires are poor, correct those and re-test before coil replacement.
+
+Avoid “shotgun” replacement (coil, wires, plugs all at once) unless parts are all clearly aged/faulty; staged diagnosis keeps root cause visible.
 
 > Community confirmation quote: “…power was on the ignition coils for a bit longer… went for a test drive… it kept loosing power…” https://www.mx5nutz.com/threads/ignition-coil-issue.149944/
 
