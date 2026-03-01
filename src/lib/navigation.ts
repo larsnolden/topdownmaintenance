@@ -54,6 +54,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Accessory drive belt service (inspect/adjust/replace)',
         slug: 'accessory-drive-belt-service',
         guideSlug: 'engine-mechanical/accessory-drive-belt-service'
+      },
+      {
+        label: 'Water pump replacement',
+        slug: 'water-pump-replacement',
+        guideSlug: 'engine-mechanical/water-pump-replacement'
       }
     ]
   },
