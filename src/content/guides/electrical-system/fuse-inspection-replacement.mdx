@@ -7,114 +7,101 @@ estimatedTime: "20-45 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "Inspect and replace Mazda MX-5 NB fuses safely, verify root cause, and avoid repeat failures caused by wiring or component faults."
+summary: "NB fuse troubleshooting guide with box locations, test-light method, and safe same-rating replacement rules."
 tags:
   - "electrical"
   - "fuses"
   - "diagnostics"
 relatedGuides: []
 order: 3
-updatedAt: "2026-02-28"
+updatedAt: "2026-03-01"
 ---
 
 ## Before You Start / Safety
 
-- Switch ignition OFF before pulling fuses.
-- Use the correct fuse puller/pliers and avoid shorting adjacent terminals.
-- Replace only with the exact same fuse type and amperage.
-
-> Warning: "Replace failed fuses with proper amp rating, not doing so can result in electrical system damage." https://www.2carpros.com/articles/how-to-check-a-car-fuse
+- Ignition OFF before pulling/installing fuses.
+- Never bridge contacts with metal tools.
+- Replace only with the **same amperage and fuse type**.
 
 ## Required Tools
 
-- Fuse puller or small insulated pliers
+- Fuse puller (or insulated needle-nose pliers)
 - Flashlight
 - Multimeter or test light (recommended)
-- Spare blade fuses in common service values: **7.5 A, 10 A, 15 A, 20 A, 30 A**
+- Spare blade fuses: 7.5 A, 10 A, 15 A, 20 A, 30 A
 
-## Required Parts / Fluids
+## Where the fuse boxes are on NB
 
-- Replacement blade fuses in matching amperage and physical size (mini/low-profile mini/regular, depending on slot)
+Typical NB layout:
+- **Engine bay fuse/relay box:** left side of bay near battery area/firewall side
+- **Cabin fuse panel:** driver footwell lower dash area (behind trim cover)
 
-### Fast fuse-ID tip (color + number)
+Always confirm with the diagram inside your own fuse-box cover and year-specific manual.
 
-On blade fuses, trust the printed amp number first; color can be a quick cross-check:
+## Fast blade-fuse color check (backup only)
+
+Read the printed amp number first; color is only a cross-check:
 - Brown 7.5 A
 - Red 10 A
 - Blue 15 A
 - Yellow 20 A
 - Green 30 A
 
-## Model-specific notes (NB1 vs NB2)
-
-- Fuse layout and assignment can vary by NB year/market and by whether covers/labels were replaced.
-- Always verify location using your fuse-box legend/manual, not internet images alone.
-
-> Manual-reference quote: "Welcome to Mazda Miata Factory Service Manuals" https://www.mellens.net/mazda/
-
-> Community quote: "My fuse box looks nothing like any of the images I can find online." https://www.reddit.com/r/Miata/search/?q=NB+fuse+box&restrict_sr=1
-
 ## Step-by-Step Procedure
 
-### 1) Confirm the failed circuit symptom
+### 1) Confirm the exact failed function
 
-Identify what stopped working (e.g., horn, lights, accessory). Check whether related systems also fail, which may indicate a shared supply issue.
+Write down precisely what fails (e.g., left low beam, horn, cabin blower speed 1-2-3, etc.).
+This reduces random fuse pulling.
 
-### 2) Locate the correct fuse box and legend
+### 2) Find the circuit fuse from cover legend/manual
 
-Use the cover legend and year-specific documentation to identify the suspect fuse(s). NB cars may have multiple fuse locations.
+Use your cover chart and manual page for your market/year. Some slot assignments vary by year/options.
 
-### 3) Inspect fuse visually first
+### 3) Pull and inspect suspect fuse
 
-Remove the fuse and check the element for a break/charred mark. Compare with a known-good fuse if uncertain.
+Remove fuse and inspect the element:
+- intact bridge = likely okay,
+- broken/blackened bridge = blown.
 
-### 4) Confirm power side and load side (recommended)
+### 4) Verify with a meter/test light (best practice)
 
-With ignition state appropriate to the circuit, verify fuse terminal power with a test light/meter.
+With circuit energized as needed:
+- power on both test points = fuse likely good,
+- power on one side only = blown fuse.
 
-> High-risk quote: "A fuse with power on just one side is blown and needs replacement." https://www.2carpros.com/articles/how-to-check-a-car-fuse
+### 5) Install exact replacement
 
-### 5) Replace with exact matching amperage
+Install same blade size and same amperage.
 
-Install only the same rating and type. Never up-rate a fuse to “stop it blowing.”
+**Do not up-rate** (e.g., replacing 15 A with 20 A). Over-fusing can overheat wiring.
 
-> High-risk quote: "Never use a fuse with a higher amperage than the one that blew... can cause electrical damage or a fire." https://www.wikihow.com/Check-Fuses
+### 6) Re-test and decide next action
 
-### 6) Re-test and check for repeat failure
+If the new fuse blows again quickly:
+- stop replacing repeatedly,
+- inspect downstream load/wiring for short,
+- unplug suspected component and retest.
 
-If the replacement blows again, stop replacing repeatedly and diagnose downstream short/load fault.
+## Quick repeat-failure triage
 
-> Community confirmation quote: "Starting problem, main fuse blown. Will it happen again?" https://www.reddit.com/r/Miata/search/?q=NB+blown+fuse&restrict_sr=1
+If fuse blows instantly on key ON:
+- suspect short to ground on supply side/component.
 
-## Torque Specs / Capacities
+If fuse blows only when activating one function:
+- suspect that actuator/device (motor, lamp holder, relay output).
 
-- Not applicable for standard fuse pull/replace tasks.
+If fuse survives static but blows over bumps:
+- suspect harness chafe/intermittent contact.
 
 ## Verification / Post-service checks
 
-- Confirm affected circuit works normally.
-- Confirm no secondary warning lights/codes appear.
-- Recheck fuse temperature after brief operation (should not overheat).
-
-## Uncertainty / Open Questions
-
-- Public sources in this run agree strongly on process controls (correct ID, same-value replacement, and no overfusing).
-- A single extractable NB1/NB2 all-market fuse-map table was not reliably available in this environment; final slot identification should be confirmed against year-specific labels/manual pages.
-
-## Images
-
-No reusable, clearly licensed NB-specific fuse-panel images were added in this run.
-
-## Image Credits
-
-- No images used.
+- Failed function restored
+- Fuse remains intact after 2-3 operation cycles
+- No burning smell, heat discoloration, or repeat trip
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-02-27. https://www.mellens.net/mazda/
-2. 2CarPros — *How to Check a Car Fuse*. Retrieved 2026-02-27. https://www.2carpros.com/articles/how-to-check-a-car-fuse
-3. wikiHow — *How to Check Fuses (with Pictures)*. Retrieved 2026-02-27. https://www.wikihow.com/Check-Fuses
-4. ScegliAuto — *Mazda Mx 5 Years 1998-2005 (MK 2, NB)*. Retrieved 2026-02-27. https://www.scegliauto.com/en/video/mazda/mx-5/1998/tutorial/
-5. Reddit r/Miata — *Search results: NB fuse box*. Retrieved 2026-02-27. https://www.reddit.com/r/Miata/search/?q=NB+fuse+box&restrict_sr=1
-6. Reddit r/Miata — *Search results: NB blown fuse*. Retrieved 2026-02-27. https://www.reddit.com/r/Miata/search/?q=NB+blown+fuse&restrict_sr=1
-7. Wikipedia — *Automotive fuse* (blade fuse sizes and common color coding). Retrieved 2026-02-28. https://en.wikipedia.org/wiki/Automotive_fuse
+1. MELLENS — Mazda Miata factory service manual archive (NB year-specific fuse/circuit documentation index). Retrieved 2026-03-01. https://www.mellens.net/mazda/
+2. 2CarPros — Fuse testing method and same-rating replacement safety guidance. Retrieved 2026-03-01. https://www.2carpros.com/articles/how-to-check-a-car-fuse
+3. Wikipedia — Automotive blade-fuse standards and common color coding reference. Retrieved 2026-03-01. https://en.wikipedia.org/wiki/Automotive_fuse

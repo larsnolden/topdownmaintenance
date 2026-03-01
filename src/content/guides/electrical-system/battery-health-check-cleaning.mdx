@@ -7,126 +7,117 @@ estimatedTime: "30-60 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "Check Mazda MX-5 NB battery condition, clean terminal corrosion safely, and verify starting performance before deciding on replacement."
+summary: "NB battery check/clean guide with exact battery location, terminal order, voltage thresholds, and corrosion control steps."
 tags:
   - "battery"
   - "electrical"
   - "corrosion"
 relatedGuides: []
 order: 1
-updatedAt: "2026-02-27"
+updatedAt: "2026-03-01"
 ---
 
 ## Before You Start / Safety
 
-- Work in a well-ventilated area.
-- Wear eye protection and gloves.
-- Keep sparks/flames away from the battery area.
-
-> Warning: "When working with a battery wear protective eyewear and gloves... A battery is filled with explosive gasses that may ignite when extreme heat or a spark is present." https://www.2carpros.com/articles/everything-goes-dead-when-engine-is-cranked
+- Work in a ventilated area, away from sparks/flames.
+- Wear nitrile gloves + eye protection.
+- Keep metal tools off both terminals at once.
 
 ## Required Tools
 
-- Gloves and safety glasses
-- Nylon/wire brush (battery terminal brush preferred)
-- Baking soda + clean/distilled water
+- 10 mm spanner/socket (terminal clamp nuts on most NB setups)
+- Nylon battery brush or dedicated terminal brush
+- Baking soda + warm water in spray bottle/cup
 - Clean rags/paper towels
-- Small socket/spanner for terminal clamps
+- Digital multimeter
 
 ## Required Parts / Fluids
 
-- Battery terminal protectant (optional)
-- Replacement terminal clamps/cables if damaged
-- Replacement battery if testing confirms failure
+- Battery terminal protectant spray/grease (optional)
+- Replacement clamp(s) if cracked/over-stretched
+- Replacement battery if test values are below threshold
 
 ## Model-specific notes (NB1 vs NB2)
 
-- NB1 and NB2 are both trunk-battery cars in most markets; condition of terminal cleanliness and cable integrity is often as important as battery age.
-- Always confirm terminal orientation and cable routing before reconnecting.
-
-> Manual-reference quote: "Welcome to Mazda Miata Factory Service Manuals" https://www.mellens.net/mazda/
-
-> Community quote: "NB battery tender question ... which one of these is the positive terminal?" https://www.reddit.com/r/Miata/search/?q=NB+battery+terminal&restrict_sr=1
+- On most NB cars, the battery is in the **trunk (right side)** behind carpet trim.
+- Many NB batteries are vented designs with a small vent tube—confirm it is connected and not kinked after service.
+- Factory cable routing is tight in the trunk; do not force cables into sharp bends.
 
 ## Step-by-Step Procedure
 
-### 1) Initial battery health triage
+### 1) Access the battery correctly
 
-Look for:
-- slow crank,
-- repeated low-voltage starts after parking,
-- visible case bulging/leak evidence,
-- heavy terminal corrosion.
+Open trunk, lift right-side trim panel/carpet cover, and expose battery top, terminals, and hold-down.
 
-If the battery repeatedly goes low, do not assume corrosion is the only issue; check charging and parasitic draw as needed.
+Before touching terminals, check for:
+- cracked case,
+- acid staining,
+- loose hold-down,
+- vent hose disconnected.
 
-### 2) Inspect terminals and clamps for corrosion/looseness
+### 2) Measure open-circuit voltage first (engine OFF)
 
-Corrosion at the post-to-clamp interface can create major voltage drop and no-start symptoms.
+Let car sit 30+ minutes after driving, then measure at battery posts.
 
-> High-risk quote: "This can be a simple problem of a bad connection at the battery terminals... corrosion ... can cause a connection problem." https://www.2carpros.com/articles/everything-goes-dead-when-engine-is-cranked
+Practical interpretation:
+- **12.6-12.8 V**: healthy fully charged
+- **12.4-12.5 V**: partially charged
+- **≤12.2 V**: low; charge + retest
+- **&lt;12.0 V**: heavily discharged or deteriorated
 
-### 3) Disconnect and clean safely
+### 3) Check cranking voltage (start test)
 
-- Disconnect negative, then positive.
-- Clean corrosion with baking soda + water and a brush.
-- Avoid letting cleaning mixture enter battery vents/caps.
+Watch meter while cranking.
+- Healthy systems usually stay around **≥9.6 V** during crank.
+- If voltage collapses far below this or starter clicks heavily, battery/cable resistance issue is likely.
 
-> High-risk quote: "To get rid of battery terminal corrosion, mix baking soda and distilled water, dip a brush in the mixture, and then brush away the blue-green foam carefully." https://www.interstatebatteries.com/blog/how-to-clean-battery-corrosion
+### 4) Disconnect safely (negative first)
 
-### 4) Dry and inspect metal contact surfaces
+1. Loosen **negative (-)** clamp and isolate it.
+2. Loosen **positive (+)** clamp.
 
-After neutralizing and cleaning, dry completely and inspect for:
-- pitted/damaged clamp bores,
-- cracked terminals,
-- cable corrosion creeping under insulation.
+This order reduces accidental short risk.
 
-Replace damaged hardware rather than forcing a poor connection.
+### 5) Clean corrosion and mating surfaces
 
-### 5) Reassemble and tighten correctly
+- Neutralize deposits with baking-soda/water solution.
+- Brush clamp bores and post surfaces to bright metal.
+- Wipe dry thoroughly.
 
-- Reconnect positive first, then negative.
-- Tighten securely without over-tightening small clamp hardware.
-- Apply terminal protectant (optional) after final fitment.
+Do not flood vent openings with solution.
 
-### 6) Function check (basic load behavior)
+### 6) Reconnect correctly (positive first)
 
-Use a simple practical check:
-- Observe headlight brightness before and during crank.
-- Severe dimming/clicking under crank suggests weak battery or high resistance.
+1. Connect **positive (+)** clamp.
+2. Connect **negative (-)** clamp.
 
-> High-risk quote: "If the headlights dim way down and go out... the battery has failed and it must be replaced." https://www.2carpros.com/articles/car-battery-load-test
+Tighten clamps until secure (no hand twist), but do not crush clamp ears.
 
-## Torque Specs / Capacities
+If available, apply a thin terminal protectant film after tightening.
 
-- This guide avoids publishing one universal terminal clamp torque value.
-- Clamp hardware design varies by battery/terminal style; tighten to secure contact without thread damage.
+### 7) Verify charging system at idle
+
+With engine running and accessories off, battery terminal voltage is commonly around **13.6-14.8 V**.
+
+If charging voltage stays near battery-rest voltage (~12.x V), diagnose alternator/charging circuit next.
 
 ## Verification / Post-service checks
 
-- Engine cranks normally without abnormal dimming/clicking.
-- Terminals remain cool and secure after a short drive.
-- Recheck for renewed corrosion after several days.
+- Fast, consistent crank hot and cold
+- No terminal movement by hand
+- No fresh corrosion bloom after 1 week
+- Battery hold-down secure; vent tube still connected
 
-## Uncertainty / Open Questions
+## Replace-vs-reuse decision guide
 
-- Publicly accessible sources in this run align well on cleaning chemistry/safety and practical load symptoms.
-- A single NB-specific OEM battery terminal torque value and one universal battery group/CCA table were not reliably extractable in this environment; confirm final replacement spec by year/market manual and installed battery tray/cable setup.
-
-## Images
-
-No reusable, clearly licensed NB-specific battery inspection/cleaning images were added in this run.
-
-## Image Credits
-
-- No images used.
+Replace battery if one or more remain true after full charge and clean terminals:
+- Resting voltage repeatedly &lt;12.4 V after overnight park
+- Cranking drop severe with known-good cable connections
+- Battery age/history unknown plus intermittent no-start
+- Visible case swelling/leak damage
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-02-27. https://www.mellens.net/mazda/
-2. Interstate Batteries — *How to Clean Car Battery Corrosion Safely*. Retrieved 2026-02-27. https://www.interstatebatteries.com/blog/how-to-clean-battery-corrosion
-3. 2CarPros — *Everything Goes Dead When Engine Is Cranked*. Retrieved 2026-02-27. https://www.2carpros.com/articles/everything-goes-dead-when-engine-is-cranked
-4. 2CarPros — *How to Load Test a Car Battery*. Retrieved 2026-02-27. https://www.2carpros.com/articles/car-battery-load-test
-5. Reddit r/Miata — *Search results: NB battery terminal*. Retrieved 2026-02-27. https://www.reddit.com/r/Miata/search/?q=NB+battery+terminal&restrict_sr=1
-6. Reddit r/Miata — *Search results: NB battery ground cable*. Retrieved 2026-02-27. https://www.reddit.com/r/Miata/search/?q=NB+battery+ground+cable&restrict_sr=1
-7. ScegliAuto — *Mazda Mx 5 Years 1998-2005 (MK 2, NB)*. Retrieved 2026-02-27. https://www.scegliauto.com/en/video/mazda/mx-5/1998/tutorial/
+1. MELLENS — Mazda Miata factory service manual archive (year-specific NB electrical system reference index). Retrieved 2026-03-01. https://www.mellens.net/mazda/
+2. 2CarPros — Battery/connection diagnostic workflow and practical cranking-behavior checks. Retrieved 2026-03-01. https://www.2carpros.com/articles/everything-goes-dead-when-engine-is-cranked
+3. Interstate Batteries — Battery terminal corrosion cleaning method (baking soda/water and post-cleaning practice). Retrieved 2026-03-01. https://www.interstatebatteries.com/blog/how-to-clean-battery-corrosion
