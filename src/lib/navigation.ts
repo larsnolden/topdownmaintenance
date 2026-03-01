@@ -64,6 +64,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Timing belt tensioner & idler pulley replacement',
         slug: 'timing-belt-tensioner-idler-replacement',
         guideSlug: 'engine-mechanical/timing-belt-tensioner-idler-replacement'
+      },
+      {
+        label: 'Crank pulley / harmonic balancer inspection & replacement',
+        slug: 'crank-pulley-harmonic-balancer-inspection',
+        guideSlug: 'engine-mechanical/crank-pulley-harmonic-balancer-inspection'
       }
     ]
   },
