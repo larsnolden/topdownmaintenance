@@ -74,6 +74,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'PCV valve replacement',
         slug: 'pcv-valve-replacement',
         guideSlug: 'engine-mechanical/pcv-valve-replacement'
+      },
+      {
+        label: 'Vacuum hose & breather hose inspection/refresh',
+        slug: 'vacuum-breather-hose-inspection-refresh',
+        guideSlug: 'engine-mechanical/vacuum-breather-hose-inspection-refresh'
       }
     ]
   },
