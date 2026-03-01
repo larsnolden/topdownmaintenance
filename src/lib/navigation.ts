@@ -59,6 +59,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Water pump replacement',
         slug: 'water-pump-replacement',
         guideSlug: 'engine-mechanical/water-pump-replacement'
+      },
+      {
+        label: 'Timing belt tensioner & idler pulley replacement',
+        slug: 'timing-belt-tensioner-idler-replacement',
+        guideSlug: 'engine-mechanical/timing-belt-tensioner-idler-replacement'
       }
     ]
   },
