@@ -79,6 +79,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Vacuum hose & breather hose inspection/refresh',
         slug: 'vacuum-breather-hose-inspection-refresh',
         guideSlug: 'engine-mechanical/vacuum-breather-hose-inspection-refresh'
+      },
+      {
+        label: 'Engine mount inspection & replacement',
+        slug: 'engine-mount-inspection-replacement',
+        guideSlug: 'engine-mechanical/engine-mount-inspection-replacement'
       }
     ]
   },
