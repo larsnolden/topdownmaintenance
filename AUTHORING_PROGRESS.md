@@ -98,7 +98,7 @@ Generation guardrail:
 
 ## Engine Mechanical
 
-- [ ] Accessory drive belt service (inspect/adjust/replace) | Owner: article-agent | Status: Not Started | URL: `/guides/engine-mechanical/accessory-drive-belt-service/` | Notes: NB uses multiple accessory belts; layout varies with A/C + PS + market/engine—confirm belt routing per year.
+- [ ] Accessory drive belt service (inspect/adjust/replace) | Owner: article-agent | Status: In Review | URL: `/guides/engine-mechanical/accessory-drive-belt-service/` | Notes: 2026-03-01: Draft completed with 5 cited sources (1 manual index, 2 how-to, 2 community). High-confidence procedural guidance; key uncertainty remains model/market-specific numeric tension & bracket torque values, explicitly flagged in article. No reusable licensed images found; documented in Image Credits.
 - [ ] Water pump replacement | Owner: article-agent | Status: Not Started | URL: `/guides/engine-mechanical/water-pump-replacement/` | Notes: Often bundled with timing belt service; confirm pump/bolt differences by engine (1.6 vs 1.8).
 - [ ] Timing belt tensioner & idler pulley replacement | Owner: article-agent | Status: Not Started | URL: `/guides/engine-mechanical/timing-belt-tensioner-idler-replacement/` | Notes: Replace/inspect while doing timing belt; verify component set differs by year/engine.
 - [ ] Crank pulley / harmonic balancer inspection & replacement | Owner: article-agent | Status: Not Started | URL: `/guides/engine-mechanical/crank-pulley-harmonic-balancer-inspection/` | Notes: Symptoms can mimic belt issues; confirm pulley type and torque method per FSM.

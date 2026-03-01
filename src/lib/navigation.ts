@@ -49,6 +49,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Engine compression test (periodic check)',
         slug: 'engine-compression-test',
         guideSlug: 'engine-mechanical/engine-compression-test'
+      },
+      {
+        label: 'Accessory drive belt service (inspect/adjust/replace)',
+        slug: 'accessory-drive-belt-service',
+        guideSlug: 'engine-mechanical/accessory-drive-belt-service'
       }
     ]
   },
