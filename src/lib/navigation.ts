@@ -160,6 +160,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Cooling fan operation check (fans, relays, sensors)',
         slug: 'cooling-fan-operation-check',
         guideSlug: 'cooling-system/cooling-fan-operation-check'
+      },
+      {
+        label: 'Coolant temperature sensor test/replacement',
+        slug: 'coolant-temperature-sensor-test-replacement',
+        guideSlug: 'cooling-system/coolant-temperature-sensor-test-replacement'
       }
     ]
   },

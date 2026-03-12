@@ -1,0 +1,130 @@
+---
+title: "Coolant temperature sensor test/replacement"
+category: "cooling-system"
+difficulty: 3
+difficultyLabel: "Intermediate"
+estimatedTime: "60-120 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "Mazda MX-5 NB coolant temperature sensor diagnostic and replacement workflow, including ECU-sensor vs gauge-sender distinction and post-repair validation."
+tags:
+  - "cooling"
+  - "sensor"
+  - "diagnostics"
+relatedGuides:
+  - "cooling-system/cooling-fan-operation-check"
+  - "cooling-system/cooling-system-pressure-test"
+order: 12
+updatedAt: "2026-03-12"
+---
+
+## Before You Start / Safety
+
+This guide is for **Mazda MX-5 NB (1998-2005, NB1/NB2)**.
+
+On NB cars, cooling/fueling behavior can depend on the ECU coolant temperature input, while the dashboard gauge may rely on a separate sender path (market/year-dependent). Diagnose before replacing parts.
+
+> Warning: Work only on a cold engine before opening/loosening cooling-system components to avoid burns from hot coolant/steam. https://www.mellens.net/mazda/index.html
+
+> High-risk quote: Coolant temperature sensor information is used by the control unit to adapt injection timing and ignition behavior. https://www.hella.com/techworld/us/technical/sensors-and-actuators/test-coolant-temperature-sensor/
+
+> Manual-reference quote: NB manuals are split by year groups (1999-2001 and 2005), so connector pinout, resistance checks, and torque/seal details must be confirmed by exact year/VIN FSM. https://www.mellens.net/mazda/index.html
+
+## Required Tools
+
+- Digital multimeter
+- Scan tool (recommended)
+- Basic sockets/spanners for sensor access
+- Drain pan and rags
+- Correct seal washer/thread seal method per replacement sensor design
+
+## Required Parts / Fluids
+
+- Correct coolant temperature sensor for exact NB variant
+- Correct seal washer/sealant as required by sensor design
+- Coolant for top-up and bleed
+
+## Model-specific notes (NB1 vs NB2)
+
+### NB1 (1998-2000)
+- Sensor circuits and sender behavior vary by market; verify connector and circuit in FSM.
+
+### NB2 (2001-2005)
+- Similar test logic, but year/market wiring and ECU/fan strategies may differ.
+- Avoid assuming one universal resistance chart or connector layout for every NB.
+
+## Step-by-Step Procedure
+
+### 1) Confirm symptoms and whether they match sensor-related faults
+
+Typical triggers for sensor testing include:
+- Unstable warm-up fueling/idle
+- Cooling-fan behavior that doesn’t match temperature conditions
+- Implausible temperature data (scanner) vs real engine state
+
+> High-risk quote: If fan control is compromised, overheating risk rises quickly and can cause serious engine damage. https://ricksfreeautorepairadvice.com/radiator-fan-not-working-how-to-diagnose-and-fix/
+
+### 2) Distinguish ECU coolant sensor path from gauge sender assumptions
+
+- Check FSM/wiring diagram for your exact car.
+- Confirm which sensor/signal drives ECU logic and which drives dash indication (if separate).
+
+> Community quote: NB community troubleshooting includes cases where gauge sender damage did not necessarily explain fan-control behavior, highlighting the need to separate circuits in diagnosis. https://www.mx5nutz.com/threads/cooling-fan-not-working-plus-diypnp.78200/
+
+### 3) Perform non-invasive checks first
+
+- Inspect connector lock, pin tension, corrosion, and harness strain.
+- Check for coolant contamination at connector area.
+- Confirm grounding and reference voltage integrity where applicable.
+
+### 4) Electrical plausibility check
+
+- Compare cold-start vs warm-engine data trend (scan tool and/or measured sensor behavior).
+- For NTC sensors, resistance should decrease as temperature increases.
+
+> High-risk quote: Coolant temperature sensors are NTC devices: internal resistance reduces as temperature increases, producing corresponding voltage changes interpreted by the control unit. https://www.hella.com/techworld/us/technical/sensors-and-actuators/test-coolant-temperature-sensor/
+
+### 5) Replace only after confirming sensor or sealing fault
+
+- Depressurize/cool system fully.
+- Remove sensor carefully and capture coolant.
+- Install replacement with correct sealing method.
+
+> Community confirmation quote: MX-5 users report sealing problems and fitment issues when incorrect washer/seal approach is used on replacement temperature sensors. https://www.mx5nutz.com/threads/coolant-temp-sensor.390034/
+
+### 6) Refill, bleed, and verify
+
+- Refill coolant correctly.
+- Bleed per FSM procedure.
+- Verify scanner temperature progression, fan behavior, and absence of leaks.
+
+## Torque Specs / Capacities (if applicable)
+
+- Sensor torque and sealing details vary by sensor design and year/VIN.
+- Use FSM and sensor manufacturer instructions for final torque/seal procedure.
+
+## Verification / Post-service checks
+
+- Stable warm-up and idle behavior.
+- Cooling fan behavior now consistent with thermal conditions.
+- No coolant leak at sensor seat after heat cycles.
+- No new fault codes after road test.
+
+## Uncertainty / Open Questions
+
+- Public sources strongly agree on NTC behavior and diagnostic flow, but not all provide NB-specific numeric resistance tables by year.
+- This guide intentionally avoids publishing a single universal ohm/temperature table for all NB variants; use year/VIN FSM values for pass/fail thresholds.
+
+## Image Credits
+
+No clearly reusable licensed NB-specific coolant temperature sensor wiring/connector diagrams were obtained during this run.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
+2. HELLA Tech World — *Coolant temperature sensor testing*. Retrieved 2026-03-12. https://www.hella.com/techworld/us/technical/sensors-and-actuators/test-coolant-temperature-sensor/
+3. Rick’s Free Auto Repair Advice — *Radiator fan not working: How to diagnose and fix*. Retrieved 2026-03-12. https://ricksfreeautorepairadvice.com/radiator-fan-not-working-how-to-diagnose-and-fix/
+4. Natrad — *Troubleshooting your car’s radiator fan*. Retrieved 2026-03-12. https://natrad.com.au/info-advice/troubleshooting-your-cars-radiator-fan/
+5. MX5Nutz Forum — *coolant temp sensor*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/coolant-temp-sensor.390034/
+6. MX5Nutz Forum — *Cooling Fan Not Working... Plus Diypnp*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/cooling-fan-not-working-plus-diypnp.78200/
