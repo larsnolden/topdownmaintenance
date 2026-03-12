@@ -323,6 +323,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'CV boot inspection & replacement',
         slug: 'cv-boot-inspection-replacement',
         guideSlug: 'clutch-transmission/cv-boot-inspection-replacement'
+      },
+      {
+        label: 'Clutch fluid flush & bleed',
+        slug: 'clutch-fluid-flush-bleed',
+        guideSlug: 'clutch-transmission/clutch-fluid-flush-bleed'
       }
     ]
   },
