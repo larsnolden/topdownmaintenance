@@ -358,6 +358,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Shifter rebuild (bushings, boots, anti-rattle)',
         slug: 'shifter-rebuild',
         guideSlug: 'clutch-transmission/shifter-rebuild'
+      },
+      {
+        label: 'Transmission mount inspection & replacement',
+        slug: 'transmission-mount-inspection-replacement',
+        guideSlug: 'clutch-transmission/transmission-mount-inspection-replacement'
       }
     ]
   },
