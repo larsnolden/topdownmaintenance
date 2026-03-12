@@ -368,6 +368,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Gearbox & differential leak inspection (common seals)',
         slug: 'gearbox-differential-leak-inspection',
         guideSlug: 'clutch-transmission/gearbox-differential-leak-inspection'
+      },
+      {
+        label: 'Differential fluid change',
+        slug: 'differential-fluid-change',
+        guideSlug: 'clutch-transmission/differential-fluid-change'
       }
     ]
   },
