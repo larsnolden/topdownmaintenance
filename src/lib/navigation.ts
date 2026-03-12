@@ -343,6 +343,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Clutch replacement (disc/pressure plate/TOB/pilot bearing)',
         slug: 'clutch-replacement',
         guideSlug: 'clutch-transmission/clutch-replacement'
+      },
+      {
+        label: 'Flywheel inspection & resurfacing/replacement',
+        slug: 'flywheel-inspection-resurface-replace',
+        guideSlug: 'clutch-transmission/flywheel-inspection-resurface-replace'
       }
     ]
   },
