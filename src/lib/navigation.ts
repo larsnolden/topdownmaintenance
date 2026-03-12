@@ -145,6 +145,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Coolant hose inspection & replacement',
         slug: 'coolant-hose-inspection-replacement',
         guideSlug: 'cooling-system/coolant-hose-inspection-replacement'
+      },
+      {
+        label: 'Cooling system pressure test & leak diagnosis',
+        slug: 'cooling-system-pressure-test',
+        guideSlug: 'cooling-system/cooling-system-pressure-test'
       }
     ]
   },
