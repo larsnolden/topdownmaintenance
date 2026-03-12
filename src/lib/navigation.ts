@@ -363,6 +363,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Transmission mount inspection & replacement',
         slug: 'transmission-mount-inspection-replacement',
         guideSlug: 'clutch-transmission/transmission-mount-inspection-replacement'
+      },
+      {
+        label: 'Gearbox & differential leak inspection (common seals)',
+        slug: 'gearbox-differential-leak-inspection',
+        guideSlug: 'clutch-transmission/gearbox-differential-leak-inspection'
       }
     ]
   },
