@@ -89,6 +89,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Oil leak inspection (common NB leak points)',
         slug: 'oil-leak-inspection-common-sources',
         guideSlug: 'engine-mechanical/oil-leak-inspection-common-sources'
+      },
+      {
+        label: 'Oil pressure switch replacement',
+        slug: 'oil-pressure-switch-replacement',
+        guideSlug: 'engine-mechanical/oil-pressure-switch-replacement'
       }
     ]
   },
