@@ -353,6 +353,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Shifter turret oil service',
         slug: 'shifter-turret-oil-service',
         guideSlug: 'clutch-transmission/shifter-turret-oil-service'
+      },
+      {
+        label: 'Shifter rebuild (bushings, boots, anti-rattle)',
+        slug: 'shifter-rebuild',
+        guideSlug: 'clutch-transmission/shifter-rebuild'
       }
     ]
   },
