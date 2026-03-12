@@ -213,6 +213,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/vacuum-leak-test'
       },
       {
+        label: 'Fuel injector cleaning (on-car / off-car options)',
+        slug: 'fuel-injector-cleaning',
+        guideSlug: 'intake-fuel-system/fuel-injector-cleaning'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
