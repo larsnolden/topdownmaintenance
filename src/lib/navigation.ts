@@ -262,6 +262,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Ignition coil pack replacement',
         slug: 'ignition-coil-pack-replacement',
         guideSlug: 'ignition-system/ignition-coil-pack-replacement'
+      },
+      {
+        label: 'Crankshaft position sensor replacement',
+        slug: 'crankshaft-position-sensor-replacement',
+        guideSlug: 'ignition-system/crankshaft-position-sensor-replacement'
       }
     ]
   },
