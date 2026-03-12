@@ -150,6 +150,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Cooling system pressure test & leak diagnosis',
         slug: 'cooling-system-pressure-test',
         guideSlug: 'cooling-system/cooling-system-pressure-test'
+      },
+      {
+        label: 'Radiator cap test & replacement',
+        slug: 'radiator-cap-test-replacement',
+        guideSlug: 'cooling-system/radiator-cap-test-replacement'
       }
     ]
   },
