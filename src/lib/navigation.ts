@@ -373,6 +373,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Differential fluid change',
         slug: 'differential-fluid-change',
         guideSlug: 'clutch-transmission/differential-fluid-change'
+      },
+      {
+        label: 'PPF alignment/inspection (if service manual specifies)',
+        slug: 'ppf-alignment-inspection',
+        guideSlug: 'clutch-transmission/ppf-alignment-inspection'
       }
     ]
   },
