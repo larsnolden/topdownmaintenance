@@ -1,0 +1,122 @@
+---
+title: "Ignition coil pack replacement"
+category: "ignition-system"
+difficulty: 3
+difficultyLabel: "Intermediate"
+estimatedTime: "45-120 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "Mazda MX-5 NB ignition coil pack diagnosis and replacement workflow with misfire triage, connector checks, and post-repair verification."
+tags:
+  - "ignition"
+  - "coil-pack"
+  - "misfire"
+  - "diagnostics"
+relatedGuides:
+  - "ignition-system/ignition-coil-inspection"
+  - "ignition-system/ignition-wire-replacement"
+order: 3
+updatedAt: "2026-03-12"
+---
+
+## Before You Start / Safety
+
+This guide is for **Mazda MX-5 NB (1998-2005, NB1/NB2)**.
+
+Coil pack failures can mimic plug, lead, ground, or ECU-control faults. Diagnose first; replace second.
+
+> Warning: Switch ignition OFF and disconnect battery as appropriate before unplugging ignition components. https://www.mellens.net/mazda/index.html
+
+> High-risk quote: Ignition coil output requirements vary with load and spark demand, so weak coils can cause intermittent misfire under specific conditions rather than constant failure. https://www.aa1car.com/library/ignition_coils.htm
+
+> Manual-reference quote: NB service procedures are year-grouped (1999-2001 and 2005), so coil type, connector pinout, and test values must be confirmed by exact year/VIN FSM. https://www.mellens.net/mazda/index.html
+
+## Required Tools
+
+- Basic socket set
+- Multimeter (for basic checks)
+- Scan tool (recommended)
+- Dielectric grease (if appropriate for lead boots)
+
+## Required Parts / Fluids
+
+- Correct coil pack for exact NB variant
+- HT leads/wires if condition is questionable
+- Spark plugs if due or fouled
+
+## Model-specific notes (NB1 vs NB2)
+
+### NB1 (1998-2000)
+- Confirm coil pack and lead arrangement by year/market.
+- Avoid mixing aftermarket coil options without confirming compatibility.
+
+### NB2 (2001-2005)
+- Many NB2/VVT configurations still use a coil-pack style wasted-spark arrangement with paired outputs.
+- Verify connector and lead routing before removal.
+
+> Community quote: MX5Nutz discussions note NB VVT cars still using a paired-coil wasted-spark style setup, which affects diagnosis and replacement assumptions. https://www.mx5nutz.com/threads/coil-pack-mazda-il-motorsports-or-other.383817/
+
+## Step-by-Step Procedure
+
+### 1) Confirm misfire pattern before replacing parts
+
+- Read codes/freeze frame.
+- Check whether misfire is cylinder-pair related or random.
+- Inspect plugs and leads before condemning coil.
+
+### 2) Inspect wiring, connector, and grounds
+
+- Check coil connector lock/pins.
+- Check ground quality and corrosion around ignition hardware.
+- Verify no harness strain/chafing.
+
+### 3) Check supporting components
+
+- Inspect HT leads for cracks/high resistance/poor terminal fit.
+- Confirm spark plug gap/condition.
+- On modified ECUs, confirm dwell settings are sane.
+
+> Community confirmation quote: Community troubleshooting shows repeated coil failures can be triggered by poor leads, bad grounds, prolonged ignition-on/no-engine-running events, or incorrect dwell settings on standalone ECUs. https://www.mx5nutz.com/threads/eating-coil-packs.389509/
+
+### 4) Replace coil pack (if diagnosis supports it)
+
+- Remove leads and connector carefully.
+- Remove mounting fasteners.
+- Install replacement coil pack and transfer/route leads correctly.
+
+### 5) Recheck ignition operation
+
+- Start engine and verify smooth idle.
+- Test under load where fault previously occurred.
+- Re-scan for pending/active misfire codes.
+
+## Torque Specs / Capacities (if applicable)
+
+- Coil pack bracket fastener torque values vary by year/bracket design.
+- Use year/VIN FSM torque values for final tightening.
+
+## Verification / Post-service checks
+
+- No misfire at idle, cruise, or load.
+- No new ignition-related codes after drive cycle.
+- Leads routed correctly and away from heat/chafe points.
+
+## Uncertainty / Open Questions
+
+- Public sources agree on diagnosis-first flow and common failure contributors.
+- Exact universal NB numeric coil resistance/pass-fail thresholds were not fully extracted from public-access references this run.
+- Article therefore defers pin-level electrical thresholds and exact torque specs to year/VIN FSM.
+
+## Image Credits
+
+No clearly reusable licensed NB-specific coil pack wiring/connector diagrams were obtained during this run.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
+2. AA1Car (Larry Carley) — *How to Diagnose and Test an Ignition Coil*. Retrieved 2026-03-12. https://www.aa1car.com/library/ignition_coils.htm
+3. AutoZone — *Advice & How-To's (DIY technical hub)*. Retrieved 2026-03-12. https://www.autozone.com/diy
+4. MX5Nutz Forum — *Coil Pack - Mazda, Il Motorsports Or Other?*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/coil-pack-mazda-il-motorsports-or-other.383817/
+5. MX5Nutz Forum — *Eating Coil Packs*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/eating-coil-packs.389509/
+6. Reddit (r/Miata) — *Search results for NB coil pack*. Retrieved 2026-03-12. https://www.reddit.com/r/Miata/search/?q=NB%20coil%20pack&restrict_sr=1

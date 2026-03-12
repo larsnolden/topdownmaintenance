@@ -257,6 +257,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Ignition wire replacement',
         slug: 'ignition-wire-replacement',
         guideSlug: 'ignition-system/ignition-wire-replacement'
+      },
+      {
+        label: 'Ignition coil pack replacement',
+        slug: 'ignition-coil-pack-replacement',
+        guideSlug: 'ignition-system/ignition-coil-pack-replacement'
       }
     ]
   },
