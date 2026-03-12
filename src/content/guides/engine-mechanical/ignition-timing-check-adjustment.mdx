@@ -1,0 +1,123 @@
+---
+title: "Ignition timing check/adjustment"
+category: "engine-mechanical"
+difficulty: 3
+difficultyLabel: "Intermediate"
+estimatedTime: "45-90 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "How to check base ignition timing on Mazda MX-5 NB engines with a timing light, and when adjustment is not factory-applicable on NB systems."
+tags:
+  - "ignition"
+  - "timing"
+  - "diagnostics"
+relatedGuides:
+  - "engine-mechanical/engine-compression-test"
+  - "engine-mechanical/spark-plug-replacement"
+order: 19
+updatedAt: "2026-03-12"
+---
+
+## Before You Start / Safety
+
+This guide is for **Mazda MX-5 NB (1998-2005)**.
+
+For many NB setups, ignition timing is ECU-managed rather than routinely adjustable like earlier distributor-era cars. So this is primarily a **check-and-verify** guide unless your exact year/market/manual explicitly allows a base-timing adjustment procedure.
+
+> Warning: Keep hands, sleeves, and test leads clear of belts/fans while the engine is running during timing-light checks. https://www.garagetooled.com/auto/how-to-use-a-timing-light/
+
+> Manual-reference quote: NB service documentation is split by year groups (1999-2001 and 2005 manuals), so timing-check and any adjustment criteria must be verified against your exact year/VIN FSM. https://www.mellens.net/mazda/index.html
+
+## Required Tools
+
+- Inductive timing light
+- Basic hand tools for covers/inspection access
+- White paint marker/chalk for timing marks (optional)
+- Shop light and mirror (optional)
+- FSM or equivalent year/VIN-correct service information
+
+## Required Parts / Fluids
+
+- None for check-only work
+- If doing any ignition-system follow-up: plugs/coils/wires as needed by diagnosis
+
+## Model-specific notes (NB1 vs NB2)
+
+### NB1 (1998-2000)
+- Community discussion commonly reports NB/Mk2 timing as ECU-controlled and not a simple CAS-rotation adjustment like earlier NA procedures.
+- If your specific market variant has a supported base-setting check routine, follow FSM exactly.
+
+### NB2 (2001-2005)
+- Community and owner discussions strongly describe NB2/Mk2.5 timing as ECU-managed and effectively non-adjustable without non-standard modifications.
+- Treat any “slot bracket / trigger wheel” mod as custom, not standard maintenance.
+
+> Community quote: “The timing is controlled by the ECU, and cannot be set.” (NB/Mk2 discussion) https://www.mx5nutz.com/threads/am-i-dumb-cant-find-where-to-adjust-mk2-1-8-timing.151373/
+
+> Community confirmation quote: MX-5Nutz timing-mod discussions also distinguish Mk1-style base timing tweaks from Mk2 systems and warn that Mk2 uses a different control strategy. https://www.mx5nutz.com/threads/guide-14-degree-ignition-timing-mod.122153/
+
+## Step-by-Step Procedure
+
+### 1) Confirm this is a timing check request, not a symptom guess
+
+Before timing work, confirm current complaints (rough idle, pinging, low power, hot start issues) are not caused by vacuum leaks, fueling, or mechanical timing errors.
+
+### 2) Warm engine to normal operating temperature
+
+- Run engine until fully warm.
+- Stable idle is important before interpreting timing-light readings.
+
+> High-risk quote: Timing checks are performed with the engine at normal running condition and timing marks viewed with a strobe at idle. https://www.scegliauto.com/en/video/mazda/tutorial/2867/
+
+### 3) Locate and clean timing marks
+
+- Identify crank pulley and reference pointer marks.
+- Clean and highlight marks if needed for visibility.
+- Connect timing light power and #1 lead pickup per tool instructions.
+
+### 4) Run the check
+
+- Idle engine and aim timing light at marks.
+- Observe timing stability, not just one flash snapshot.
+- Record reading and idle condition.
+
+### 5) Determine whether adjustment is factory-applicable
+
+- If FSM says check-only: stop at verification and continue diagnosis elsewhere.
+- If FSM includes a permitted base-setting procedure for your variant: follow that specific routine only.
+- Do **not** apply NA distributor-style adjustment assumptions to NB cars.
+
+### 6) Re-verify after any permitted change
+
+- Recheck at idle and after brief throttle blips.
+- Confirm no new drivability issues.
+
+## Torque Specs / Capacities (if applicable)
+
+- No universal NB torque values are published here because this job is usually check-only on NB platforms.
+- If your FSM allows an adjustment step requiring loosen/tighten hardware, use year/VIN-specific torque values from that FSM.
+
+## Verification / Post-service checks
+
+- Idle quality remains stable.
+- No misfire or knock introduced after work.
+- No warning lights triggered after road test.
+- Reconfirm timing reading repeatability if symptoms persist.
+
+## Uncertainty / Open Questions
+
+- Public sources are aligned on **method** (timing-light check) but mixed on exact “adjustability” across all NB market variants.
+- Community evidence strongly indicates most NB configurations are ECU-controlled and not intended for routine manual base-timing adjustment.
+- Therefore this guide prioritizes conservative check/verify workflow and FSM-first decisions.
+
+## Image Credits
+
+No clearly reusable licensed NB-specific ignition timing diagrams/photos were obtained during this run.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
+2. Garage Tooled — *How to Use a Timing Light to Set Ignition Timing*. Retrieved 2026-03-12. https://www.garagetooled.com/auto/how-to-use-a-timing-light/
+3. ScegliAuto — *Idle Adjustment and Timing (With video)*. Retrieved 2026-03-12. https://www.scegliauto.com/en/video/mazda/tutorial/2867/
+4. MX5Nutz Forum — *Am I Dumb? Can't Find Where To Adjust Mk2 1.8 Timing!*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/am-i-dumb-cant-find-where-to-adjust-mk2-1-8-timing.151373/
+5. MX5Nutz Forum — *Guide: 14 Degree Ignition Timing Mod*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/guide-14-degree-ignition-timing-mod.122153/

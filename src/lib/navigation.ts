@@ -114,6 +114,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Cylinder leak-down test',
         slug: 'cylinder-leakdown-test',
         guideSlug: 'engine-mechanical/cylinder-leakdown-test'
+      },
+      {
+        label: 'Ignition timing check/adjustment',
+        slug: 'ignition-timing-check-adjustment',
+        guideSlug: 'engine-mechanical/ignition-timing-check-adjustment'
       }
     ]
   },
