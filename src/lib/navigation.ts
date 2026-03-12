@@ -348,6 +348,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Flywheel inspection & resurfacing/replacement',
         slug: 'flywheel-inspection-resurface-replace',
         guideSlug: 'clutch-transmission/flywheel-inspection-resurface-replace'
+      },
+      {
+        label: 'Shifter turret oil service',
+        slug: 'shifter-turret-oil-service',
+        guideSlug: 'clutch-transmission/shifter-turret-oil-service'
       }
     ]
   },
