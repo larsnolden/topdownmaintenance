@@ -198,6 +198,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/throttle-body-cleaning'
       },
       {
+        label: 'MAF sensor cleaning / intake air metering check',
+        slug: 'maf-sensor-cleaning',
+        guideSlug: 'intake-fuel-system/maf-sensor-cleaning'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'

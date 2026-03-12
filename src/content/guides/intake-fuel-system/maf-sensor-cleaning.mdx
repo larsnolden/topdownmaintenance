@@ -1,0 +1,123 @@
+---
+title: "MAF sensor cleaning / intake air metering check"
+category: "intake-fuel-system"
+difficulty: 2
+difficultyLabel: "Intermediate"
+estimatedTime: "30-60 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "Mazda MX-5 NB MAF sensor cleaning and intake-air metering check workflow with sensor-type verification, safe cleaning process, and post-clean validation."
+tags:
+  - "maf"
+  - "intake"
+  - "diagnostics"
+relatedGuides:
+  - "intake-fuel-system/throttle-body-cleaning"
+  - "engine-mechanical/ignition-timing-check-adjustment"
+order: 15
+updatedAt: "2026-03-12"
+---
+
+## Before You Start / Safety
+
+This guide is for **Mazda MX-5 NB (1998-2005, NB1/NB2)**.
+
+Do not assume every drivability issue is a dirty MAF. Confirm intake leaks, ignition condition, and fuel delivery basics before replacing sensors.
+
+> Warning: Disconnect battery/ignition feed as needed and avoid touching sensing elements directly; MAF elements are delicate and easily damaged by contact. https://www.autozone.com/diy/engine/how-to-clean-a-mass-air-flow-sensor
+
+> High-risk quote: The MAF sensor is a primary fuel-management input that affects injector and ignition strategy from measured intake airflow. https://www.autozone.com/diy/engine/how-to-clean-a-mass-air-flow-sensor
+
+> Manual-reference quote: NB factory manuals are year-grouped (1999-2001 and 2005), so exact wiring pins, expected signal checks, and component handling should be confirmed with year/VIN FSM documentation. https://www.mellens.net/mazda/index.html
+
+## Required Tools
+
+- Correct MAF cleaner spray (sensor-safe)
+- Screwdriver/socket for intake tube/MAF housing fasteners
+- Nitrile gloves and eye protection
+- Scan tool (recommended)
+
+## Required Parts / Fluids
+
+- MAF cleaner (sensor-safe only)
+- Replacement MAF seal/gasket if damaged
+- Replacement MAF only if diagnosis confirms failure
+
+## Model-specific notes (NB1 vs NB2)
+
+### NB1 (1998-2000)
+- Confirm your intake metering hardware type first; avoid applying procedures intended for different sensor technologies.
+
+### NB2 (2001-2005)
+- Same cleaning logic applies, but connector and intake hardware details may vary by market/year.
+- Validate with FSM pinout and intake diagram for your exact variant.
+
+## Step-by-Step Procedure
+
+### 1) Symptom triage before cleaning
+
+Common clues that justify MAF-focused checks:
+- Hesitation/stumble under throttle
+- Irregular idle after ruling out vacuum leaks
+- Fuel trim concerns or rich/lean codes (with full diagnosis)
+
+### 2) Confirm sensor type and compatibility
+
+- Ensure your car actually uses a MAF strategy in this configuration.
+- Use only dedicated MAF cleaner; avoid carb/brake cleaner.
+
+> High-risk quote: Some airflow sensor types (e.g., Karman-vortex systems) are not cleaned the same way, so identify sensor type before attempting cleaning. https://www.autozone.com/diy/engine/how-to-clean-a-mass-air-flow-sensor
+
+### 3) Remove MAF carefully
+
+- Unplug connector without pulling on wires.
+- Remove housing/sensor fasteners gently.
+- Do not touch sensing wire/film.
+
+### 4) Clean sensing element correctly
+
+- Spray sensor-safe cleaner on sensing elements and nearby metering path.
+- Allow complete evaporation/drying before reinstall.
+- Do not use compressed air or brushes on sensing element.
+
+### 5) Reinstall and perform intake-air metering check
+
+- Refit sensor/housing and ensure no intake leaks at joints.
+- Start engine and confirm idle stability.
+- Check scan data/fuel trims where available.
+
+> Community quote: Miata community discussions show many drivability complaints attributed to MAF are ultimately multi-factor (sensor, grounds, intake leaks, ignition), so cleaning should be treated as one diagnostic step—not automatic cure. https://old.reddit.com/r/Miata/search?q=maf+sensor&restrict_sr=on
+
+> Community confirmation quote: MX5Nutz troubleshooting threads referencing MAF cleaning and rich-running faults similarly highlight that replacement without deeper diagnosis can miss root causes. https://duckduckgo.com/html/?q=site:mx5nutz.com+P0172+MAF
+
+## Torque Specs / Capacities (if applicable)
+
+- MAF fastener torque values vary by housing/sensor and are typically low.
+- Use year/VIN FSM specs; avoid overtightening sensor screws and intake clamp hardware.
+
+## Verification / Post-service checks
+
+- Stable idle and improved throttle response (if MAF contamination was contributory).
+- No new intake leaks or loose connectors.
+- Confirm no new fault codes after drive cycle.
+- If symptoms persist, continue with vacuum leak, fuel pressure, and ignition diagnostics.
+
+## Uncertainty / Open Questions
+
+- This run had partial source-access limits on some intended how-to pages.
+- High confidence on handling safety and general cleaning process; moderate confidence on universal NB-specific sensor-type variance by market/year without full FSM table extraction.
+- Article intentionally defers final pin-level electrical thresholds to year/VIN FSM.
+
+## Image Credits
+
+No clearly reusable licensed NB-specific MAF cleaning diagrams/photos were obtained during this run.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
+2. AutoZone — *How to Clean a Mass Air Flow Sensor*. Retrieved 2026-03-12. https://www.autozone.com/diy/engine/how-to-clean-a-mass-air-flow-sensor
+3. AutoZone — *Advice & How-To's (DIY technical hub)*. Retrieved 2026-03-12. https://www.autozone.com/diy
+4. MX5Nutz (thread capture) — *MAF sensor cleaning* (thread URL resolved to archived/forum content snapshot in this environment). Retrieved 2026-03-12. https://www.mx5nutz.com/threads/maf-sensor-cleaning.118188/
+5. Reddit (r/Miata, old.reddit) — *Miata: search results - maf sensor*. Retrieved 2026-03-12. https://old.reddit.com/r/Miata/search?q=maf+sensor&restrict_sr=on
+6. DuckDuckGo (index of MX5Nutz MAF/P0172 discussions) — *site:mx5nutz.com P0172 MAF*. Retrieved 2026-03-12. https://duckduckgo.com/html/?q=site:mx5nutz.com+P0172+MAF
