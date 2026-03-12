@@ -1,0 +1,136 @@
+---
+title: "Cylinder leak-down test"
+category: "engine-mechanical"
+difficulty: 4
+difficultyLabel: "Advanced"
+estimatedTime: "90-150 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "How to perform and interpret a cylinder leak-down test on Mazda MX-5 NB engines, with TDC-compression setup controls and follow-up diagnosis guidance."
+tags:
+  - "engine"
+  - "diagnostics"
+  - "leak-down"
+  - "compression"
+relatedGuides:
+  - "engine-mechanical/engine-compression-test"
+order: 18
+updatedAt: "2026-03-12"
+---
+
+## Before You Start / Safety
+
+This guide is for **Mazda MX-5 NB (1998-2005, NB1/NB2)**.
+
+A leak-down test is a follow-up diagnostic when compression readings are uneven, low, or suspicious. It does **not** replace basic mechanical timing and ignition/fueling checks.
+
+> Warning: A leak-down test uses compressed air; secure the drivetrain and keep hands/tools clear because the engine can rotate if the piston is not truly at TDC on compression. https://www.autozone.com/diy/tools/how-to-perform-a-cylinder-leak-down-test
+
+> High-risk quote: “It’s critical that the piston is at the top of the compression stroke when both intake and exhaust valves are closed.” https://www.speedwaymotors.com/the-toolbox/how-to-do-an-engine-cylinder-leak-down-test-and-interpreting-results/145764
+
+> Manual-reference quote: NB service procedures are organized by year groups (1999-2001 and 2005 manual sets), so final threshold interpretation and follow-up decisions should be checked against year/VIN FSM references. https://www.mellens.net/mazda/index.html
+
+## Required Tools
+
+- Cylinder leak-down tester (dual-gauge preferred)
+- Air compressor with regulator
+- Spark plug socket + ratchet/extensions
+- Breaker bar/socket for crank rotation
+- Basic hand tools and good lighting
+- Notebook/app for per-cylinder readings
+
+## Required Parts / Fluids
+
+- No replacement parts required for testing itself
+- Optional: spark plugs (if due), anti-seize only if plug maker/manual allows
+
+## Model-specific notes (NB1 vs NB2)
+
+### NB1 (1998-2000)
+- Test method is unchanged: warm engine, each cylinder at TDC on compression, add regulated air, record leakage and leak path.
+
+### NB2 (2001-2005)
+- Method is also unchanged.
+- VVT-equipped cars still use the same leak-down logic; interpretation must consider overall engine condition and known running symptoms.
+
+## Step-by-Step Procedure
+
+### 1) Prepare and warm the engine
+
+- Bring engine to operating temperature where possible.
+- Shut down, remove ignition/fuel enable as needed, and remove spark plugs.
+
+> High-risk quote: Warming first improves seal realism because ring sealing behavior changes with temperature. https://ricksfreeautorepairadvice.com/how-to-perform-a-cylinder-leakdown-test/
+
+### 2) Set cylinder #1 at TDC on compression stroke
+
+- Rotate crank by hand.
+- Confirm you are at **compression TDC** (both valves closed for that cylinder).
+- Lock/hold position carefully before adding shop air.
+
+### 3) Connect tester and set reference pressure
+
+- Install hose adapter in plug hole.
+- Connect tester and regulated air supply.
+- Zero/calibrate tester per tool instructions.
+
+### 4) Apply air and record leakage percentage
+
+- Add air gradually.
+- Record leakage % for that cylinder.
+- Listen for where air escapes:
+  - intake tract → intake valve sealing issue
+  - exhaust tailpipe/manifold → exhaust valve sealing issue
+  - oil filler/dipstick/crankcase breathers → ring/cylinder leakage
+  - cooling system bubbling/noise → head gasket/crack suspicion
+
+> High-risk quote: Leak-down is used to identify *where* compression is escaping, not just whether compression is low. https://www.autozone.com/diy/tools/how-to-perform-a-cylinder-leak-down-test
+
+### 5) Repeat for cylinders 2-4 with same setup discipline
+
+- Reposition each piston to compression TDC before testing.
+- Keep test pressure and process consistent across all cylinders.
+
+> High-risk quote: Consistent supply pressure and repeatable method are essential for meaningful cylinder-to-cylinder comparison. https://ricksfreeautorepairadvice.com/how-to-perform-a-cylinder-leakdown-test/
+
+### 6) Interpret results by pattern, not one number alone
+
+- Small leakage with even cylinder spread generally indicates healthy sealing for age/mileage.
+- One cylinder markedly worse than others usually indicates localized valve/ring/head-gasket fault.
+- Multiple cylinders high can indicate broader wear or shared issue.
+
+> Community quote: Miata community leak-down discussions commonly report that one outlier cylinder with very high loss changes diagnosis from “tune-up issue” toward mechanical repair planning. https://old.reddit.com/r/Miata/search?q=leakdown&restrict_sr=on
+
+> Community confirmation quote: Community posts also show leak-down results are most useful when paired with symptoms (hard start/misfire/power loss) rather than read in isolation. https://www.reddit.com/r/Miata/search/?q=leakdown&restrict_sr=1
+
+## Torque Specs / Capacities (if applicable)
+
+- Not applicable for leak-down measurement itself.
+- Spark plug reinstall torque after test should follow year/VIN FSM and plug manufacturer guidance.
+
+## Verification / Post-service checks
+
+- Reinstall plugs and connectors correctly.
+- Confirm normal start and idle after test.
+- If major leakage is found, avoid hard driving until root cause plan is made.
+- Use leak-down + compression + symptom history to choose next step (valve work, ring diagnosis, head-gasket testing, etc.).
+
+## Uncertainty / Open Questions
+
+- Public sources differ on exact “good/acceptable/bad” percentage cutoffs, and those values depend on tester design, pressure baseline, temperature, and engine age.
+- This guide therefore emphasizes **cylinder balance/trend** and leak path location over one universal pass/fail number.
+- Final interpretation for repair decisions should be cross-checked against year/VIN FSM data and measured symptoms.
+
+## Image Credits
+
+No clearly reusable licensed NB-specific leak-down diagrams/photos were obtained during this run.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
+2. AutoZone — *How To Perform A Cylinder Leak Down Test*. Retrieved 2026-03-12. https://www.autozone.com/diy/tools/how-to-perform-a-cylinder-leak-down-test
+3. Speedway Motors — *How to do an Engine Cylinder Leak Down Test & Interpreting Results*. Retrieved 2026-03-12. https://www.speedwaymotors.com/the-toolbox/how-to-do-an-engine-cylinder-leak-down-test-and-interpreting-results/145764
+4. Rick’s Free Auto Repair Advice — *How To Perform A Cylinder Leakdown Test*. Retrieved 2026-03-12. https://ricksfreeautorepairadvice.com/how-to-perform-a-cylinder-leakdown-test/
+5. Reddit (r/Miata, old.reddit) — *Miata: search results - leakdown*. Retrieved 2026-03-12. https://old.reddit.com/r/Miata/search?q=leakdown&restrict_sr=on
+6. Reddit (r/Miata) — *Search results for leakdown*. Retrieved 2026-03-12. https://www.reddit.com/r/Miata/search/?q=leakdown&restrict_sr=1

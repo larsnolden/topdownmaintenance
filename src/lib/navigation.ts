@@ -109,6 +109,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Rear main seal replacement',
         slug: 'rear-main-seal-replacement',
         guideSlug: 'engine-mechanical/rear-main-seal-replacement'
+      },
+      {
+        label: 'Cylinder leak-down test',
+        slug: 'cylinder-leakdown-test',
+        guideSlug: 'engine-mechanical/cylinder-leakdown-test'
       }
     ]
   },
