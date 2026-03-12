@@ -223,6 +223,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/fuel-pressure-test'
       },
       {
+        label: 'Fuel pump replacement',
+        slug: 'fuel-pump-replacement',
+        guideSlug: 'intake-fuel-system/fuel-pump-replacement'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
