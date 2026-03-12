@@ -94,6 +94,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Oil pressure switch replacement',
         slug: 'oil-pressure-switch-replacement',
         guideSlug: 'engine-mechanical/oil-pressure-switch-replacement'
+      },
+      {
+        label: 'Front crank seal replacement',
+        slug: 'front-crank-seal-replacement',
+        guideSlug: 'engine-mechanical/front-crank-seal-replacement'
       }
     ]
   },
