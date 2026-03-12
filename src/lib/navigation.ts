@@ -99,6 +99,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Front crank seal replacement',
         slug: 'front-crank-seal-replacement',
         guideSlug: 'engine-mechanical/front-crank-seal-replacement'
+      },
+      {
+        label: 'Camshaft seal replacement',
+        slug: 'camshaft-seal-replacement',
+        guideSlug: 'engine-mechanical/camshaft-seal-replacement'
       }
     ]
   },
