@@ -338,6 +338,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Clutch slave cylinder replacement',
         slug: 'clutch-slave-cylinder-replacement',
         guideSlug: 'clutch-transmission/clutch-slave-cylinder-replacement'
+      },
+      {
+        label: 'Clutch replacement (disc/pressure plate/TOB/pilot bearing)',
+        slug: 'clutch-replacement',
+        guideSlug: 'clutch-transmission/clutch-replacement'
       }
     ]
   },
