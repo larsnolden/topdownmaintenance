@@ -258,6 +258,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/exhaust-heat-shield-rattle-fix'
       },
       {
+        label: 'EGR valve & passages cleaning (if equipped)',
+        slug: 'egr-cleaning',
+        guideSlug: 'intake-fuel-system/egr-cleaning'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
