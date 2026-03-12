@@ -155,6 +155,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Radiator cap test & replacement',
         slug: 'radiator-cap-test-replacement',
         guideSlug: 'cooling-system/radiator-cap-test-replacement'
+      },
+      {
+        label: 'Cooling fan operation check (fans, relays, sensors)',
+        slug: 'cooling-fan-operation-check',
+        guideSlug: 'cooling-system/cooling-fan-operation-check'
       }
     ]
   },
