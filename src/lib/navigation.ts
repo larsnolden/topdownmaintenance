@@ -208,6 +208,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/iac-cleaning-idle-relearn'
       },
       {
+        label: 'Vacuum leak test (intake boot, hoses, manifold)',
+        slug: 'vacuum-leak-test',
+        guideSlug: 'intake-fuel-system/vacuum-leak-test'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
