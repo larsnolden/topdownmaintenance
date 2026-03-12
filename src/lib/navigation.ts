@@ -233,6 +233,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/evap-system-inspection'
       },
       {
+        label: 'Throttle cable inspection/adjustment & lubrication',
+        slug: 'throttle-cable-adjustment-lubrication',
+        guideSlug: 'intake-fuel-system/throttle-cable-adjustment-lubrication'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
