@@ -248,6 +248,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/exhaust-leak-inspection-gasket-repair'
       },
       {
+        label: 'Exhaust hanger inspection & replacement',
+        slug: 'exhaust-hanger-inspection-replacement',
+        guideSlug: 'intake-fuel-system/exhaust-hanger-inspection-replacement'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
