@@ -218,6 +218,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/fuel-injector-cleaning'
       },
       {
+        label: 'Fuel pressure test & regulator diagnosis',
+        slug: 'fuel-pressure-test',
+        guideSlug: 'intake-fuel-system/fuel-pressure-test'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'

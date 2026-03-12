@@ -1,0 +1,124 @@
+---
+title: "Fuel pressure test & regulator diagnosis"
+category: "intake-fuel-system"
+difficulty: 4
+difficultyLabel: "Advanced"
+estimatedTime: "90-150 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "Mazda MX-5 NB fuel pressure diagnostic workflow covering safe gauge setup, running/hold pressure interpretation, and regulator-related decision points."
+tags:
+  - "fuel"
+  - "pressure"
+  - "regulator"
+  - "diagnostics"
+relatedGuides:
+  - "intake-fuel-system/fuel-injector-cleaning"
+  - "intake-fuel-system/fuel-pump-replacement"
+order: 19
+updatedAt: "2026-03-12"
+---
+
+## Before You Start / Safety
+
+This guide is for **Mazda MX-5 NB (1998-2005, NB1/NB2)**.
+
+Fuel pressure testing can quickly isolate pump, regulator, supply, and leak-down issues—but only if setup is safe and test conditions are repeatable.
+
+> Warning: Fuel systems are pressurized and flammable; depressurize correctly, avoid ignition sources, and keep extinguishing equipment nearby. https://www.wikihow.com/Test-Fuel-Pressure
+
+> High-risk quote: Fuel pressure/volume faults can cause poor performance, no-start, and unstable running; diagnosis should measure actual pressure rather than guessing from symptoms. https://www.autozone.com/diy
+
+> Manual-reference quote: NB FSM content is split by year groups (1999-2001 and 2005), so exact pressure specs, line routing, and test connection points must be confirmed by year/VIN documentation. https://www.mellens.net/mazda/index.html
+
+## Required Tools
+
+- Fuel pressure gauge kit with correct adapter(s)
+- Rags, drain pan, eye protection, gloves
+- Basic hand tools for line/access point service
+- Scan tool (recommended)
+
+## Required Parts / Fluids
+
+- Replacement sealing washers/O-rings as required by test connection method
+- No routine replacement parts required for test-only work
+
+## Model-specific notes (NB1 vs NB2)
+
+### NB1 (1998-2000)
+- Test principles are unchanged: key-on/running pressure + response and leak-down checks.
+- Confirm where to connect gauge on your exact rail/line layout.
+
+### NB2 (2001-2005)
+- Same method, but pressure specs and routing/access can differ by market and emissions package.
+- Verify regulator and return/reference behavior with FSM guidance before drawing conclusions.
+
+## Step-by-Step Procedure
+
+### 1) Pre-test triage
+
+- Record symptoms: long crank, hot restart issue, lean/rich behavior, hesitation under load.
+- Check for related codes and fuel-trim context.
+
+### 2) Connect gauge safely
+
+- Relieve pressure before opening system.
+- Install gauge/adapter and verify leak-free connection.
+- Keep absorbent rags and ventilation in place.
+
+### 3) Key-on and idle/running pressure checks
+
+- Record prime pressure (key-on), then idle pressure.
+- Observe pressure stability while blipping throttle or changing load.
+- Compare readings to exact FSM target(s).
+
+### 4) Regulator response check
+
+- Evaluate whether pressure responds as expected to regulator reference changes (where applicable for your setup).
+- No/abnormal change may indicate regulator line fault, regulator fault, or supply issue.
+
+> Community quote: MX5Nutz fuel-pressure discussions repeatedly reference regulator behavior and manifold-reference context as key to interpreting “looks okay at idle” readings. https://duckduckgo.com/html/?q=site:mx5nutz.com+fuel+pressure+test+NB
+
+### 5) Leak-down (residual pressure hold) test
+
+- Shut engine off and monitor pressure decay.
+- Fast drop can indicate injector leak, regulator leak path, check valve/pump hold issue, or external leak.
+
+### 6) Decision mapping
+
+- **Low pressure under load**: suspect pump/supply restriction/electrical feed.
+- **Pressure high/abnormal**: suspect regulator control issue or return-path issue.
+- **Pressure unstable**: check wiring, pump control, or intermittent restriction.
+
+> Community confirmation quote: r/Miata NB fuel-system threads show that location/identification of regulator and line routing is a common source of diagnostic mistakes, so verify layout first. https://www.reddit.com/r/Miata/search/?q=fuel%20pressure%20NB&restrict_sr=1
+
+## Torque Specs / Capacities (if applicable)
+
+- Use year/VIN FSM for fuel line fitting torque, rail fastener torque, and sealing part replacement requirements.
+- This guide intentionally avoids one universal NB numeric pressure table because values/configuration differ by year/market.
+
+## Verification / Post-service checks
+
+- No seepage/leaks at test connection points after depressurization and reassembly.
+- Engine starts and idles normally.
+- Post-test road check confirms symptom direction (improved/unchanged/worse) and next diagnostic step.
+
+## Uncertainty / Open Questions
+
+- Several direct independent article URLs were inaccessible/redirected during this run.
+- High confidence: safe measurement process and diagnosis logic.
+- Moderate confidence: universal published NB pressure figures from openly accessible sources; therefore article defers final numeric thresholds to year/VIN FSM.
+
+## Image Credits
+
+No clearly reusable licensed NB-specific fuel pressure test diagrams were obtained during this run.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
+2. AutoZone — *Advice & How-To's (DIY technical hub)*. Retrieved 2026-03-12. https://www.autozone.com/diy
+3. wikiHow — *Test Fuel Pressure* (page access varied in this environment; content title/URL confirmed during fetch). Retrieved 2026-03-12. https://www.wikihow.com/Test-Fuel-Pressure
+4. DuckDuckGo — *site:mx5nutz.com fuel pressure test NB* (index of MX5Nutz fuel-pressure threads). Retrieved 2026-03-12. https://duckduckgo.com/html/?q=site:mx5nutz.com+fuel+pressure+test+NB
+5. Reddit (r/Miata) — *Search results for fuel pressure NB*. Retrieved 2026-03-12. https://www.reddit.com/r/Miata/search/?q=fuel%20pressure%20NB&restrict_sr=1
+6. 2CarPros — *Fuel pressure test article endpoint referenced for research (unavailable/404 during this run)*. Retrieved 2026-03-12. https://www.2carpros.com/articles/how-to-test-fuel-system-pressure-and-volume
