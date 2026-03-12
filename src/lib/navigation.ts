@@ -238,6 +238,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/throttle-cable-adjustment-lubrication'
       },
       {
+        label: 'Oxygen sensor replacement (upstream/downstream)',
+        slug: 'oxygen-sensor-replacement',
+        guideSlug: 'intake-fuel-system/oxygen-sensor-replacement'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'

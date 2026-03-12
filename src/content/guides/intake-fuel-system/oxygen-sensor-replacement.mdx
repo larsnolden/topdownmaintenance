@@ -1,0 +1,131 @@
+---
+title: "Oxygen sensor replacement (upstream/downstream)"
+category: "intake-fuel-system"
+difficulty: 3
+difficultyLabel: "Intermediate"
+estimatedTime: "60-120 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "Mazda MX-5 NB oxygen sensor replacement guide with upstream/downstream role distinction, safe removal workflow, and post-repair readiness checks."
+tags:
+  - "oxygen-sensor"
+  - "lambda"
+  - "fuel-trim"
+  - "diagnostics"
+relatedGuides:
+  - "intake-fuel-system/fuel-pressure-test"
+  - "intake-fuel-system/evap-system-inspection"
+order: 23
+updatedAt: "2026-03-12"
+---
+
+## Before You Start / Safety
+
+This guide is for **Mazda MX-5 NB (1998-2005, NB1/NB2)**.
+
+Oxygen (lambda) sensor faults can cause fuel-trim issues, emissions failures, and check-engine lights. Many NBs have upstream and downstream sensors depending on market/emissions calibration.
+
+> Warning: Exhaust components and O2 sensors become extremely hot; allow full cooldown and support vehicle safely before under-car work. https://www.wikihow.com/Change-an-Oxygen-Sensor
+
+> High-risk quote: O2 sensor faults can drive rich/lean operation and should be diagnosed by sensor position/function (upstream vs downstream), not by replacing random sensors first. https://www.2carpros.com/articles/how-to-replace-an-oxygen-sensor
+
+> Manual-reference quote: NB service procedures are split by year groups (1999-2001 and 2005), so exact sensor count, location, connector routing, and torque must be verified by year/VIN FSM. https://www.mellens.net/mazda/index.html
+
+## Required Tools
+
+- O2 sensor socket (or suitable 22 mm / 7/8" tool)
+- Penetrating oil for seized threads
+- Ratchet/extensions
+- Jack/stands and wheel chocks if under-car access required
+- Scan tool for code/readiness verification
+
+## Required Parts / Fluids
+
+- Correct O2 sensor(s) for exact NB variant and sensor position
+- Anti-seize only if sensor manufacturer allows/provides guidance
+- Replacement clips/loom retainers if brittle or broken
+
+## Model-specific notes (NB1 vs NB2)
+
+### NB1 (1998-2000)
+- Sensor count and connector style may differ by market and emissions package.
+- Confirm upstream/downstream assignment before ordering.
+
+### NB2 (2001-2005)
+- Similar service method, but harness routing and undertray access can vary.
+- Verify post-cat sensor presence before assuming two-sensor layout.
+
+> Community quote: MX5Nutz NB oxygen-sensor threads repeatedly show confusion about sensor location/count and accessibility from underneath, especially across NB vs NBFL variants. https://duckduckgo.com/html/?q=site:mx5nutz.com+NB+oxygen+sensor
+
+## Step-by-Step Procedure
+
+### 1) Confirm which sensor failed
+
+- Read DTC and freeze-frame.
+- Map code to bank/sensor position using FSM for your exact variant.
+- Do not swap upstream/downstream parts blindly.
+
+### 2) Prepare for removal
+
+- Let exhaust cool completely.
+- Raise/support vehicle if needed.
+- Apply penetrating oil to sensor threads and allow soak time.
+
+### 3) Disconnect sensor connector first
+
+- Unclip harness and disconnect connector before turning sensor.
+- This prevents twisting the harness during removal.
+
+### 4) Remove old sensor carefully
+
+- Use O2 socket and controlled force.
+- If seized, reapply penetrant and work sensor gradually.
+- Avoid damaging bung threads.
+
+> High-risk quote: Disconnect the sensor wire before unscrewing so harness twist does not damage wiring; seized sensors often need penetrant and steady force. https://www.2carpros.com/articles/how-to-replace-an-oxygen-sensor
+
+### 5) Install replacement sensor
+
+- Confirm new sensor matches connector and lead length.
+- Apply anti-seize only if specified by manufacturer (many sensors come pre-coated).
+- Route harness away from hot/moving components and reclip securely.
+
+### 6) Clear codes and verify
+
+- Clear DTCs.
+- Run warm-up and short drive cycle.
+- Recheck pending/confirmed codes and readiness monitors.
+
+> Community confirmation quote: r/Miata discussions commonly emphasize verifying exact NB sensor type/position and completing proper drive cycles after replacement to confirm readiness and fault resolution. https://www.reddit.com/r/Miata/search/?q=NB%20oxygen%20sensor&restrict_sr=1
+
+## Torque Specs / Capacities (if applicable)
+
+- O2 sensor torque values vary by sensor and application.
+- Use year/VIN FSM and sensor manufacturer instructions for final torque and anti-seize guidance.
+
+## Verification / Post-service checks
+
+- No exhaust leak/hiss at sensor bung.
+- No CEL return after drive cycle.
+- Fuel-trim and readiness behavior normal for your state/market test criteria.
+
+## Uncertainty / Open Questions
+
+- Public sources agree on replacement process and safety, but NB market-specific sensor count/location varies.
+- This guide intentionally avoids publishing one universal NB sensor-count table; use year/VIN FSM for definitive mapping.
+- Repository schema currently has no `exhaust-emissions` category, so this guide is filed under `intake-fuel-system` for build validity.
+
+## Image Credits
+
+No clearly reusable licensed NB-specific O2 sensor location diagrams were obtained during this run.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
+2. 2CarPros — *How to Replace an Oxygen Sensor*. Retrieved 2026-03-12. https://www.2carpros.com/articles/how-to-replace-an-oxygen-sensor
+3. wikiHow — *How to Change an Oxygen Sensor*. Retrieved 2026-03-12. https://www.wikihow.com/Change-an-Oxygen-Sensor
+4. AutoZone — *Advice & How-To's (DIY technical hub)*. Retrieved 2026-03-12. https://www.autozone.com/diy
+5. DuckDuckGo — *site:mx5nutz.com NB oxygen sensor* (index of MX5Nutz oxygen-sensor threads). Retrieved 2026-03-12. https://duckduckgo.com/html/?q=site:mx5nutz.com+NB+oxygen+sensor
+6. Reddit (r/Miata) — *Search results for NB oxygen sensor*. Retrieved 2026-03-12. https://www.reddit.com/r/Miata/search/?q=NB%20oxygen%20sensor&restrict_sr=1
+7. MX5Nutz Forum — *How Do I Replace Oxygen Sensor*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/how-do-i-replace-oxygen-sensor.126375/
