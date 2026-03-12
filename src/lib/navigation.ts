@@ -170,6 +170,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Heater core flush & heater performance diagnosis',
         slug: 'heater-core-flush-heater-performance',
         guideSlug: 'cooling-system/heater-core-flush-heater-performance'
+      },
+      {
+        label: 'Coolant expansion tank inspection/replacement',
+        slug: 'coolant-expansion-tank-inspection-replacement',
+        guideSlug: 'cooling-system/coolant-expansion-tank-inspection-replacement'
       }
     ]
   },
