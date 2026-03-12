@@ -267,6 +267,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Crankshaft position sensor replacement',
         slug: 'crankshaft-position-sensor-replacement',
         guideSlug: 'ignition-system/crankshaft-position-sensor-replacement'
+      },
+      {
+        label: 'Cam position sensor / CAS service (incl. O-ring leak where applicable)',
+        slug: 'cam-sensor-cas-service-o-ring',
+        guideSlug: 'ignition-system/cam-sensor-cas-service-o-ring'
       }
     ]
   },
