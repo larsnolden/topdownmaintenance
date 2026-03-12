@@ -104,6 +104,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Camshaft seal replacement',
         slug: 'camshaft-seal-replacement',
         guideSlug: 'engine-mechanical/camshaft-seal-replacement'
+      },
+      {
+        label: 'Rear main seal replacement',
+        slug: 'rear-main-seal-replacement',
+        guideSlug: 'engine-mechanical/rear-main-seal-replacement'
       }
     ]
   },
