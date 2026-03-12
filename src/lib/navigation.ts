@@ -243,6 +243,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/oxygen-sensor-replacement'
       },
       {
+        label: 'Exhaust leak inspection & gasket replacement planning',
+        slug: 'exhaust-leak-inspection-gasket-repair',
+        guideSlug: 'intake-fuel-system/exhaust-leak-inspection-gasket-repair'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
