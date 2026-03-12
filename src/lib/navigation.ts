@@ -253,6 +253,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/exhaust-hanger-inspection-replacement'
       },
       {
+        label: 'Exhaust heat shield rattle diagnosis & fix',
+        slug: 'exhaust-heat-shield-rattle-fix',
+        guideSlug: 'intake-fuel-system/exhaust-heat-shield-rattle-fix'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
