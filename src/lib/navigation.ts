@@ -203,6 +203,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/maf-sensor-cleaning'
       },
       {
+        label: 'Idle air control valve (IAC) cleaning & idle relearn',
+        slug: 'iac-cleaning-idle-relearn',
+        guideSlug: 'intake-fuel-system/iac-cleaning-idle-relearn'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
