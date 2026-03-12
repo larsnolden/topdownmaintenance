@@ -165,6 +165,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Coolant temperature sensor test/replacement',
         slug: 'coolant-temperature-sensor-test-replacement',
         guideSlug: 'cooling-system/coolant-temperature-sensor-test-replacement'
+      },
+      {
+        label: 'Heater core flush & heater performance diagnosis',
+        slug: 'heater-core-flush-heater-performance',
+        guideSlug: 'cooling-system/heater-core-flush-heater-performance'
       }
     ]
   },
