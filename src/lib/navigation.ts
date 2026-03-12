@@ -228,6 +228,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'intake-fuel-system/fuel-pump-replacement'
       },
       {
+        label: 'EVAP system inspection (purge valve, canister, hoses)',
+        slug: 'evap-system-inspection',
+        guideSlug: 'intake-fuel-system/evap-system-inspection'
+      },
+      {
         label: 'Spark plug inspection (ensure proper firing)',
         slug: 'spark-plug-inspection',
         guideSlug: 'intake-fuel-system/spark-plug-inspection'
