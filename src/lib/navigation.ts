@@ -333,6 +333,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Clutch master cylinder replacement',
         slug: 'clutch-master-cylinder-replacement',
         guideSlug: 'clutch-transmission/clutch-master-cylinder-replacement'
+      },
+      {
+        label: 'Clutch slave cylinder replacement',
+        slug: 'clutch-slave-cylinder-replacement',
+        guideSlug: 'clutch-transmission/clutch-slave-cylinder-replacement'
       }
     ]
   },
