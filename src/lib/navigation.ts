@@ -328,6 +328,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Clutch fluid flush & bleed',
         slug: 'clutch-fluid-flush-bleed',
         guideSlug: 'clutch-transmission/clutch-fluid-flush-bleed'
+      },
+      {
+        label: 'Clutch master cylinder replacement',
+        slug: 'clutch-master-cylinder-replacement',
+        guideSlug: 'clutch-transmission/clutch-master-cylinder-replacement'
       }
     ]
   },
