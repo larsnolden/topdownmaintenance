@@ -619,6 +619,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/relay-inspection-testing'
       },
       {
+        label: 'Wiper & washer system service (pump, nozzles, lines)',
+        slug: 'wiper-washer-system-service',
+        guideSlug: 'electrical-system/wiper-washer-system-service'
+      },
+      {
         label: 'Fuse inspection & replacement',
         slug: 'fuse-inspection-replacement',
         guideSlug: 'electrical-system/fuse-inspection-replacement'
