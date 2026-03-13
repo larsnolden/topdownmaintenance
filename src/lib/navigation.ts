@@ -375,6 +375,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'clutch-transmission/differential-fluid-change'
       },
       {
+        label: 'Differential seals replacement (axle seals / pinion seal)',
+        slug: 'differential-seal-replacement',
+        guideSlug: 'clutch-transmission/differential-seal-replacement'
+      },
+      {
         label: 'PPF alignment/inspection (if service manual specifies)',
         slug: 'ppf-alignment-inspection',
         guideSlug: 'clutch-transmission/ppf-alignment-inspection'
