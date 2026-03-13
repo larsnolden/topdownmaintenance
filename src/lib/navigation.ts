@@ -645,6 +645,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'tires-wheels/wheel-balance-vibration-diagnosis'
       },
       {
+        label: 'Spare tire, jack & tool kit inspection',
+        slug: 'spare-tire-jack-toolkit-inspection',
+        guideSlug: 'tires-wheels/spare-tire-jack-toolkit-inspection'
+      },
+      {
         label: 'Tire pressure check',
         slug: 'tire-pressure-check',
         guideSlug: 'tires-wheels/tire-pressure-check'
