@@ -574,6 +574,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/alternator-output-check'
       },
       {
+        label: 'Starter motor test & replacement',
+        slug: 'starter-test-replacement',
+        guideSlug: 'electrical-system/starter-test-replacement'
+      },
+      {
         label: 'Fuse inspection & replacement',
         slug: 'fuse-inspection-replacement',
         guideSlug: 'electrical-system/fuse-inspection-replacement'
