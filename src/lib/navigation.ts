@@ -528,6 +528,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'steering-alignment/power-steering-fluid-flush'
       },
       {
+        label: 'Power steering pump inspection & replacement',
+        slug: 'power-steering-pump-inspection-replacement',
+        guideSlug: 'steering-alignment/power-steering-pump-inspection-replacement'
+      },
+      {
         label: 'Tie rod inspection & replacement',
         slug: 'tie-rod-inspection-replacement',
         guideSlug: 'steering-alignment/tie-rod-inspection-replacement'
