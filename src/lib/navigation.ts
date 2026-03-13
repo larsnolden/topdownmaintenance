@@ -640,6 +640,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'tires-wheels/tire-tread-wear-inspection'
       },
       {
+        label: 'Wheel balance & vibration diagnosis',
+        slug: 'wheel-balance-vibration-diagnosis',
+        guideSlug: 'tires-wheels/wheel-balance-vibration-diagnosis'
+      },
+      {
         label: 'Tire pressure check',
         slug: 'tire-pressure-check',
         guideSlug: 'tires-wheels/tire-pressure-check'
