@@ -472,6 +472,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'suspension/shock-absorber-replacement'
       },
       {
+        label: 'Coil spring inspection & replacement',
+        slug: 'coil-spring-inspection-replacement',
+        guideSlug: 'suspension/coil-spring-inspection-replacement'
+      },
+      {
         label: 'Ball joint inspection',
         slug: 'ball-joint-inspection',
         guideSlug: 'suspension/ball-joint-inspection'
