@@ -467,6 +467,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'suspension/shock-absorber-inspection'
       },
       {
+        label: 'Shock absorber replacement',
+        slug: 'shock-absorber-replacement',
+        guideSlug: 'suspension/shock-absorber-replacement'
+      },
+      {
         label: 'Ball joint inspection',
         slug: 'ball-joint-inspection',
         guideSlug: 'suspension/ball-joint-inspection'
