@@ -385,6 +385,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'clutch-transmission/differential-mount-bushing-replacement'
       },
       {
+        label: 'Driveshaft inspection & replacement (U-joints)',
+        slug: 'driveshaft-inspection-replacement',
+        guideSlug: 'clutch-transmission/driveshaft-inspection-replacement'
+      },
+      {
         label: 'PPF alignment/inspection (if service manual specifies)',
         slug: 'ppf-alignment-inspection',
         guideSlug: 'clutch-transmission/ppf-alignment-inspection'
