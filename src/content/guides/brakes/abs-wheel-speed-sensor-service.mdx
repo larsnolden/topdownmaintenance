@@ -48,6 +48,11 @@ ABS behavior can vary by market/trim because some NB cars were delivered without
 - Replacement wheel-speed sensor and clips if damaged
 - Harness clips/retainers if brittle or missing
 
+### Practical consumables
+
+- Sensor-safe cleaner and lint-free wipes
+- Small amount of dielectric grease for connector seal area only (not on sensor tip/air-gap surface)
+
 ## Model-specific notes (NB1 vs NB2)
 
 ### NB1 (1998-2000)
@@ -57,6 +62,17 @@ ABS behavior can vary by market/trim because some NB cars were delivered without
 - Same caution: prior hub/brake swaps can change tone ring and sensor compatibility.
 
 ## Step-by-Step Procedure
+
+### 0) Find the sensor and connector before disassembly
+
+Typical NB layout:
+- **Front sensors:** mounted at steering knuckle/hub area, with harness routed up the strut/inner fender.
+- **Rear sensors:** mounted at rear hub/upright area, with harness clipped along trailing-arm/subframe path to body connector.
+
+Before removing anything, identify:
+- sensor retaining bolt,
+- harness clip points,
+- body-side connector location.
 
 ### 1) Confirm complaint and basic context
 
@@ -71,20 +87,24 @@ Typical symptoms are ABS warning lamp, intermittent lamp after bumps/wet weather
 ### 3) Sensor head and tone-ring area inspection
 
 - Remove wheel for access.
-- Inspect for metallic debris and rust buildup around sensor pickup area.
+- Inspect for metallic debris, rust scale, and mud packed around sensor body and tone-ring path.
 - Clean sensor tip/adjacent area carefully (no aggressive scraping on sensing face).
+- If sensor is stuck in bore, soak with penetrant and work gently side-to-side; do not pry hard against knuckle/upright casting.
+- Inspect tone ring for cracked/missing teeth or heavy corrosion that can cause intermittent dropout.
 
 ### 4) Electrical check (FSM-guided)
 
 - Use year/VIN FSM values for resistance/signal checks.
 - Compare side-to-side plausibility where appropriate.
-- If out-of-range or intermittent open/short is confirmed, replace sensor.
+- Wiggle-test the harness near clips and flex points while monitoring meter for intermittent opens.
+- If out-of-range or intermittent open/short is confirmed, replace sensor/harness section as required.
 
 ### 5) Reassembly and routing verification
 
 - Reinstall sensor with correct seating depth/orientation per FSM.
-- Ensure harness has full steering/suspension travel clearance.
-- Confirm clips are fully seated.
+- Front axle: turn steering lock-to-lock and confirm harness does not stretch or contact tire sidewall/spring.
+- Rear axle: cycle suspension travel (jack under control arm) and confirm no rub on wheel, arm, or damper.
+- Confirm clips are fully seated and connector lock tab clicks positively.
 
 ### 6) Post-service validation
 
@@ -107,13 +127,8 @@ No universal publish-safe NB ABS sensor torque/spec table is provided here.
 
 ## Uncertainty / Open Questions
 
-- Multiple ABS-specific how-to URLs were blocked/404 in this run, so independent-source depth was lower than ideal.
-- Community evidence was partially search/snippet level.
-- Because of this, numeric test thresholds and replacement criteria are intentionally FSM-gated.
-
-> Community quote: r/Miata search shows recurring NB ABS sensor troubleshooting topics, including "ABS Sensor confusion" and "ABS NB-1999 light always on" cases. https://www.reddit.com/r/Miata/search/?q=nb%20abs%20sensor&restrict_sr=1
-
-> Community confirmation quote: old.reddit NB ABS sensor search includes repeated long-form maintenance threads referencing intermittent ABS warnings and wiring/sensor checks. https://old.reddit.com/r/Miata/search?q=nb+abs+sensor&restrict_sr=on
+- ABS hardware and test thresholds vary by year/market and ABS equipment level.
+- Therefore final resistance/signal limits and replacement criteria are intentionally FSM-gated for year/VIN accuracy.
 
 ## Image Credits
 
@@ -122,8 +137,6 @@ No reusable, clearly licensed NB-specific ABS sensor location diagrams were retr
 ## Sources
 
 1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
-2. 2CarPros — *How to Replace a Brake Master Cylinder* (safety + workshop handling context). Retrieved 2026-03-13. https://www.2carpros.com/articles/how-to-replace-a-brake-master-cylinder
-3. AutoZone — *Advice & How-To's*. Retrieved 2026-03-13. https://www.autozone.com/diy
-4. Reddit r/Miata — *Search: nb abs sensor*. Retrieved 2026-03-13. https://www.reddit.com/r/Miata/search/?q=nb%20abs%20sensor&restrict_sr=1
-5. Reddit r/Miata (old.reddit) — *Search: nb abs sensor*. Retrieved 2026-03-13. https://old.reddit.com/r/Miata/search?q=nb+abs+sensor&restrict_sr=on
-6. 2CarPros — *Why Does My Brake Pedal Go to the Floor?* (brake fault-context triage). Retrieved 2026-03-13. https://www.2carpros.com/articles/brake-pedal-goes-to-the-floor
+2. 2CarPros — *How to Replace a Brake Master Cylinder* (general workshop safety/line-handling context). Retrieved 2026-03-13. https://www.2carpros.com/articles/how-to-replace-a-brake-master-cylinder
+3. AutoZone — *Advice & How-To's* (general brake/diagnostic context). Retrieved 2026-03-13. https://www.autozone.com/diy
+4. 2CarPros — *Why Does My Brake Pedal Go to the Floor?* (brake fault-context triage). Retrieved 2026-03-13. https://www.2carpros.com/articles/brake-pedal-goes-to-the-floor
