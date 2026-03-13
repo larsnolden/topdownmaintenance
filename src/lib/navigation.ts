@@ -416,6 +416,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'brakes/brake-caliper-slide-pin-service'
       },
       {
+        label: 'Brake caliper rebuild (seals/piston)',
+        slug: 'brake-caliper-rebuild',
+        guideSlug: 'brakes/brake-caliper-rebuild'
+      },
+      {
         label: 'Brake fluid flush & bleed',
         slug: 'brake-fluid-flush-bleed',
         guideSlug: 'brakes/brake-fluid-flush-bleed'
