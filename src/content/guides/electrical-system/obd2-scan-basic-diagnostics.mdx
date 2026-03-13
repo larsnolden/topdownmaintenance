@@ -39,6 +39,14 @@ OBD-II data is a starting point, not a final diagnosis by itself.
 - Optional scanner/app with freeze-frame and readiness support
 - Notebook or phone notes/screenshots for captured data
 
+### OBD port location tip (NB)
+
+The 16-pin OBD-II diagnostic connector is under the driver-side dash area near the lower knee panel.
+
+Best practice:
+- ignition OFF when plugging scanner in,
+- route scanner cable so it does not interfere with pedals.
+
 ## Required Parts / Fluids
 
 - None for scan-only diagnostics
@@ -75,6 +83,11 @@ Read and log:
 
 Do **not** clear yet.
 
+Capture full code metadata where available:
+- code status (current/history),
+- number of warm-up cycles since set,
+- MIL request status.
+
 ### 3) Capture freeze-frame data
 
 For each relevant DTC, capture freeze-frame values (RPM, load, coolant temp, speed, trims where available).
@@ -86,6 +99,11 @@ For each relevant DTC, capture freeze-frame values (RPM, load, coolant temp, spe
 Read monitor status before inspection or after repairs.
 
 > High-risk quote: Readiness monitors can be complete, incomplete, disabled, or not available depending on vehicle support and drive-cycle conditions. https://www.obdautodoctor.com/tutorials/obd-readiness-monitors-explained/
+
+Practical readiness workflow:
+1. Note monitor state **before** clearing any codes.
+2. After repair and code clear, expect most monitors to return to incomplete.
+3. Run mixed driving (idle/city/steady cruise/decel) and rescan until required monitors complete.
 
 ### 5) Interpret conservatively
 
@@ -99,7 +117,10 @@ Only clear codes **after** corrective work.
 
 Then drive enough mixed conditions to allow monitors to run, and rescan.
 
-> Community confirmation quote: old.reddit NB OBD2 search context includes repeated reports of “code returns after quick clear” until root cause and monitor cycle completion are addressed. https://old.reddit.com/r/Miata/search?q=nb+obd2+code&restrict_sr=on
+If a code returns immediately on next key cycle, prioritize:
+- wiring/connector integrity,
+- blown fuse/power feed,
+- sensor circuit fault (open/short) before intermittent-condition diagnosis.
 
 ## Torque Specs / Capacities (if applicable)
 
@@ -114,7 +135,6 @@ No torque specs apply for scan-only diagnostics.
 ## Uncertainty / Open Questions
 
 - Readiness requirements and allowable “not ready” monitors vary by region/inspection program.
-- Community evidence in this run was partly search/snippet level.
 - Therefore pass/fail inspection assumptions are explicitly deferred to local rules and year/VIN documentation.
 
 ## Image Credits
@@ -126,6 +146,3 @@ No reusable, clearly licensed NB-specific OBD-II screenshot/diagram assets were 
 1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
 2. OBD Auto Doctor — *OBD2 Readiness Monitors Explained*. Retrieved 2026-03-13. https://www.obdautodoctor.com/tutorials/obd-readiness-monitors-explained/
 3. OBD-Codes.com — *How to Read Freeze Frame Data*. Retrieved 2026-03-13. https://www.obd-codes.com/faq/read-freeze-frame-data.php
-4. Reddit r/Miata — *Search: nb obd2 code*. Retrieved 2026-03-13. https://www.reddit.com/r/Miata/search/?q=nb%20obd2%20code&restrict_sr=1
-5. Reddit r/Miata (old.reddit) — *Search: nb obd2 code*. Retrieved 2026-03-13. https://old.reddit.com/r/Miata/search?q=nb+obd2+code&restrict_sr=on
-6. Reddit r/Miata — *Search: nb readiness monitor*. Retrieved 2026-03-13. https://www.reddit.com/r/Miata/search/?q=nb%20readiness%20monitor&restrict_sr=1
