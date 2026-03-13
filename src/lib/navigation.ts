@@ -436,6 +436,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'brakes/brake-master-cylinder-replacement'
       },
       {
+        label: 'Brake booster check & vacuum supply inspection',
+        slug: 'brake-booster-check-vacuum-supply',
+        guideSlug: 'brakes/brake-booster-check-vacuum-supply'
+      },
+      {
         label: 'Brake fluid flush & bleed',
         slug: 'brake-fluid-flush-bleed',
         guideSlug: 'brakes/brake-fluid-flush-bleed'
