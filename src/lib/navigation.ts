@@ -487,6 +487,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'suspension/wheel-bearing-inspection-replacement'
       },
       {
+        label: 'Control arm replacement (upper/lower)',
+        slug: 'control-arm-replacement',
+        guideSlug: 'suspension/control-arm-replacement'
+      },
+      {
         label: 'Ball joint inspection',
         slug: 'ball-joint-inspection',
         guideSlug: 'suspension/ball-joint-inspection'
