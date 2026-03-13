@@ -431,6 +431,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'brakes/brake-hard-line-inspection-repair'
       },
       {
+        label: 'Brake master cylinder replacement',
+        slug: 'brake-master-cylinder-replacement',
+        guideSlug: 'brakes/brake-master-cylinder-replacement'
+      },
+      {
         label: 'Brake fluid flush & bleed',
         slug: 'brake-fluid-flush-bleed',
         guideSlug: 'brakes/brake-fluid-flush-bleed'
