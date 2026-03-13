@@ -650,6 +650,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'tires-wheels/spare-tire-jack-toolkit-inspection'
       },
       {
+        label: 'Tire puncture repair (plug/patch decision)',
+        slug: 'tire-puncture-repair',
+        guideSlug: 'tires-wheels/tire-puncture-repair'
+      },
+      {
         label: 'Tire pressure check',
         slug: 'tire-pressure-check',
         guideSlug: 'tires-wheels/tire-pressure-check'
