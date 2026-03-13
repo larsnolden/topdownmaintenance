@@ -37,6 +37,7 @@ A hard brake pedal or poor assist can be caused by booster, vacuum hose, check v
 
 - Flashlight and inspection mirror
 - Hand vacuum pump/gauge (recommended)
+- Small hose clamps/pliers for temporary line isolation checks
 - Basic hand tools for hose/clamp checks
 - Brake cleaner/rags for leak trace cleanup
 
@@ -54,6 +55,15 @@ A hard brake pedal or poor assist can be caused by booster, vacuum hose, check v
 - Same caution: prior modifications can alter vacuum routing and confuse diagnosis.
 
 ## Step-by-Step Procedure
+
+### 0) Identify the booster and vacuum line on NB
+
+On NB models, the brake booster is the **large round black canister** on the firewall behind the brake master cylinder. A **thick vacuum hose** runs from intake manifold area to the booster via a one-way check valve near the booster grommet.
+
+Quick ID tips:
+- booster = large round diaphragm housing,
+- master cylinder = aluminum body with fluid reservoir bolted to booster front,
+- booster vacuum port/check valve = plastic valve at booster hose entry.
 
 ### 1) Baseline pedal-feel check
 
@@ -73,6 +83,10 @@ Inspect hose from intake manifold to booster for:
 
 The booster line check valve should hold vacuum in booster when engine vacuum drops.
 
+Practical test methods:
+- **Blow-through test (removed valve):** air should pass in one direction only.
+- **Hand-vacuum test (installed/bench):** apply vacuum and verify it holds without rapid drop.
+
 If flow direction behavior is wrong or valve leaks down, replace valve and re-test before condemning booster.
 
 ### 4) Rule out hydraulic issues in parallel
@@ -84,8 +98,10 @@ A sinking pedal can come from hydraulic faults unrelated to booster assist.
 ### 5) Leak testing and decision point
 
 - Use vacuum gauge/hand pump where possible.
-- If vacuum supply is correct and check valve passes, but assist remains poor, booster/internal mechanism fault is more likely.
+- At hot idle, manifold vacuum should generally be in a normal gasoline-engine range (roughly high teens to low 20s inHg at sea level; altitude/cam profiles can change this).
+- If manifold vacuum is healthy but booster vacuum decays quickly after shutdown, suspect check valve/booster leakage.
 - If vacuum supply is weak, diagnose intake/vacuum source faults before replacing booster.
+- If vacuum supply is correct and check valve passes, but assist remains poor, booster/internal mechanism fault is more likely.
 
 ### 6) Post-check verification
 
@@ -109,13 +125,8 @@ No universal publish-safe NB torque table is provided here due variant and hardw
 
 ## Uncertainty / Open Questions
 
-- In this run, direct booster-specific how-to pages were partially unavailable (404/redirect-limited), so independent evidence relied on accessible brake-system diagnostics and safety guidance.
-- Community evidence was partly search/snippet level.
-- Therefore numeric pass/fail values and final replacement thresholds are explicitly FSM-gated.
-
-> Community quote: r/Miata search includes repeated NB brake-booster diagnosis topics (e.g., "Should I replace this brake booster?" and "Questions about 2001 Nb brake booster delete.") supporting a check-before-replace workflow. https://www.reddit.com/r/Miata/search/?q=nb%20brake%20booster&restrict_sr=1
-
-> Community confirmation quote: old.reddit NB brake-booster search also reflects recurring booster/vacuum routing discussions, reinforcing vacuum-path verification before part swaps. https://old.reddit.com/r/Miata/search?q=nb+brake+booster&restrict_sr=on
+- Exact pass/fail thresholds and test sequence details can vary by market/year and by available equipment.
+- Therefore final replacement thresholds and any model-specific numeric limits are explicitly FSM-gated.
 
 ## Image Credits
 
@@ -124,8 +135,6 @@ No reusable, clearly licensed NB-specific brake booster vacuum-routing diagrams 
 ## Sources
 
 1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
-2. 2CarPros — *How to Replace a Brake Master Cylinder*. Retrieved 2026-03-13. https://www.2carpros.com/articles/how-to-replace-a-brake-master-cylinder
-3. 2CarPros — *Why Does My Brake Pedal Go to the Floor?*. Retrieved 2026-03-13. https://www.2carpros.com/articles/brake-pedal-goes-to-the-floor
-4. AutoZone — *Advice & How-To's*. Retrieved 2026-03-13. https://www.autozone.com/diy
-5. Reddit r/Miata — *Search: nb brake booster*. Retrieved 2026-03-13. https://www.reddit.com/r/Miata/search/?q=nb%20brake%20booster&restrict_sr=1
-6. Reddit r/Miata (old.reddit) — *Search: nb brake booster*. Retrieved 2026-03-13. https://old.reddit.com/r/Miata/search?q=nb+brake+booster&restrict_sr=on
+2. 2CarPros — *How to Replace a Brake Master Cylinder* (booster/master location and safety context). Retrieved 2026-03-13. https://www.2carpros.com/articles/how-to-replace-a-brake-master-cylinder
+3. 2CarPros — *Why Does My Brake Pedal Go to the Floor?* (hydraulic-vs-assist diagnostic context). Retrieved 2026-03-13. https://www.2carpros.com/articles/brake-pedal-goes-to-the-floor
+4. AutoZone — *Advice & How-To's* (general brake diagnosis context). Retrieved 2026-03-13. https://www.autozone.com/diy
