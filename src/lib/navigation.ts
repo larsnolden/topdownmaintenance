@@ -533,6 +533,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'steering-alignment/power-steering-pump-inspection-replacement'
       },
       {
+        label: 'Steering rack boot replacement',
+        slug: 'steering-rack-boot-replacement',
+        guideSlug: 'steering-alignment/steering-rack-boot-replacement'
+      },
+      {
         label: 'Tie rod inspection & replacement',
         slug: 'tie-rod-inspection-replacement',
         guideSlug: 'steering-alignment/tie-rod-inspection-replacement'
