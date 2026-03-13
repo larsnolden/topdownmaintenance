@@ -441,6 +441,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'brakes/brake-booster-check-vacuum-supply'
       },
       {
+        label: 'ABS wheel speed sensor inspection/cleaning',
+        slug: 'abs-wheel-speed-sensor-service',
+        guideSlug: 'brakes/abs-wheel-speed-sensor-service'
+      },
+      {
         label: 'Brake fluid flush & bleed',
         slug: 'brake-fluid-flush-bleed',
         guideSlug: 'brakes/brake-fluid-flush-bleed'
