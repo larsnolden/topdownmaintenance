@@ -482,6 +482,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'suspension/strut-top-mount-replacement'
       },
       {
+        label: 'Wheel bearing inspection & replacement (front/rear)',
+        slug: 'wheel-bearing-inspection-replacement',
+        guideSlug: 'suspension/wheel-bearing-inspection-replacement'
+      },
+      {
         label: 'Ball joint inspection',
         slug: 'ball-joint-inspection',
         guideSlug: 'suspension/ball-joint-inspection'
