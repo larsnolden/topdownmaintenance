@@ -569,6 +569,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/battery-health-check-cleaning'
       },
       {
+        label: 'Battery replacement (fitment & safe swap)',
+        slug: 'battery-replacement',
+        guideSlug: 'electrical-system/battery-replacement'
+      },
+      {
         label: 'Alternator output check',
         slug: 'alternator-output-check',
         guideSlug: 'electrical-system/alternator-output-check'
