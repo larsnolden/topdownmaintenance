@@ -589,6 +589,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/ground-strap-main-cable-inspection'
       },
       {
+        label: 'Key fob battery replacement',
+        slug: 'key-fob-battery-replacement',
+        guideSlug: 'electrical-system/key-fob-battery-replacement'
+      },
+      {
         label: 'Fuse inspection & replacement',
         slug: 'fuse-inspection-replacement',
         guideSlug: 'electrical-system/fuse-inspection-replacement'
