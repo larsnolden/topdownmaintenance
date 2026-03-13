@@ -392,7 +392,7 @@ export const menuSections: MenuSectionDefinition[] = [
       {
         label: 'PPF alignment/inspection (if service manual specifies)',
         slug: 'ppf-alignment-inspection',
-        guideSlug: 'clutch-transmission/ppf-alignment-inspection'
+        guideSlug: 'clutch-transmission/ppf-inspection-realignment'
       }
     ]
   },
