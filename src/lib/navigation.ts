@@ -411,6 +411,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'brakes/brake-pad-inspection-replacement'
       },
       {
+        label: 'Brake caliper slide pin service (clean & lubricate)',
+        slug: 'brake-caliper-slide-pin-service',
+        guideSlug: 'brakes/brake-caliper-slide-pin-service'
+      },
+      {
         label: 'Brake fluid flush & bleed',
         slug: 'brake-fluid-flush-bleed',
         guideSlug: 'brakes/brake-fluid-flush-bleed'
