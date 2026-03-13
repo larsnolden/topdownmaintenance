@@ -609,6 +609,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/exterior-bulb-replacement'
       },
       {
+        label: 'OBD-II scan basics (codes, freeze frame, readiness)',
+        slug: 'obd2-scan-basic-diagnostics',
+        guideSlug: 'electrical-system/obd2-scan-basic-diagnostics'
+      },
+      {
         label: 'Fuse inspection & replacement',
         slug: 'fuse-inspection-replacement',
         guideSlug: 'electrical-system/fuse-inspection-replacement'
