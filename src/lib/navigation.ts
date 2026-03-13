@@ -477,6 +477,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'suspension/coil-spring-inspection-replacement'
       },
       {
+        label: 'Strut top mount/bearing inspection & replacement',
+        slug: 'strut-top-mount-replacement',
+        guideSlug: 'suspension/strut-top-mount-replacement'
+      },
+      {
         label: 'Ball joint inspection',
         slug: 'ball-joint-inspection',
         guideSlug: 'suspension/ball-joint-inspection'
