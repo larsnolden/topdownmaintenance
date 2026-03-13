@@ -426,6 +426,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'brakes/brake-hose-replacement'
       },
       {
+        label: 'Brake hard line corrosion inspection & repair planning',
+        slug: 'brake-hard-line-inspection-repair',
+        guideSlug: 'brakes/brake-hard-line-inspection-repair'
+      },
+      {
         label: 'Brake fluid flush & bleed',
         slug: 'brake-fluid-flush-bleed',
         guideSlug: 'brakes/brake-fluid-flush-bleed'
