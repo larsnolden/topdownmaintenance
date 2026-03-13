@@ -421,6 +421,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'brakes/brake-caliper-rebuild'
       },
       {
+        label: 'Brake hose inspection & replacement (flex lines)',
+        slug: 'brake-hose-replacement',
+        guideSlug: 'brakes/brake-hose-replacement'
+      },
+      {
         label: 'Brake fluid flush & bleed',
         slug: 'brake-fluid-flush-bleed',
         guideSlug: 'brakes/brake-fluid-flush-bleed'
