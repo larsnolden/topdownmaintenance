@@ -635,6 +635,11 @@ export const menuSections: MenuSectionDefinition[] = [
     slug: 'tires-wheels',
     items: [
       {
+        label: 'Tire tread depth & wear pattern inspection',
+        slug: 'tire-tread-wear-inspection',
+        guideSlug: 'tires-wheels/tire-tread-wear-inspection'
+      },
+      {
         label: 'Tire pressure check',
         slug: 'tire-pressure-check',
         guideSlug: 'tires-wheels/tire-pressure-check'
