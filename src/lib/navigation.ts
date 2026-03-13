@@ -380,6 +380,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'clutch-transmission/differential-seal-replacement'
       },
       {
+        label: 'Differential mounts/bushings inspection & replacement',
+        slug: 'differential-mount-bushing-replacement',
+        guideSlug: 'clutch-transmission/differential-mount-bushing-replacement'
+      },
+      {
         label: 'PPF alignment/inspection (if service manual specifies)',
         slug: 'ppf-alignment-inspection',
         guideSlug: 'clutch-transmission/ppf-alignment-inspection'
