@@ -401,6 +401,11 @@ export const menuSections: MenuSectionDefinition[] = [
     slug: 'brakes',
     items: [
       {
+        label: 'Parking brake adjustment',
+        slug: 'parking-brake-adjustment',
+        guideSlug: 'brakes/parking-brake-adjustment'
+      },
+      {
         label: 'Brake pad inspection & replacement',
         slug: 'brake-pad-inspection-replacement',
         guideSlug: 'brakes/brake-pad-inspection-replacement'

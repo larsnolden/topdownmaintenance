@@ -166,7 +166,7 @@ Generation guardrail:
 
 ## Brakes
 
-- [ ] Parking brake adjustment | Owner: article-agent | Status: Not Started | URL: `/guides/brakes/parking-brake-adjustment/` | Notes: Method can differ by rear caliper type/year; include “drag vs travel” checks.
+- [ ] Parking brake adjustment | Owner: article-agent | Status: Ready | URL: `/guides/brakes/parking-brake-adjustment/` | Notes: 2026-03-13: Completed NB-only parking brake adjustment guide with diagnosis-first workflow (rear brake condition before cable adjustment), drag-vs-travel validation, and FSM-gated final settings. Source mix used: 1 official/manual source (Mellens), 2 independent how-to sources (2CarPros rear brake service guidance + AutoZone brake service guide), and 2 community sources (r/Miata + old.reddit NB parking-brake search evidence). Key uncertainties: several direct parking-brake how-to/forum pages were blocked/404 in this environment, so some community evidence remained search-index level and numeric lever-travel/torque values were deferred to year/VIN FSM. No reusable licensed NB-specific images found/added.
 - [ ] Brake caliper slide pin service (clean & lubricate) | Owner: article-agent | Status: Not Started | URL: `/guides/brakes/brake-caliper-slide-pin-service/` | Notes: Critical for uneven pad wear; lube choice matters.
 - [ ] Brake caliper rebuild (seals/piston) | Owner: article-agent | Status: Not Started | URL: `/guides/brakes/brake-caliper-rebuild/` | Notes: Sport brake packages vary; include piston condition and bore scoring decision points.
 - [ ] Brake hose inspection & replacement (flex lines) | Owner: article-agent | Status: Not Started | URL: `/guides/brakes/brake-hose-replacement/` | Notes: ABS vs non-ABS routing differs; include line-wrench + rounding prevention.
