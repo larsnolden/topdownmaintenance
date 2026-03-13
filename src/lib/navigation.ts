@@ -543,6 +543,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'steering-alignment/steering-rack-replacement-rebuild'
       },
       {
+        label: 'Steering column U-joint inspection (binding/play)',
+        slug: 'steering-column-u-joint-inspection',
+        guideSlug: 'steering-alignment/steering-column-u-joint-inspection'
+      },
+      {
         label: 'Tie rod inspection & replacement',
         slug: 'tie-rod-inspection-replacement',
         guideSlug: 'steering-alignment/tie-rod-inspection-replacement'
