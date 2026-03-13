@@ -594,6 +594,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/key-fob-battery-replacement'
       },
       {
+        label: 'Headlight bulb replacement',
+        slug: 'headlight-bulb-replacement',
+        guideSlug: 'electrical-system/headlight-bulb-replacement'
+      },
+      {
         label: 'Fuse inspection & replacement',
         slug: 'fuse-inspection-replacement',
         guideSlug: 'electrical-system/fuse-inspection-replacement'
