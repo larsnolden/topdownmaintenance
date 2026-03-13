@@ -614,6 +614,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/obd2-scan-basic-diagnostics'
       },
       {
+        label: 'Relay inspection & quick testing (main/fuel/fan)',
+        slug: 'relay-inspection-testing',
+        guideSlug: 'electrical-system/relay-inspection-testing'
+      },
+      {
         label: 'Fuse inspection & replacement',
         slug: 'fuse-inspection-replacement',
         guideSlug: 'electrical-system/fuse-inspection-replacement'

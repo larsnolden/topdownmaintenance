@@ -1,0 +1,139 @@
+---
+title: "Relay inspection & quick testing (main/fuel/fan)"
+category: "electrical-system"
+difficulty: 3
+difficultyLabel: "Intermediate"
+estimatedTime: "30-90 minutes"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "NB relay inspection and quick-test workflow for main, fuel, and cooling fan circuits with conservative swap-testing and circuit-verification steps."
+tags:
+  - "electrical"
+  - "relay"
+  - "diagnostics"
+  - "no-start"
+relatedGuides:
+  - "electrical-system/obd2-scan-basic-diagnostics"
+  - "electrical-system/starter-test-replacement"
+  - "electrical-system/fuse-inspection-replacement"
+order: 11
+updatedAt: "2026-03-13"
+---
+
+## Before You Start / Safety
+
+This guide is for **Mazda MX-5 NB (1998-2005)** only.
+
+Relays are often blamed too early. Confirm power supply, grounds, fuse integrity, and load-side wiring before replacing relays blindly.
+
+> Warning: Disable ignition and secure vehicle before probing energized circuits. https://www.autozone.com/diy
+
+> High-risk quote: Quick relay checks should verify both coil-side control and load-side output; a click alone does not prove full function. https://www.2carpros.com/articles/how-to-test-an-automotive-relay
+
+> Manual-reference quote: Mellens indexes NB-era manuals (1999-2001 and 2005), so relay-box layout and pin designations must be confirmed by exact year/VIN before test-point probing. https://www.mellens.net/mazda/index.html
+
+## Required Tools
+
+- Digital multimeter
+- Test light
+- Relay puller/needle-nose pliers
+- Known-good relay of matching pin layout (for swap test)
+- Wiring diagram/FSM reference
+
+## Required Parts / Fluids
+
+- Correct replacement relay(s) only after testing confirms fault
+
+## Model-specific notes (NB1 vs NB2)
+
+### NB1 (1998-2000)
+- Relay locations and labeling can vary by market and equipment package.
+
+### NB2 (2001-2005)
+- Same caution: ABS/AC/fan/fuel circuits may use different relay box layouts than NB1 or swapped harnesses.
+
+> Community quote: r/Miata search repeatedly includes NB posts asking exact fuel/fan relay location and pinout differences, reinforcing year/VIN relay-map verification before testing. https://www.reddit.com/r/Miata/search/?q=nb%20relay%20main%20fuel%20fan&restrict_sr=1
+
+## Step-by-Step Procedure
+
+### 1) Confirm symptom and affected subsystem
+
+Identify which system fails:
+- no-start/fuel pump prime issues,
+- cooling fan not triggering,
+- intermittent main-power behavior.
+
+### 2) Check fuses and feed voltage first
+
+Before touching relay:
+- verify associated fuses,
+- verify battery/system voltage,
+- verify ground condition.
+
+### 3) Relay identification sanity check
+
+Use FSM year/VIN diagram to confirm:
+- relay location,
+- pin numbering,
+- circuit function.
+
+Do not trust universal internet relay maps for NB variants.
+
+### 4) Quick functional tests
+
+- Listen/feel for relay actuation (if accessible).
+- Test coil-side control voltage and ground when command is present.
+- Test load-side output voltage to downstream circuit.
+
+### 5) Swap test with identical known-good relay
+
+If pinout/current rating are identical, swap with a non-critical circuit relay briefly.
+
+If symptom moves with relay, relay fault is likely.
+
+### 6) Confirm downstream component before replacement
+
+A good relay cannot fix:
+- failed pump/fan motor,
+- corroded connectors,
+- broken wires,
+- bad grounds.
+
+### 7) Final verification
+
+After repair/replacement:
+- verify repeatable circuit operation across temperature cycles,
+- recheck for heat at relay/socket,
+- confirm no intermittent dropouts.
+
+> Community confirmation quote: old.reddit NB relay/fuel-pump search context shows many cases where relay replacement alone did not solve no-start until wiring/ground/load faults were found. https://old.reddit.com/r/Miata/search?q=nb+relay+fuel+pump&restrict_sr=on
+
+## Torque Specs / Capacities (if applicable)
+
+No torque specs apply to relay bench/plug-in testing.
+
+## Verification / Post-service checks
+
+- Target circuit operates reliably (pump/fan/main feed)
+- No relay/socket overheating after operation
+- No repeat intermittent fault after short drive/idle cycles
+
+## Uncertainty / Open Questions
+
+- Public NB-specific relay maps were inconsistent across regions in accessible sources.
+- Community evidence was partly search/snippet level.
+- Therefore this guide defers exact relay position/pin maps to year/VIN FSM documentation.
+
+## Image Credits
+
+No reusable, clearly licensed NB-specific relay-box diagrams were retrieved in this run.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
+2. 2CarPros — *How to Test an Automotive Relay*. Retrieved 2026-03-13. https://www.2carpros.com/articles/how-to-test-an-automotive-relay
+3. AutoZone — *Advice & How-To's*. Retrieved 2026-03-13. https://www.autozone.com/diy
+4. Reddit r/Miata — *Search: nb relay main fuel fan*. Retrieved 2026-03-13. https://www.reddit.com/r/Miata/search/?q=nb%20relay%20main%20fuel%20fan&restrict_sr=1
+5. Reddit r/Miata (old.reddit) — *Search: nb relay fuel pump*. Retrieved 2026-03-13. https://old.reddit.com/r/Miata/search?q=nb+relay+fuel+pump&restrict_sr=on
+6. Reddit r/Miata — *Search: nb cooling fan relay*. Retrieved 2026-03-13. https://www.reddit.com/r/Miata/search/?q=nb%20cooling%20fan%20relay&restrict_sr=1
