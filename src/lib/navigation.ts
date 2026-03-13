@@ -579,6 +579,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/starter-test-replacement'
       },
       {
+        label: 'Ground straps & main cables inspection/refresh',
+        slug: 'ground-strap-main-cable-inspection',
+        guideSlug: 'electrical-system/ground-strap-main-cable-inspection'
+      },
+      {
         label: 'Fuse inspection & replacement',
         slug: 'fuse-inspection-replacement',
         guideSlug: 'electrical-system/fuse-inspection-replacement'
