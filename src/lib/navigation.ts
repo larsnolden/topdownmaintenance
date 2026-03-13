@@ -599,6 +599,11 @@ export const menuSections: MenuSectionDefinition[] = [
         guideSlug: 'electrical-system/headlight-bulb-replacement'
       },
       {
+        label: 'Headlight aim adjustment',
+        slug: 'headlight-aim-adjustment',
+        guideSlug: 'electrical-system/headlight-aim-adjustment'
+      },
+      {
         label: 'Fuse inspection & replacement',
         slug: 'fuse-inspection-replacement',
         guideSlug: 'electrical-system/fuse-inspection-replacement'
