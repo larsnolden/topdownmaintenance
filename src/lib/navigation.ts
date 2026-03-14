@@ -694,6 +694,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Drain clearing (ensure proper water flow)',
         slug: 'drain-clearing',
         guideSlug: 'convertible-top-exterior-trim/drain-clearing'
+      },
+      {
+        label: 'Soft top inspection & minor repair (seams, window, straps)',
+        slug: 'soft-top-inspection-minor-repair',
+        guideSlug: 'convertible-top-exterior-trim/soft-top-inspection-minor-repair'
       }
     ]
   },
