@@ -750,6 +750,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Seat belt inspection & care',
         slug: 'seat-belt-inspection-care',
         guideSlug: 'body-interior/seat-belt-inspection-care'
+      },
+      {
+        label: 'Interior water leak diagnosis (wet carpet)',
+        slug: 'interior-water-leak-diagnosis',
+        guideSlug: 'body-interior/interior-water-leak-diagnosis'
       }
     ]
   },
