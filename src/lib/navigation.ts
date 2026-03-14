@@ -719,6 +719,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Weatherstrip cleaning & conditioning (doors/windows/top seals)',
         slug: 'weatherstrip-clean-condition',
         guideSlug: 'convertible-top-exterior-trim/weatherstrip-clean-condition'
+      },
+      {
+        label: 'Window regulator lubrication & glass adjustment',
+        slug: 'window-regulator-lube-glass-adjustment',
+        guideSlug: 'convertible-top-exterior-trim/window-regulator-lube-glass-adjustment'
       }
     ]
   },
