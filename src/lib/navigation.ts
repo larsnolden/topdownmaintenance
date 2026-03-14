@@ -699,6 +699,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Soft top inspection & minor repair (seams, window, straps)',
         slug: 'soft-top-inspection-minor-repair',
         guideSlug: 'convertible-top-exterior-trim/soft-top-inspection-minor-repair'
+      },
+      {
+        label: 'Soft top replacement',
+        slug: 'soft-top-replacement',
+        guideSlug: 'convertible-top-exterior-trim/soft-top-replacement'
       }
     ]
   },
