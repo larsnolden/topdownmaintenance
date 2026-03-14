@@ -740,6 +740,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Hinges & latches lubrication (doors, hood, trunk, fuel door)',
         slug: 'hinges-latches-lubrication',
         guideSlug: 'body-interior/hinges-latches-lubrication'
+      },
+      {
+        label: 'Seat track lubrication & inspection',
+        slug: 'seat-track-lubrication',
+        guideSlug: 'body-interior/seat-track-lubrication'
       }
     ]
   },
