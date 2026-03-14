@@ -7,7 +7,7 @@ estimatedTime: "10-25 minutes"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "NB key-fob battery replacement workflow with case-opening safety, polarity checks, and post-replacement re-sync troubleshooting notes."
+summary: "NB key-fob battery replacement with case-opening technique, exact coin-cell code matching, polarity verification, and quick fault triage if remote still fails."
 tags:
   - "electrical"
   - "key-fob"
@@ -18,117 +18,109 @@ relatedGuides:
   - "electrical-system/fuse-inspection-replacement"
   - "electrical-system/ground-strap-main-cable-inspection"
 order: 6
-updatedAt: "2026-03-13"
+updatedAt: "2026-03-14"
 ---
 
 ## Before You Start / Safety
 
-This guide is for **Mazda MX-5 NB (1998-2005)** only.
+This guide is for **Mazda MX-5 NB (1998-2005)**.
 
-NB key/remote hardware varies by year/market and prior ownership changes. Confirm your fob style and battery type before opening the case.
+NB remotes vary by market/year and many cars now use aftermarket shells or alarm systems. Always confirm your actual battery code from the removed cell.
 
-> Warning: Coin-cell batteries are hazardous if swallowed and must be kept away from children/pets. https://www.energizer.com/batteries/coin-cell-batteries
-
-> High-risk quote: Open the fob case gently with a non-marring tool to avoid cracking tabs or damaging the PCB/buttons. https://www.wikihow.com/Change-the-Battery-in-a-Key-Fob
-
-> Manual-reference quote: Mellens indexes NB-era manuals (1999-2001 and 2005), so remote/keyless system details and programming differences should be confirmed by exact year/VIN when troubleshooting post-swap issues. https://www.mellens.net/mazda/index.html
+- Work on a clean table so tiny clips/springs are not lost.
+- Keep coin cells away from children/pets.
+- Do not bend PCB or button membrane when opening case.
 
 ## Required Tools
 
-- Small flat plastic pry tool (or plastic pick)
+- Plastic pry tool/pick (avoid metal screwdriver if possible)
 - Lint-free cloth
-- Correct coin-cell battery (verify exact code from old cell)
+- Optional tweezers (plastic preferred)
 
 ## Required Parts / Fluids
 
-- Replacement coin-cell battery matching original spec (same code/chemistry)
+- Correct replacement coin cell matching original code and chemistry
 
-### Practical battery-code guidance
+### Practical battery-code rules
 
-Most remotes use a 3V lithium coin cell (commonly **CR20xx** family such as CR2025 or CR2032), but thickness differs and must match exactly.
+Most NB-era fobs use 3V lithium coin cells in the **CR20xx** family, commonly CR2025 or CR2032.
 
-Rules:
-1. Read the code printed on the old cell.
-2. Match full code (for example, CR2025 ≠ CR2032).
-3. Use a fresh, reputable-brand cell in original packaging.
-
-## Model-specific notes (NB1 vs NB2)
-
-### NB1 (1998-2000)
-- Remote/keyless hardware may differ by market/trim; some cars may not have OEM remote hardware.
-
-### NB2 (2001-2005)
-- Multiple fob shells and aftermarket replacements exist; verify case style and battery orientation directly.
-
-> Community quote: r/Miata search repeatedly surfaces NB questions on key-fob type, battery code, and pairing behavior after battery disconnect/replacement. https://www.reddit.com/r/Miata/search/?q=nb%20key%20fob%20battery&restrict_sr=1
+Important:
+- **CR2025 and CR2032 are not interchangeable in every fob** (thickness differs).
+- Match the **full printed code** on old cell.
+- Use a fresh, reputable battery in sealed packaging.
 
 ## Step-by-Step Procedure
 
-### 1) Confirm battery type before opening
+### 1) Identify your fob style first
 
-Read the old battery code first (if visible) and buy identical replacement.
+Before opening:
+- note button count and case style,
+- remove key blade/insert if your shell design has one,
+- locate seam notch (usually at side/end of shell).
 
-Do not rely on “looks similar” coin cells.
+### 2) Open case without cracking tabs
 
-### 2) Open the fob carefully
+- Insert plastic tool at seam notch.
+- Twist gently until first clip releases.
+- Move along seam and release clips progressively.
 
-- Remove physical key insert if applicable.
-- Locate the seam/notch (often at one end of the shell).
-- Pry at seam/notch with plastic tool.
-- Twist gently just enough to release first clip, then work around shell.
-- Separate shell halves slowly to protect clips and button pad.
+Avoid forcing one corner only; that usually breaks tabs.
 
-### 3) Note battery orientation
+### 3) Document battery orientation before removal
 
-Before removing old cell, note **+/- orientation** and contact position.
+- Take a quick phone photo of cell orientation.
+- Note which side faces up (`+`/`-`).
 
-Take a quick phone photo for reference.
+This prevents reverse-install mistakes.
 
-### 4) Replace battery
+### 4) Replace coin cell
 
-- Remove old cell gently.
-- Clean contacts lightly if needed.
-- Install new cell in exact same orientation.
+- Lift old cell out gently from retaining contacts.
+- Inspect contacts for oxidation or weak spring tension.
+- Install new cell in exact same orientation and seat fully.
 
-### 5) Reassemble and function check
+If contact looks dull/dirty, wipe lightly with dry lint-free cloth before insertion.
 
-- Re-seat button pad and PCB correctly.
-- Snap case closed evenly.
-- Test lock/unlock/trunk functions near vehicle.
+### 5) Reassemble correctly
 
-### 6) If remote still fails
+- Ensure PCB and rubber button pad are aligned.
+- Snap shell halves together evenly around perimeter.
+- Confirm all clips engage (no corner gaps).
 
-- Recheck battery orientation and contact tension.
-- Confirm battery is fresh and correct type.
-- Inspect for cracked solder joints or worn button switches.
-- Follow year/VIN-specific programming/registration steps if required.
+### 6) Functional test at vehicle
 
-Quick triage:
-- LED on fob lights but car does not respond => likely pairing/vehicle-side issue.
-- No LED/no response from fob => likely battery/contact or fob PCB/button issue.
+Test from normal distance:
+- lock,
+- unlock,
+- trunk release (if equipped).
 
-## Torque Specs / Capacities (if applicable)
+If fob has LED, confirm it lights consistently when buttons are pressed.
 
-No torque specs apply for typical fob battery replacement.
+## Quick fault triage (if still not working)
+
+- LED on fob, no car response -> likely pairing/receiver issue.
+- No LED and no response -> battery orientation/contact or PCB/button issue.
+- Works only very close to car -> weak cell, poor contact, or internal fob antenna/board issue.
+
+Try one known-good new cell before deeper troubleshooting.
+
+## Practical mistakes to avoid
+
+- Forcing shell open with metal blade and cracking tabs.
+- Installing battery upside-down.
+- Assuming all CR20xx sizes fit the same holder.
+- Touching contact springs excessively and deforming them.
 
 ## Verification / Post-service checks
 
-- Lock/unlock works at normal range
-- Trunk release button (if equipped) works
-- Fob case fully clipped with no rattles
-- No intermittent button response
-
-## Uncertainty / Open Questions
-
-- NB remote/fob hardware can vary significantly by market, trim, and aftermarket alarm/keyless retrofits.
-- Therefore exact battery code and any reprogramming sequence should be verified by your specific fob and year/VIN documentation.
-
-## Image Credits
-
-No reusable, clearly licensed NB-specific key-fob teardown images were retrieved in this run.
+- Reliable lock/unlock at normal range
+- Buttons feel normal with no sticking
+- Shell fully clipped with no rattles/gaps
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
-2. wikiHow — *Change the Battery in a Key Fob*. Retrieved 2026-03-13. https://www.wikihow.com/Change-the-Battery-in-a-Key-Fob
-3. Energizer — *Coin Cell Batteries* (safety/handling context). Retrieved 2026-03-13. https://www.energizer.com/batteries/coin-cell-batteries
+1. MELLENS — *Mazda Miata Factory Service Manuals* (year/VIN keyless-system confirmation source). Retrieved 2026-03-14. https://www.mellens.net/mazda/index.html
+2. wikiHow — *Change the Battery in a Key Fob* (general case opening and battery replacement workflow context). Retrieved 2026-03-14. https://www.wikihow.com/Change-the-Battery-in-a-Key-Fob
+3. Energizer — *Coin Cell Batteries* (coin-cell handling/safety context). Retrieved 2026-03-14. https://www.energizer.com/batteries/coin-cell-batteries
+4. Reddit r/Miata — *Search: nb key fob battery* (NB owner variation context). Retrieved 2026-03-14. https://www.reddit.com/r/Miata/search/?q=nb%20key%20fob%20battery&restrict_sr=1
