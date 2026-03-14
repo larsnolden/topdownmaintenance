@@ -7,7 +7,7 @@ estimatedTime: "30-90 minutes"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "NB relay inspection and quick-test workflow for main, fuel, and cooling fan circuits with conservative swap-testing and circuit-verification steps."
+summary: "NB relay diagnosis workflow with socket-pin testing, safe swap criteria, and clear coil-vs-load fault separation for fuel, fan, and main-power circuits."
 tags:
   - "electrical"
   - "relay"
@@ -18,136 +18,125 @@ relatedGuides:
   - "electrical-system/starter-test-replacement"
   - "electrical-system/fuse-inspection-replacement"
 order: 11
-updatedAt: "2026-03-13"
+updatedAt: "2026-03-14"
 ---
 
 ## Before You Start / Safety
 
-This guide is for **Mazda MX-5 NB (1998-2005)** only.
+This guide is for **Mazda MX-5 NB (1998-2005)**.
 
-Relays are often blamed too early. Confirm power supply, grounds, fuse integrity, and load-side wiring before replacing relays blindly.
+Relay faults are common, but replacing relays first without testing wastes time. Test power feed, control side, and load side in order.
 
-> Warning: Disable ignition and secure vehicle before probing energized circuits. https://www.autozone.com/diy
-
-> High-risk quote: Quick relay checks should verify both coil-side control and load-side output; a click alone does not prove full function. https://www.2carpros.com/articles/how-to-test-an-automotive-relay
-
-> Manual-reference quote: Mellens indexes NB-era manuals (1999-2001 and 2005), so relay-box layout and pin designations must be confirmed by exact year/VIN before test-point probing. https://www.mellens.net/mazda/index.html
+- Ignition off before relay removal/insertion.
+- Use fused jumpers for any bypass tests.
+- Keep fingers/tools clear of fans and moving parts during live checks.
 
 ## Required Tools
 
 - Digital multimeter
 - Test light
 - Relay puller/needle-nose pliers
-- Known-good relay of matching pin layout (for swap test)
-- Wiring diagram/FSM reference
+- Known-good matching relay for swap test
+- Wiring diagram/FSM for your exact year
 
-### Relay-box location orientation (NB)
+## Where relay boxes are on NB
 
-NB cars commonly have relay/fuse blocks in the engine-bay fuse/relay box area; some circuits may also involve interior fuse/relay locations depending on market/equipment.
+Common locations:
+- under-bonnet fuse/relay box (primary for fan/fuel/main circuits),
+- interior fuse/relay area (some body/control circuits by market/equipment).
 
-Before probing:
-- confirm exact box and cavity from year/VIN diagram,
-- identify pin numbers on relay base/socket (not just terminal shape).
+Always use cavity labels + year/VIN diagram. Similar-looking relays may control unrelated systems.
 
-## Required Parts / Fluids
+## Standard relay pin logic (reference)
 
-- Correct replacement relay(s) only after testing confirms fault
+Many automotive 4-pin relays use:
+- **85/86** = coil terminals (control side)
+- **30** = battery feed/common
+- **87** = switched output to load
 
-## Model-specific notes (NB1 vs NB2)
-
-### NB1 (1998-2000)
-- Relay locations and labeling can vary by market and equipment package.
-
-### NB2 (2001-2005)
-- Same caution: ABS/AC/fan/fuel circuits may use different relay box layouts than NB1 or swapped harnesses.
-
-Use year/VIN relay maps to avoid misidentifying similarly shaped relays across adjacent circuits.
+Some 5-pin relays add **87a** (normally-closed contact). Verify exact relay diagram on case.
 
 ## Step-by-Step Procedure
 
-### 1) Confirm symptom and affected subsystem
+### 1) Confirm subsystem and symptom
 
-Identify which system fails:
-- no-start/fuel pump prime issues,
-- cooling fan not triggering,
+Examples:
+- no fuel pump prime,
+- cooling fan not commanding,
 - intermittent main-power behavior.
 
-### 2) Check fuses and feed voltage first
+### 2) Check fuses and supply first
 
-Before touching relay:
-- verify associated fuses,
-- verify battery/system voltage,
-- verify ground condition.
+Before testing relay:
+- verify related fuse integrity,
+- confirm battery voltage is healthy,
+- confirm major grounds are intact.
 
-### 3) Relay identification sanity check
+### 3) Identify correct relay cavity
 
-Use FSM year/VIN diagram to confirm:
-- relay location,
-- pin numbering,
-- circuit function.
+From lid legend + FSM:
+- confirm relay function,
+- confirm pin layout,
+- confirm expected command condition (KOEO, engine running, A/C request, etc.).
 
-Do not trust universal internet relay maps for NB variants.
+### 4) Coil-side test (85/86)
 
-### 4) Quick functional tests
+With command active:
+- one side should receive control voltage,
+- other side should have proper ground path (or vice versa depending circuit design).
 
-- Listen/feel for relay actuation (if accessible).
-- Test coil-side control voltage and ground when command is present.
-- Test load-side output voltage to downstream circuit.
+Outcomes:
+- no coil command = upstream control/wiring issue,
+- coil command present but no actuation = suspect relay coil/open contact issue.
 
-Practical logic:
-- click present + no load output => possible contact failure/high resistance,
-- no click + proper coil command missing => upstream command/power/ground issue,
-- output present + component still inoperative => downstream wiring/load fault.
+### 5) Load-side test (30 to 87)
 
-### 5) Swap test with identical known-good relay
+- Verify constant/expected feed at pin 30.
+- When relay is energized, verify switched output at pin 87.
 
-If pinout/current rating are identical, swap with a non-critical circuit relay briefly.
+Important rule:
+- audible click alone does **not** prove relay is passing load current.
 
-Swap-test checklist:
-- same pin layout,
-- same relay type (normally open vs changeover where applicable),
-- same or higher OEM-equivalent current rating.
+### 6) Swap-test safely (optional)
 
-If symptom moves with relay, relay fault is likely.
+Only swap if all match:
+- identical part type,
+- identical pin layout,
+- same switching function,
+- same or higher OEM-equivalent rating.
 
-### 6) Confirm downstream component before replacement
+If symptom moves with relay, relay fault is likely confirmed.
 
-A good relay cannot fix:
-- failed pump/fan motor,
-- corroded connectors,
-- broken wires,
-- bad grounds.
+### 7) Socket condition check
 
-### 7) Final verification
+Inspect relay socket for:
+- heat discoloration,
+- loose female terminals,
+- corrosion/water ingress.
+
+A new relay in a damaged socket can fail again quickly.
+
+### 8) Final confirmation
 
 After repair/replacement:
-- verify repeatable circuit operation across temperature cycles,
-- recheck for heat at relay/socket,
+- verify repeatable operation over multiple cycles,
+- check socket temperature after several minutes under load,
 - confirm no intermittent dropouts.
 
-Relay replacement should only follow proof of failed relay function, not be used as first-line fault isolation.
+## Practical fault split
 
-## Torque Specs / Capacities (if applicable)
-
-No torque specs apply to relay bench/plug-in testing.
+- **No coil command + no click:** control-side fault (fuse/switch/ECU/wiring/ground).
+- **Click + no output on 87:** relay contact failure or socket/high-resistance issue.
+- **Output on 87 + component dead:** downstream load/wiring/ground issue.
 
 ## Verification / Post-service checks
 
-- Target circuit operates reliably (pump/fan/main feed)
-- No relay/socket overheating after operation
-- No repeat intermittent fault after short drive/idle cycles
-
-## Uncertainty / Open Questions
-
-- Public NB-specific relay maps were inconsistent across regions in accessible sources.
-- Therefore this guide defers exact relay position/pin maps to year/VIN FSM documentation.
-
-## Image Credits
-
-No reusable, clearly licensed NB-specific relay-box diagrams were retrieved in this run.
+- Target circuit functions consistently
+- No relay/socket overheating
+- No repeat fault after warm/cold retest
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
-2. 2CarPros — *How to Test an Automotive Relay*. Retrieved 2026-03-13. https://www.2carpros.com/articles/how-to-test-an-automotive-relay
-3. AutoZone — *Advice & How-To's* (general automotive electrical diagnostic context). Retrieved 2026-03-13. https://www.autozone.com/diy
+1. MELLENS — *Mazda Miata Factory Service Manuals* (year/VIN relay map and pinout confirmation source). Retrieved 2026-03-14. https://www.mellens.net/mazda/index.html
+2. 2CarPros — *How to Test an Automotive Relay* (coil/load-side testing workflow context). Retrieved 2026-03-14. https://www.2carpros.com/articles/how-to-test-an-automotive-relay
+3. AutoZone — *Advice & How-To's* (general automotive electrical diagnostic context). Retrieved 2026-03-14. https://www.autozone.com/diy
