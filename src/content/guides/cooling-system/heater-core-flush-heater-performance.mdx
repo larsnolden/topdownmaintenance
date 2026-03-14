@@ -7,7 +7,7 @@ estimatedTime: "90-150 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "Mazda MX-5 NB heater-performance diagnosis and heater-core reverse-flush workflow for poor cabin heat, including clog vs airlock vs leak differentiation."
+summary: "Mazda MX-5 NB heater-performance diagnosis and heater-core reverse-flush procedure with exact firewall-hose identification, flow checks, and post-flush bleed validation."
 tags:
   - "cooling"
   - "heater-core"
@@ -16,116 +16,125 @@ relatedGuides:
   - "cooling-system/coolant-flush-refill"
   - "cooling-system/cooling-system-pressure-test"
 order: 13
-updatedAt: "2026-03-12"
+updatedAt: "2026-03-14"
 ---
 
 ## Before You Start / Safety
 
 This guide is for **Mazda MX-5 NB (1998-2005, NB1/NB2)**.
 
-A weak/no-heat complaint can be caused by low coolant, trapped air, blend-door/control issues, thermostat faults, or heater-core restriction. Diagnose first; flush second.
+Weak cabin heat is often caused by one of four things:
+1. low coolant/air in system,
+2. thermostat not reaching normal temperature,
+3. heater-core restriction,
+4. heater control door/cable issue.
 
-> Warning: Work only on a fully cooled system before disconnecting heater hoses to avoid burns from hot coolant and steam. https://www.mellens.net/mazda/index.html
+Diagnose in that order before replacing parts.
 
-> High-risk quote: A clogged heater core can reduce or eliminate cabin heat, and reverse flushing is commonly used to restore flow. https://ricksfreeautorepairadvice.com/flush-a-heater-core/
-
-> Manual-reference quote: NB manuals are split by year groups (1999-2001 and 2005), so hose routing, bleed process, and final checks should be verified by exact year/VIN FSM. https://www.mellens.net/mazda/index.html
+- Work only on fully cooled engine.
+- Coolant is toxic; capture every drain/flush discharge.
+- Protect alternator/belt area from water spray during hose flushing.
 
 ## Required Tools
 
-- Pliers/screwdriver for hose clamps
-- Drain pan
-- Garden-hose flush adapter/tubing or equivalent controlled flush setup
-- Multimeter/scan tool (optional but helpful for thermostat/sensor plausibility checks)
-- Gloves, eye protection, absorbent rags
+- Hose-clamp pliers or screwdrivers
+- Drain pan + absorbent rags
+- Short hose adapters/tubing for controlled flush
+- Low-pressure water source (garden hose with gentle flow)
+- Gloves + eye protection
 
 ## Required Parts / Fluids
 
-- Correct coolant for refill/top-up
-- New hose clamps if originals are weak
-- Replacement hoses only if damaged during removal
+- Correct coolant for refill/bleed
+- Replacement hose clamps if originals are weak/rusted
+- Replacement heater hoses only if cracked/hardened
 
-## Model-specific notes (NB1 vs NB2)
+### Practical quantity planning
 
-### NB1 (1998-2000)
-- Diagnostic flow is the same: coolant level/airlock/thermostat/heater-core flow.
+- For heater-core-only flush/reconnect, keep **at least 2-3 L** premixed coolant ready for refill and bleed corrections.
+- If old coolant is heavily contaminated, do a full cooling flush instead of partial top-up.
 
-### NB2 (2001-2005)
-- Same fundamentals, but connector/control details may differ by year/market.
-- Always confirm bleed and refill sequence in the year/VIN FSM.
+## Where heater-core hoses are on NB
+
+Standing in front of the car, look at the **firewall behind the engine**:
+
+- Two rubber hoses pass through the firewall into the heater core.
+- These are the hoses you disconnect for core flush.
+- On warm engine (before cooling down for service), one hose may feel hotter than the other; this helps identify flow direction.
+
+Do not confuse heater hoses with small throttle-body or expansion-tank hoses.
 
 ## Step-by-Step Procedure
 
-### 1) Confirm symptom type before touching hoses
+### 1) Confirm symptom type first
 
-- **No heat at all:** possible low coolant, airlock, control door/valve issue, or severe core restriction.
-- **Weak heat only at higher RPM:** often low flow/airlock/core restriction clue.
-- **Sweet smell/fogging/film on screen:** prioritize leak diagnosis (possible heater core leak) before any flush.
+- **No heat at all:** check coolant level, thermostat behavior, and heater controls.
+- **Heat only at higher RPM:** low flow/airlock/restriction suspicion.
+- **Sweet smell or windscreen film:** possible core leak; pressure-test before flushing aggressively.
 
-### 2) Baseline checks
+### 2) Baseline thermal check before disassembly
 
-- Verify coolant level and evidence of prior coolant loss.
-- Confirm engine reaches normal temperature (thermostat plausibility).
-- Check heater control operation through full hot/cold range.
+With engine fully warm and heater set to hot:
+- feel both heater hoses carefully,
+- both should be warm/hot (one somewhat cooler is normal).
 
-> High-risk quote: If the engine is not reaching normal operating temperature due to thermostat issues, cabin heat output will also be poor. https://www.2carpros.com/articles/car-heater-not-working
+Diagnostic clue:
+- one very hot and one much cooler = reduced heater-core flow likely.
 
-### 3) Consider airlock first (common after cooling work)
+### 3) Depressurize and disconnect hoses (cold engine)
 
-- If recent coolant service occurred, prioritize proper bleeding before concluding heater-core blockage.
+- Let engine cool completely.
+- Open radiator cap safely.
+- Place drain pan under firewall hose area.
+- Loosen heater-hose clamps and twist hoses gently to free them.
 
-> Community quote: MX-5 owners with weak heat often report improvement after coolant refresh plus careful system burping, suggesting trapped air can mimic heater-core faults. https://www.mx5nutz.com/threads/heating-very-very-weak.138294/
+If hose is stuck, rotate first; avoid prying hard against firewall tubes.
 
-### 4) Perform controlled heater-core reverse flush
+### 4) Reverse flush first, then forward flush
 
-- Identify heater-core inlet/outlet hoses correctly.
-- Disconnect hoses with drain pan positioned.
-- Flush in reverse direction first, then forward, until discharge runs clean and flow is consistent.
+1. Connect low-pressure water to the **outlet side** so flow runs backward through core.
+2. Flush until discharge clears and flow stabilizes.
+3. Swap and flush in normal direction.
+4. Alternate directions 2-3 times until water runs clear both ways.
 
-> High-risk quote: Correctly identifying inlet vs return hose is important; flushing in the wrong direction first can worsen blockage. https://ricksfreeautorepairadvice.com/flush-a-heater-core/
-
-> High-risk quote: Flushing procedure references typically disconnect heater-core hoses and force water through to remove debris from the core passages. https://www.wikihow.com/Flush-a-Heater-Core
+Use gentle pressure only. Heater cores are not designed for high-pressure blasting.
 
 ### 5) Reassemble and refill
 
-- Reconnect hoses/clamps securely.
-- Refill with correct coolant mix.
-- Bleed air using FSM-aligned process.
+- Reconnect hoses fully onto firewall pipes.
+- Position clamps behind bead/lip of pipe.
+- Refill cooling system with correct coolant mix.
+- Bleed system per NB process.
 
-### 6) Verify heater performance and leak status
+### 6) Validate heater output
 
-- Confirm stable hot air output at idle and moderate RPM.
-- Confirm no hose/cabin coolant leaks.
-- If weak heat persists despite good coolant level, full temp, and proper bleeding, escalate to control-system or heater-core replacement diagnosis.
+After full warm-up:
+- cabin air should become consistently hot at idle,
+- both heater hoses should now be similarly hot,
+- no gurgling sounds from dash area.
 
-> Community confirmation quote: Miata community reports show heater-core and cooling issues are often intertwined with previous flush/bypass work, so post-service verification over multiple heat cycles is important. https://old.reddit.com/r/Miata/search?q=heater+core+flush&restrict_sr=on
+### 7) Leak and level recheck
 
-## Torque Specs / Capacities (if applicable)
+After complete cooldown:
+- recheck radiator and expansion level,
+- inspect heater hose joints at firewall for seepage.
 
-- No single universal torque value is required for flush-only work.
-- Use year/VIN FSM for any component removal torques and full refill/bleed capacities.
+## Practical decision points
+
+- If heat improves briefly then fades, suspect remaining air or recurring low-coolant issue.
+- If no improvement despite good coolant level and normal engine temp, inspect HVAC blend door/cable operation.
+- If coolant smell or interior fog persists, escalate to heater-core leak diagnosis/replacement.
 
 ## Verification / Post-service checks
 
-- Cabin heat is restored and stable.
-- Engine reaches/holds normal operating temperature.
-- No coolant smell, windshield fogging residue, or fresh leaks.
-- Coolant level remains stable after multiple full heat cycles.
-
-## Uncertainty / Open Questions
-
-- Public guidance is consistent on reverse-flush method and airlock checks, but specific NB heater-hose routing and bleed details can vary by year/market.
-- This guide avoids one-size-fits-all numeric thresholds and defers exact final checks to year/VIN FSM references.
-
-## Image Credits
-
-No clearly reusable licensed NB-specific heater-core flush diagrams/photos were obtained during this run.
+- Stable cabin heat at idle and low road speed
+- No coolant leaks at firewall hose connections
+- No persistent coolant smell in cabin
+- Stable coolant level over 2-3 heat cycles
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
-2. 2CarPros — *How to Repair a Heater Not Working*. Retrieved 2026-03-12. https://www.2carpros.com/articles/car-heater-not-working
-3. Rick’s Free Auto Repair Advice — *Flush a heater core*. Retrieved 2026-03-12. https://ricksfreeautorepairadvice.com/flush-a-heater-core/
-4. wikiHow — *How to Flush a Heater Core*. Retrieved 2026-03-12. https://www.wikihow.com/Flush-a-Heater-Core
-5. MX5Nutz Forum — *Heating Very Very Weak*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/heating-very-very-weak.138294/
-6. Reddit (r/Miata, old.reddit) — *Miata: search results - heater core flush*. Retrieved 2026-03-12. https://old.reddit.com/r/Miata/search?q=heater+core+flush&restrict_sr=on
+1. MELLENS — *Mazda Miata Factory Service Manuals* (year/VIN cooling and heater-system confirmation source). Retrieved 2026-03-14. https://www.mellens.net/mazda/index.html
+2. Rick’s Free Auto Repair Advice — *Flush a heater core* (reverse-flush method rationale and sequence context). Retrieved 2026-03-14. https://ricksfreeautorepairadvice.com/flush-a-heater-core/
+3. 2CarPros — *How to Repair a Heater Not Working* (thermostat/coolant-level/heater-core diagnostic order context). Retrieved 2026-03-14. https://www.2carpros.com/articles/car-heater-not-working
+4. MX5Nutz Forum — *Heating Very Very Weak* (NB owner symptom pattern and bleed/flow troubleshooting context). Retrieved 2026-03-14. https://www.mx5nutz.com/threads/heating-very-very-weak.138294/
