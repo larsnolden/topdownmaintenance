@@ -781,6 +781,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'A/C performance check & service decision guide',
         slug: 'ac-performance-check-service',
         guideSlug: 'hvac-climate-control/ac-performance-check-service'
+      },
+      {
+        label: 'Cabin air filter service (if equipped)',
+        slug: 'cabin-air-filter-service',
+        guideSlug: 'hvac-climate-control/cabin-air-filter-service'
       }
     ]
   },
