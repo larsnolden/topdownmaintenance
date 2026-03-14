@@ -740,6 +740,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Underseal maintenance (reapply as necessary)',
         slug: 'underseal-maintenance',
         guideSlug: 'rust-prevention/underseal-maintenance'
+      },
+      {
+        label: 'Cavity wax / internal rustproofing (sills, chassis cavities)',
+        slug: 'cavity-wax-internal-rustproofing',
+        guideSlug: 'rust-prevention/cavity-wax-internal-rustproofing'
       }
     ]
   },
