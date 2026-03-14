@@ -714,6 +714,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Hardtop latch & seal maintenance (if equipped)',
         slug: 'hardtop-latch-seal-maintenance',
         guideSlug: 'convertible-top-exterior-trim/hardtop-latch-seal-maintenance'
+      },
+      {
+        label: 'Weatherstrip cleaning & conditioning (doors/windows/top seals)',
+        slug: 'weatherstrip-clean-condition',
+        guideSlug: 'convertible-top-exterior-trim/weatherstrip-clean-condition'
       }
     ]
   },
