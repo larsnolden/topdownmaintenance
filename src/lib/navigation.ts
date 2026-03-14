@@ -791,6 +791,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Blower motor & resistor diagnosis (fan speed issues)',
         slug: 'blower-motor-resistor-diagnosis',
         guideSlug: 'hvac-climate-control/blower-motor-resistor-diagnosis'
+      },
+      {
+        label: 'Heater control valve/cable inspection (no-heat issues)',
+        slug: 'heater-control-valve-cable-inspection',
+        guideSlug: 'hvac-climate-control/heater-control-valve-cable-inspection'
       }
     ]
   },
