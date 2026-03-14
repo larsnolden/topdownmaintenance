@@ -786,6 +786,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Cabin air filter service (if equipped)',
         slug: 'cabin-air-filter-service',
         guideSlug: 'hvac-climate-control/cabin-air-filter-service'
+      },
+      {
+        label: 'Blower motor & resistor diagnosis (fan speed issues)',
+        slug: 'blower-motor-resistor-diagnosis',
+        guideSlug: 'hvac-climate-control/blower-motor-resistor-diagnosis'
       }
     ]
   },

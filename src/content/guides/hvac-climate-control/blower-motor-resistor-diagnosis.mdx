@@ -1,0 +1,123 @@
+---
+title: "Blower motor & resistor diagnosis (fan speed issues)"
+category: "hvac-climate-control"
+difficulty: 3
+difficultyLabel: "Intermediate"
+estimatedTime: "45-120 min"
+applicableModels:
+  - "NB1"
+  - "NB2"
+summary: "Diagnose NB HVAC fan-speed faults by separating resistor, blower motor, fuse/relay, and switch/control issues before replacing parts."
+tags:
+  - "hvac"
+  - "blower-motor"
+  - "resistor"
+relatedGuides: []
+order: 3
+updatedAt: "2026-03-14"
+---
+
+## Before You Start / Safety
+
+Fan-speed faults can overlap with A/C control complaints. Diagnose blower operation first before assuming a refrigerant issue.
+
+> Warning: "Always wear safety glasses and gloves when charging the A/C system." https://www.autozone.com/diy/climate-control/how-to-recharge-car-ac
+
+> High-risk quote: "Most people don't know that the high speed blower motor fan speed setting and the medium and low speed settings are two separate electrical circuits." https://www.2carpros.com/articles/blower-fan-motor-works-on-high-speed-only
+
+## Required Tools
+
+- Multimeter or test light
+- Basic socket/screwdriver set
+- Trim tools (for passenger-side lower trim/cowl access as required)
+- Wiring diagram access (FSM strongly recommended)
+
+## Required Parts / Fluids
+
+- Blower resistor pack/control module (only after diagnosis)
+- Blower motor (if high current draw/noisy/sticking)
+- Relay/fuse/connector repair parts as needed
+
+## Model-specific notes (NB1 vs NB2)
+
+- NB1 and NB2 use similar blower diagnosis logic, but trim access and harness routing can vary by market (LHD/RHD) and prior modifications.
+
+> Manual-reference quote: "1999-2001 Mazda Miata Service Repair Manual" and "2005 Mazda Miata Service Repair Manual" are listed in the Miata factory manual index. https://www.mellens.net/mazda/
+
+## Step-by-Step Procedure
+
+### 1) Confirm exact symptom pattern
+
+Identify which speeds fail:
+- only high works,
+- only low works,
+- no speeds work,
+- intermittent all-speed dropout.
+
+### 2) Fuse/relay first
+
+Check HVAC/blower fuses and blower relay output before replacing resistor or motor.
+
+> Community quote: "It was a relay" https://www.reddit.com/r/Miata/comments/v6hsx6/.json
+
+### 3) Interpret “high only” correctly
+
+If high works but lower speeds do not, suspect resistor/control path first.
+
+> High-risk quote: "when the high speed is working it mean the medium and lower speeds are not working, this is because these alternative settings are electrically routed through a blower motor resistor or a blower motor control module." https://www.2carpros.com/articles/blower-fan-motor-works-on-high-speed-only
+
+### 4) Inspect resistor/module and connector heat damage
+
+Look for burnt resistor elements, melted connector pins, and heat-discolored wiring.
+
+> High-risk quote: "inspect the resistor connector for heat damage at the terminals and replace or repair it as needed" https://www.2carpros.com/articles/blower-fan-motor-works-on-high-speed-only
+
+### 5) Evaluate blower motor current draw/condition
+
+Aging blower motors can overdraw current and repeatedly kill replacement resistors/modules.
+
+> High-risk quote: "blower motor... pulling excessive amperage... will cause the resistor or a solid state speed controller to burn out." https://www.2carpros.com/articles/blower-fan-motor-works-on-high-speed-only
+
+### 6) Verify switch/control and wiring continuity
+
+If both resistor and blower test good, check switch output and harness continuity per FSM wiring.
+
+### 7) Re-test through all speed positions
+
+After repair, verify stable operation on every fan speed and confirm no connector heating after several minutes.
+
+> Community confirmation quote: "the blower motor work when hooked up directly to 12v" (useful as a motor-isolation test) https://www.reddit.com/r/Miata/comments/v6hsx6/.json
+
+## Torque Specs / Capacities
+
+- No universal torque table is provided for blower diagnosis tasks.
+- Use year/VIN FSM values where bracket/fastener torques are specified.
+
+## Verification / Post-service checks
+
+- All fan speeds function consistently
+- No immediate fuse blowing or relay chatter
+- No burning smell/connector heat build-up
+- HVAC airflow stable at idle and while driving
+
+## Uncertainty / Open Questions
+
+- Browser snapshot timed out this run; research proceeded using retrievable sources and community JSON threads.
+- Several mainstream how-to URLs were blocked/404 in this environment, so this guide leans on accessible technical diagnostics and explicitly flags uncertainty.
+
+## Images
+
+No reusable, clearly licensed NB-specific blower resistor diagnostic images were added in this run.
+
+## Image Credits
+
+- No images used.
+
+## Sources
+
+1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-14. https://www.mellens.net/mazda/
+2. AutoZone — *How to Recharge Your Car's AC*. Retrieved 2026-03-14. https://www.autozone.com/diy/climate-control/how-to-recharge-car-ac
+3. AutoZone — *Advice & How-To's (DIY Hub)*. Retrieved 2026-03-14. https://www.autozone.com/diy
+4. 2CarPros — *Blower Fan Motor Works on High Speed Only*. Retrieved 2026-03-14. https://www.2carpros.com/articles/blower-fan-motor-works-on-high-speed-only
+5. Reddit r/Miata — *AC blower fan won't come on...* (JSON endpoint). Retrieved 2026-03-14. https://www.reddit.com/r/Miata/comments/v6hsx6/.json
+6. Reddit r/Miata — *2005 NB replacing heater core... clean AC coil and fan blower* (JSON endpoint). Retrieved 2026-03-14. https://www.reddit.com/r/Miata/comments/ae2zl6/.json
