@@ -745,6 +745,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Seat track lubrication & inspection',
         slug: 'seat-track-lubrication',
         guideSlug: 'body-interior/seat-track-lubrication'
+      },
+      {
+        label: 'Seat belt inspection & care',
+        slug: 'seat-belt-inspection-care',
+        guideSlug: 'body-interior/seat-belt-inspection-care'
       }
     ]
   },
