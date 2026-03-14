@@ -7,7 +7,7 @@ estimatedTime: "60-120 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "Mazda MX-5 NB cooling fan diagnostic workflow to verify fan command logic, relay/fuse integrity, and sensor-driven activation behavior."
+summary: "Mazda MX-5 NB cooling-fan diagnosis with exact check order, fan/relay/fuse location guidance, and practical pass-fail decisions before parts replacement."
 tags:
   - "cooling"
   - "fan"
@@ -16,113 +16,107 @@ relatedGuides:
   - "cooling-system/cooling-system-pressure-test"
   - "cooling-system/coolant-temperature-sensor-test-replacement"
 order: 11
-updatedAt: "2026-03-12"
+updatedAt: "2026-03-14"
 ---
 
 ## Before You Start / Safety
 
 This guide is for **Mazda MX-5 NB (1998-2005, NB1/NB2)**.
 
-Cooling fan diagnosis requires working around a running engine and rotating fan blades.
+Cooling fan diagnosis is electrical work around a hot, running engine.
 
-> Warning: Treat the fan as if it may start at any time; keep fingers, tools, and loose clothing clear of the fan path. https://www.700r4transmissionhq.com/mazda-mx-5-radiator-fan-not-working/
-
-> High-risk quote: If radiator fan function fails, overheating risk increases quickly and can lead to severe engine damage. https://ricksfreeautorepairadvice.com/radiator-fan-not-working-how-to-diagnose-and-fix/
-
-> Manual-reference quote: NB workshop references are split by year groups (1999-2001 and 2005), so relay locations, wiring colors, and test values must be confirmed by exact year/VIN FSM. https://www.mellens.net/mazda/index.html
+- Keep hands, sleeves, and meter leads clear of fan blades and belts.
+- Assume fans can start at any time.
+- If coolant is already overheating, stop engine and diagnose cold.
 
 ## Required Tools
 
 - Digital multimeter
-- Fuse puller and spare fuses (correct ratings)
-- Test light or jumper leads (for controlled checks)
-- Wiring diagram / FSM for your exact NB year
-- Basic hand tools for relay/fan connector access
+- Test light
+- Fuse puller + correct spare fuses
+- Fused jumper wire (for direct fan motor test)
+- Wiring diagram/FSM for your exact year
 
-## Required Parts / Fluids
+## Where key components are on NB
 
-- Replacement fuse(s), relay(s), or fan motor only after diagnosis confirms failure
-- No fluids required for electrical fan checks
+### Radiator fan motors
+- Mounted directly to fan shrouds behind radiator.
+- Access from engine-bay front area; connectors are on fan harness near shroud.
 
-## Model-specific notes (NB1 vs NB2)
+### Fan fuses/relays
+- Typically in the under-bonnet fuse/relay box (black plastic box near battery/inner fender area).
+- Lid usually has a legend for fan-related fuses/relays.
 
-### NB1 (1998-2000)
-- Basic diagnosis flow is unchanged: check fan command, power feed, relay switching, and fan motor function.
+### Coolant temperature input path
+- ECU uses coolant temperature data for fan-command decisions.
+- Gauge behavior alone is not a complete fan-diagnosis input.
 
-### NB2 (2001-2005)
-- Some markets/configurations show different fan-control details and A/C interaction behavior.
-- Use year/VIN wiring data before hard-coding expected trigger points.
+## Step-by-Step Procedure (fastest reliable order)
 
-> Community quote: MX-5 owners report that turning A/C on can immediately force fan behavior changes, which is useful as a quick command-path sanity check. https://www.mx5nutz.com/threads/fan-not-coming-on.15785/
+### 1) Confirm the symptom pattern
 
-## Step-by-Step Procedure
+- Overheats in traffic but cools at speed → strong fan-system suspicion.
+- Fan runs only with A/C request → command-path clue.
+- Fan intermittent when harness is touched → connector/harness issue likely.
 
-### 1) Confirm symptom pattern first
+### 2) A/C quick command check (if equipped)
 
-- Overheats only in traffic/idle, but improves at road speed?
-- Fan never runs, or runs only with A/C?
-- Fan starts intermittently or only if harness is moved?
+With engine at idle and safe access:
+1. Turn A/C OFF, observe fan state.
+2. Turn A/C ON, observe whether one/both fans respond.
 
-### 2) Quick command-path check (A/C and warm idle)
+If fan behavior changes with A/C, motor power path may be okay and control logic/input side needs deeper checks.
 
-- With safe conditions, observe fan behavior at warm idle.
-- Repeat with A/C request (if equipped) and compare.
-- Note if one fan runs, both run, or neither runs.
+### 3) Fuse-first, relay-second
 
-### 3) Check fuse(s) and fan relay(s)
+1. Inspect fan-related fuses with meter/test light (not visual-only).
+2. Replace blown fuse once.
+3. If fuse blows again, stop replacing fuses and trace short/overcurrent.
+4. Test/swap suspect relay with known-good equivalent of same type.
 
-- Inspect fan-related fuses first.
-- If fuse is blown, replace once and retest. If it blows again, diagnose short/overcurrent before further replacement.
-- Swap/test relay(s) only with known-good equivalents and wiring references.
+### 4) Direct fan motor test (separates motor fault from control fault)
 
-> High-risk quote: A blown fan fuse that fails again usually indicates an underlying wiring/motor load issue, not a “bad luck” fuse event. https://ricksfreeautorepairadvice.com/radiator-fan-not-working-how-to-diagnose-and-fix/
+- Disconnect fan motor connector.
+- Use fused jumper from battery positive and solid ground to fan motor terminals.
+- If motor does not spin smoothly and strongly, motor or ground path is faulty.
+- If motor runs directly but not in normal operation, focus on relay/control/sensor side.
 
-### 4) Verify fan motor and connector integrity
+### 5) Command-voltage test at fan connector
 
-- Check fan connector voltage when fan is commanded on.
-- If command voltage is present but fan does not spin, suspect motor/ground path.
-- Inspect harness and pins for heat, looseness, or intermittent contact.
+With fan expected to be ON:
+- Measure voltage at fan connector.
+- Voltage present + no fan spin = motor/ground issue.
+- No voltage = upstream issue (fuse, relay, wiring, ECU command, sensor input).
 
-> Community confirmation quote: MX-5 community fault-finding includes cases where fan operation changed when connector wires were moved, confirming connector/motor-side issues rather than ECU logic failure. https://www.mx5nutz.com/threads/cooling-fan-not-working-plus-diypnp.78200/
+### 6) Sensor/input plausibility check
 
-### 5) Check sensor/input side if command never arrives
+- Verify coolant temperature reading trend with scanner where possible.
+- Compare engine warm-up reality to reported value.
+- Implausible temp signal can prevent proper fan command.
 
-- Confirm coolant temperature input plausibility via scan/tooling where possible.
-- Check relevant sensor wiring continuity and grounds.
-- Do not replace sensors blindly before confirming power/ground/signal integrity.
+### 7) Confirm repair under repeatable conditions
 
-### 6) Confirm repair with repeatable hot-idle test
+- Warm engine to normal operating temperature at idle.
+- Verify fan cut-in and cut-out are repeatable.
+- Repeat with A/C load where applicable.
 
-- Reassemble.
-- Warm engine fully and observe fan cut-in/cut-out behavior.
-- Verify stable temperature in traffic simulation and with A/C load.
+## Practical pass/fail decisions
 
-## Torque Specs / Capacities (if applicable)
-
-- Not generally torque-driven unless replacing hardware/mounts.
-- Use FSM for year/VIN-specific values where component replacement is required.
+- **Blown fuse repeats immediately:** do wiring/motor draw fault-finding before any more parts swaps.
+- **Relay clicks but fan dead:** check output voltage at relay/fan connector.
+- **Fan runs direct-jumper but not commanded:** command path fault (sensor, relay control, harness, ECU output path).
+- **Both fans healthy electrically but temp still rises:** continue with coolant flow/air/pressure diagnostics.
 
 ## Verification / Post-service checks
 
-- Fan activation is repeatable and predictable under the same thermal/load conditions.
-- Idle/traffic temperature remains controlled.
-- No repeated fuse failures.
-- A/C request no longer causes abnormal temperature rise.
-
-## Uncertainty / Open Questions
-
-- Public sources agree on the diagnostic sequence (fuse → relay → motor/wiring → sensor/control path), but not all publish NB-specific trigger temperatures and dual-fan logic details.
-- This guide intentionally avoids hard universal trigger-temperature numbers and defers those to exact year/VIN FSM data.
-
-## Image Credits
-
-No clearly reusable licensed NB-specific cooling-fan wiring/fuse diagrams were obtained during this run.
+- Stable coolant temperature at extended idle
+- No repeated fuse failures
+- Predictable fan behavior with and without A/C request
+- No new wiring heat damage at connectors
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-12. https://www.mellens.net/mazda/index.html
-2. Rick’s Free Auto Repair Advice — *Radiator fan not working: How to diagnose and fix*. Retrieved 2026-03-12. https://ricksfreeautorepairadvice.com/radiator-fan-not-working-how-to-diagnose-and-fix/
-3. Natrad — *Troubleshooting your car’s radiator fan*. Retrieved 2026-03-12. https://natrad.com.au/info-advice/troubleshooting-your-cars-radiator-fan/
-4. Drivetrain Resource (700R4TransmissionHQ) — *Mazda MX-5: Radiator Fan Not Working Diagnosis*. Retrieved 2026-03-12. https://www.700r4transmissionhq.com/mazda-mx-5-radiator-fan-not-working/
-5. MX5Nutz Forum — *Fan Not Coming On*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/fan-not-coming-on.15785/
-6. MX5Nutz Forum — *Cooling Fan Not Working... Plus Diypnp*. Retrieved 2026-03-12. https://www.mx5nutz.com/threads/cooling-fan-not-working-plus-diypnp.78200/
+1. MELLENS — *Mazda Miata Factory Service Manual archive* (year/VIN wiring and fan-control confirmation source). Retrieved 2026-03-14. https://www.mellens.net/mazda/
+2. Rick’s Free Auto Repair Advice — *Radiator fan not working: How to diagnose and fix* (diagnostic order and repeat-blown-fuse logic). Retrieved 2026-03-14. https://ricksfreeautorepairadvice.com/radiator-fan-not-working-how-to-diagnose-and-fix/
+3. MX5Nutz Forum — *Fan Not Coming On* (NB owner observation: A/C request as fan-command sanity check). Retrieved 2026-03-14. https://www.mx5nutz.com/threads/fan-not-coming-on.15785/
+4. MX5Nutz Forum — *Cooling Fan Not Working... Plus Diypnp* (intermittent connector/wiring behavior context). Retrieved 2026-03-14. https://www.mx5nutz.com/threads/cooling-fan-not-working-plus-diypnp.78200/
