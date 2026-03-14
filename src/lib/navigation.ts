@@ -709,6 +709,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Rain rail inspection & replacement',
         slug: 'rain-rail-inspection-replacement',
         guideSlug: 'convertible-top-exterior-trim/rain-rail-inspection-replacement'
+      },
+      {
+        label: 'Hardtop latch & seal maintenance (if equipped)',
+        slug: 'hardtop-latch-seal-maintenance',
+        guideSlug: 'convertible-top-exterior-trim/hardtop-latch-seal-maintenance'
       }
     ]
   },
