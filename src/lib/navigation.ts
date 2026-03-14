@@ -755,6 +755,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Interior water leak diagnosis (wet carpet)',
         slug: 'interior-water-leak-diagnosis',
         guideSlug: 'body-interior/interior-water-leak-diagnosis'
+      },
+      {
+        label: 'Trunk water leak diagnosis',
+        slug: 'trunk-water-leak-diagnosis',
+        guideSlug: 'body-interior/trunk-water-leak-diagnosis'
       }
     ]
   },
