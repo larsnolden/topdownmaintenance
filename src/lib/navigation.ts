@@ -735,6 +735,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Jacking & lifting points (safe lifting guide)',
         slug: 'jacking-lifting-points-guide',
         guideSlug: 'body-interior/jacking-lifting-points-guide'
+      },
+      {
+        label: 'Hinges & latches lubrication (doors, hood, trunk, fuel door)',
+        slug: 'hinges-latches-lubrication',
+        guideSlug: 'body-interior/hinges-latches-lubrication'
       }
     ]
   },
