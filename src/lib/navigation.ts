@@ -704,6 +704,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Soft top replacement',
         slug: 'soft-top-replacement',
         guideSlug: 'convertible-top-exterior-trim/soft-top-replacement'
+      },
+      {
+        label: 'Rain rail inspection & replacement',
+        slug: 'rain-rail-inspection-replacement',
+        guideSlug: 'convertible-top-exterior-trim/rain-rail-inspection-replacement'
       }
     ]
   },
