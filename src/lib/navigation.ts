@@ -750,6 +750,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Rocker/sill internal inspection (access points & warning signs)',
         slug: 'rocker-sill-internal-inspection',
         guideSlug: 'rust-prevention/rocker-sill-internal-inspection'
+      },
+      {
+        label: 'Wheel arch liner removal & rust inspection',
+        slug: 'wheel-arch-liner-rust-inspection',
+        guideSlug: 'rust-prevention/wheel-arch-liner-rust-inspection'
       }
     ]
   },
