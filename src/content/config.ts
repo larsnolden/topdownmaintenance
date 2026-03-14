@@ -17,6 +17,7 @@ const guides = defineCollection({
       'tires-wheels',
       'convertible-top-exterior-trim',
       'rust-prevention',
+      'hvac-climate-control',
       'appendices'
     ]),
     difficulty: z.number().int().min(1).max(5),

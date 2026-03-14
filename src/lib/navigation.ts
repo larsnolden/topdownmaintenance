@@ -774,6 +774,17 @@ export const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
+    label: 'HVAC & Climate Control',
+    slug: 'hvac-climate-control',
+    items: [
+      {
+        label: 'A/C performance check & service decision guide',
+        slug: 'ac-performance-check-service',
+        guideSlug: 'hvac-climate-control/ac-performance-check-service'
+      }
+    ]
+  },
+  {
     label: 'Appendices',
     slug: 'appendices',
     items: [

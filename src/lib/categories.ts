@@ -11,6 +11,7 @@ export const CATEGORY_LABELS = {
   'tires-wheels': 'Tires & Wheels',
   'convertible-top-exterior-trim': 'Convertible Top & Exterior Trim',
   'rust-prevention': 'Rust Prevention',
+  'hvac-climate-control': 'HVAC & Climate Control',
   appendices: 'Appendices'
 } as const;
 
