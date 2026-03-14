@@ -760,6 +760,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Battery tray rust inspection & treatment',
         slug: 'battery-tray-rust-inspection-treatment',
         guideSlug: 'rust-prevention/battery-tray-rust-inspection-treatment'
+      },
+      {
+        label: 'Paint chip touch-up & small rust spot treatment',
+        slug: 'paint-chip-touchup-rust-spot-treatment',
+        guideSlug: 'rust-prevention/paint-chip-touchup-rust-spot-treatment'
       }
     ]
   },
