@@ -7,7 +7,7 @@ estimatedTime: "2-5 hours"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "NB starter no-crank diagnosis and replacement workflow with voltage-drop checks first, then starter removal only after control-circuit confirmation."
+summary: "NB no-crank diagnosis and starter replacement with concrete battery/cable voltage-drop checks, trigger-wire testing, and post-install crank validation."
 tags:
   - "electrical"
   - "starter"
@@ -16,122 +16,119 @@ tags:
 relatedGuides:
   - "electrical-system/battery-health-check-cleaning"
   - "electrical-system/ground-strap-main-cable-inspection"
-  - "electrical-system/alternator-output-check"
+  - "electrical-system/relay-inspection-testing"
 order: 4
-updatedAt: "2026-03-13"
+updatedAt: "2026-03-14"
 ---
 
 ## Before You Start / Safety
 
-This guide is for **Mazda MX-5 NB (1998-2005)** only.
+This guide is for **Mazda MX-5 NB (1998-2005)**.
 
-A no-crank condition is not always a bad starter. Battery state, cable condition, grounds, relay/control wiring, and ignition-switch output can all mimic starter failure.
+Most "bad starter" diagnoses are actually battery, cable, or control-circuit faults. Test before replacing.
 
-> Warning: "Make sure the parking brake is set" before under-car starter testing work. https://www.2carpros.com/articles/starter-not-working-repair
-
-> High-risk quote: "use a test light to see if the starter solenoid is getting 12 volts" in crank mode before condemning the starter itself. https://www.2carpros.com/articles/starter-not-working-repair
-
-> Manual-reference quote: Mellens indexes NB-era manuals (1999-2001 and 2005), so exact starter circuit tests, connector pinouts, and mounting torque specs must be confirmed by year/VIN. https://www.mellens.net/mazda/index.html
+- Car in neutral/park with parking brake fully set.
+- Disable ignition/fuel only if doing extended crank testing.
+- Keep hands/tools clear of belts and fan during live tests.
 
 ## Required Tools
 
-- Digital multimeter and/or test light
-- Battery charger/load support (recommended)
-- Basic socket/wrench set
-- Extension/universal tools for starter fasteners
+- Digital multimeter (with min/max capture helpful)
+- Test light
+- Battery charger/support
+- Socket set with extensions/universal joints
 - Torque wrench
 
 ## Required Parts / Fluids
 
-- Correct starter motor for NB year/transmission setup
-- New hardware if required by FSM
-- Terminal protectant/cleaner for cable ends if needed
-
-## Model-specific notes (NB1 vs NB2)
-
-### NB1 (1998-2000)
-- Confirm starter part compatibility by transmission type and engine variant.
-
-### NB2 (2001-2005)
-- Same caution: prior swaps can mix components; verify installed starter and wiring arrangement first.
-
-> Community quote: r/Miata search repeatedly includes NB starter-specific no-crank threads and replacement discussions, including "What my friend was quoted for replacing his starter (1999 NB)". https://www.reddit.com/r/Miata/search/?q=nb%20starter%20replacement&restrict_sr=1
+- Correct starter motor for NB year/transmission
+- Terminal cleaner/protectant (if corrosion present)
+- Replacement starter hardware only if required
 
 ## Step-by-Step Procedure
 
-### 1) Confirm symptom type
+### 1) Confirm this is a no-crank fault
 
-Differentiate:
-- **No-crank** (starter does not rotate engine),
-- **Crank-no-start** (starter turns engine but engine does not fire).
+This guide applies when key is turned to START and:
+- engine does not rotate,
+- only click/noise occurs, or
+- crank is intermittent.
 
-This guide is for **no-crank** diagnosis/replacement.
+If engine cranks normally but won’t fire, diagnose fuel/spark/management instead.
 
-### 2) Battery and cable baseline first
+### 2) Battery baseline first
 
-- Verify battery voltage/state of charge.
-- Inspect positive and ground cable connections.
-- Check for corrosion or heat-damaged cable ends.
+Before blaming starter, check battery at posts:
+- **~12.6 V** fully charged at rest is a good baseline,
+- below ~12.2 V suggests low charge state,
+- during crank attempt, large voltage collapse indicates battery/supply weakness.
 
-### 3) Starter control-circuit test
+Charge or substitute known-good battery before deeper starter diagnosis.
 
-At starter trigger wire, command crank and verify whether control voltage appears.
+### 3) Cable and ground integrity check
 
-If no trigger voltage, diagnose upstream controls (relay, switch, immobilizer/clutch/neutral inputs as applicable) before replacing starter.
+Inspect and tug-test:
+- battery positive to starter feed path,
+- battery negative to chassis,
+- engine ground strap(s).
 
-### 4) Main feed and voltage-drop checks
+Look for green corrosion, loose lugs, heat-darkened insulation, broken strands.
 
-- Confirm constant battery feed at starter main terminal.
-- Check voltage drop on positive and negative paths during crank command.
+### 4) Trigger-wire test at starter solenoid
 
-If supply drops excessively, repair battery/cable/ground faults first.
+During START command, check small trigger terminal:
+- command voltage present -> control side likely okay,
+- no command voltage -> upstream issue (relay/ignition switch/interlock/wiring).
 
-### 5) Starter verdict and replacement
+Do not replace starter if trigger command never arrives.
 
-If trigger and feed are correct but starter does not crank reliably, starter internal fault is likely.
+### 5) Main feed and voltage-drop test
 
-- Disconnect battery.
-- Remove starter in FSM sequence.
-- Install replacement unit and reconnect wiring securely.
-- Torque mounting hardware to FSM values.
+With START commanded:
+- measure drop from battery positive post to starter B+ terminal,
+- measure drop from starter case to battery negative post.
 
-### 6) Post-install verification
+High drop on either side points to cable/connection resistance, not necessarily bad starter.
 
-- Confirm consistent crank speed hot/cold.
-- Verify no abnormal starter noise.
-- Recheck battery/charging condition after repair.
+### 6) Starter decision logic
 
-> Community confirmation quote: old.reddit NB starter replacement search context repeatedly shows users finding low trigger voltage/ground issues before final starter replacement decisions. https://old.reddit.com/r/Miata/search?q=nb+starter+replacement&restrict_sr=on
+Starter is likely faulty when all are true:
+1. battery is healthy/charged,
+2. trigger command is present,
+3. main feed/ground path is adequate,
+4. starter still fails to crank reliably.
 
-## Torque Specs / Capacities (if applicable)
+### 7) Replacement workflow
 
-- Starter mounting and cable terminal torques: **year/VIN FSM only**
-- Circuit test thresholds/pinouts: **year/VIN FSM only**
+- Disconnect battery negative first.
+- Remove starter wiring and mounting fasteners.
+- Compare old/new starter nose, mounting ears, and terminal orientation.
+- Install replacement and tighten to year/VIN FSM values.
+- Reconnect wiring securely and protect terminal from contamination.
 
-No universal publish-safe NB starter torque/spec table is provided here.
+### 8) Post-install validation
+
+- Verify consistent crank speed cold and hot.
+- Confirm no grinding/whine after key release.
+- Recheck charging system and cable temperature after several starts.
+
+## Practical fault split
+
+- **Single click + no crank:** solenoid engages but motor/feed path weak.
+- **Rapid clicking:** battery voltage collapse or poor main connections.
+- **No click/no crank with no trigger voltage:** control-side fault upstream.
+- **Hot soak no-crank only:** starter heat sensitivity or high-resistance cable/ground issue.
 
 ## Verification / Post-service checks
 
-- Engine cranks immediately and consistently
-- No click-only/no-crank recurrence
-- No excessive voltage drop during cranking
-- No hot-start failure after full warm-up
-
-## Uncertainty / Open Questions
-
-- Several starter-specific independent how-to pages were blocked/redirected in this environment.
-- Community evidence was partly search/snippet level.
-- Therefore this guide keeps diagnostics conservative and defers numeric thresholds to year/VIN FSM.
-
-## Image Credits
-
-No reusable, clearly licensed NB-specific starter wiring/location diagrams were retrieved in this run.
+- Immediate, repeatable cranking across multiple key cycles
+- No return of click-only condition
+- No abnormal voltage-drop behavior during crank
+- No cable heating/smell after repeated starts
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
-2. 2CarPros — *Starter Not Working? Here’s How to Diagnose and Repair It*. Retrieved 2026-03-13. https://www.2carpros.com/articles/starter-not-working-repair
-3. AutoZone — *Advice & How-To's*. Retrieved 2026-03-13. https://www.autozone.com/diy
-4. Reddit r/Miata — *Search: nb starter replacement*. Retrieved 2026-03-13. https://www.reddit.com/r/Miata/search/?q=nb%20starter%20replacement&restrict_sr=1
-5. Reddit r/Miata (old.reddit) — *Search: nb starter replacement*. Retrieved 2026-03-13. https://old.reddit.com/r/Miata/search?q=nb+starter+replacement&restrict_sr=on
-6. Reddit r/Miata — *Search: nb no start starter*. Retrieved 2026-03-13. https://www.reddit.com/r/Miata/search/?q=nb%20no%20start%20starter&restrict_sr=1
+1. MELLENS — *Mazda Miata Factory Service Manuals* (year/VIN starter circuit and torque confirmation source). Retrieved 2026-03-14. https://www.mellens.net/mazda/index.html
+2. 2CarPros — *Starter Not Working? Here’s How to Diagnose and Repair It* (trigger/feed diagnostic sequence context). Retrieved 2026-03-14. https://www.2carpros.com/articles/starter-not-working-repair
+3. AutoZone — *Advice & How-To's* (automotive electrical diagnosis context). Retrieved 2026-03-14. https://www.autozone.com/diy
+4. Reddit r/Miata — *Search: nb starter replacement* (NB owner symptom-pattern context). Retrieved 2026-03-14. https://www.reddit.com/r/Miata/search/?q=nb%20starter%20replacement&restrict_sr=1
