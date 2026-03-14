@@ -10,6 +10,7 @@ export const CATEGORY_LABELS = {
   'electrical-system': 'Electrical System',
   'tires-wheels': 'Tires & Wheels',
   'convertible-top-exterior-trim': 'Convertible Top & Exterior Trim',
+  'body-interior': 'Body & Interior',
   'rust-prevention': 'Rust Prevention',
   'hvac-climate-control': 'HVAC & Climate Control',
   appendices: 'Appendices'

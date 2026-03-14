@@ -16,6 +16,7 @@ const guides = defineCollection({
       'electrical-system',
       'tires-wheels',
       'convertible-top-exterior-trim',
+      'body-interior',
       'rust-prevention',
       'hvac-climate-control',
       'appendices'

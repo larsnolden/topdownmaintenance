@@ -728,6 +728,17 @@ export const menuSections: MenuSectionDefinition[] = [
     ]
   },
   {
+    label: 'Body & Interior',
+    slug: 'body-interior',
+    items: [
+      {
+        label: 'Jacking & lifting points (safe lifting guide)',
+        slug: 'jacking-lifting-points-guide',
+        guideSlug: 'body-interior/jacking-lifting-points-guide'
+      }
+    ]
+  },
+  {
     label: 'Rust Prevention',
     slug: 'rust-prevention',
     items: [
