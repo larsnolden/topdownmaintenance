@@ -745,6 +745,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Cavity wax / internal rustproofing (sills, chassis cavities)',
         slug: 'cavity-wax-internal-rustproofing',
         guideSlug: 'rust-prevention/cavity-wax-internal-rustproofing'
+      },
+      {
+        label: 'Rocker/sill internal inspection (access points & warning signs)',
+        slug: 'rocker-sill-internal-inspection',
+        guideSlug: 'rust-prevention/rocker-sill-internal-inspection'
       }
     ]
   },
