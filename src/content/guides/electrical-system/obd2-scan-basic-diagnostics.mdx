@@ -7,7 +7,7 @@ estimatedTime: "20-60 minutes"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "NB OBD-II basic diagnostic workflow covering DTC reading, freeze-frame interpretation, and readiness monitor checks without over-diagnosing from a single code pull."
+summary: "NB OBD-II workflow with code/freeze-frame capture, practical live-data sanity checks, and readiness strategy before emissions inspection."
 tags:
   - "electrical"
   - "obd2"
@@ -15,134 +15,119 @@ tags:
   - "readiness"
 relatedGuides:
   - "electrical-system/fuse-inspection-replacement"
+  - "electrical-system/relay-inspection-testing"
   - "electrical-system/starter-test-replacement"
-  - "engine-management/check-engine-light-basic-diagnosis"
 order: 10
-updatedAt: "2026-03-13"
+updatedAt: "2026-03-14"
 ---
 
 ## Before You Start / Safety
 
-This guide is for **Mazda MX-5 NB (1998-2005)** only.
+This guide is for **Mazda MX-5 NB (1998-2005)**.
 
-OBD-II data is a starting point, not a final diagnosis by itself.
+OBD-II data points you in the right direction; it does not replace mechanical checks.
 
-> Warning: Avoid replacing parts from one stored code alone; verify wiring, power/ground, and live conditions first. https://www.obd-codes.com/faq/read-freeze-frame-data.php
-
-> High-risk quote: Clearing codes resets monitor information and can set readiness monitors back to incomplete before inspection. https://www.obdautodoctor.com/tutorials/obd-readiness-monitors-explained/
-
-> Manual-reference quote: Mellens indexes NB-era manuals (1999-2001 and 2005), so connector pinouts, code charts, and model-specific diagnostic trees should be confirmed by year/VIN. https://www.mellens.net/mazda/index.html
+- Key OFF before plugging scanner in.
+- Route cable away from pedals.
+- Record all data **before** clearing anything.
 
 ## Required Tools
 
 - OBD-II scanner (basic code reader minimum)
-- Optional scanner/app with freeze-frame and readiness support
-- Notebook or phone notes/screenshots for captured data
+- Preferably a scanner/app showing freeze-frame and readiness
+- Notes/screenshots for captured data
 
-### OBD port location tip (NB)
+## OBD port location on NB
 
-The 16-pin OBD-II diagnostic connector is under the driver-side dash area near the lower knee panel.
+The 16-pin OBD-II connector is under the driver-side lower dash/knee area.
 
-Best practice:
-- ignition OFF when plugging scanner in,
-- route scanner cable so it does not interfere with pedals.
-
-## Required Parts / Fluids
-
-- None for scan-only diagnostics
-
-## Model-specific notes (NB1 vs NB2)
-
-### NB1 (1998-2000)
-- Some scan apps/readers expose limited live data on older ECUs; verify scanner compatibility before deep diagnosis.
-
-### NB2 (2001-2005)
-- Data availability is often better, but monitor behavior still depends on drive-cycle completion and fault status.
-
-> Community quote: r/Miata search repeatedly includes NB posts asking whether 1999/2000 cars are OBD-II and why generic readers show limited data. https://www.reddit.com/r/Miata/search/?q=nb%20obd2%20code&restrict_sr=1
+Tip: connect with ignition OFF, then switch to KOEO (key on engine off) for first read.
 
 ## Step-by-Step Procedure
 
-### 1) Identify symptom and operating context
+### 1) Capture symptom context first
 
-Record when the issue happens:
+Write when fault appears:
 - cold start,
 - hot restart,
 - idle,
-- cruise/load,
-- refuel events.
+- steady cruise,
+- acceleration/load,
+- after refueling.
 
-Codes without context are easy to misread.
+Context is essential for interpreting the same DTC differently.
 
-### 2) Pull all code types (if scanner supports)
+### 2) Pull all code categories
 
-Read and log:
+Read and save:
 - stored codes,
 - pending codes,
-- permanent codes (if present).
+- permanent codes (if supported).
 
-Do **not** clear yet.
+Do not clear yet.
 
-Capture full code metadata where available:
-- code status (current/history),
-- number of warm-up cycles since set,
-- MIL request status.
+### 3) Save freeze-frame for each relevant DTC
 
-### 3) Capture freeze-frame data
+Capture values such as:
+- RPM,
+- coolant temp,
+- vehicle speed,
+- calculated load,
+- short/long fuel trim (if available).
 
-For each relevant DTC, capture freeze-frame values (RPM, load, coolant temp, speed, trims where available).
+Freeze-frame helps identify the exact condition that triggered the fault.
 
-> High-risk quote: Freeze-frame shows the operating snapshot when fault criteria were met, helping avoid random parts swapping. https://www.obd-codes.com/faq/read-freeze-frame-data.php
+### 4) Run basic live-data sanity checks
 
-### 4) Check readiness monitor status
+With warmed engine at idle, compare values for plausibility:
+- coolant should show realistic warm value (not stuck at impossible low/high),
+- upstream O2 activity should not be frozen,
+- trims should not be extreme without an obvious cause.
 
-Read monitor status before inspection or after repairs.
+Practical clue:
+- impossible coolant value + related DTC often points to circuit/open/short issues before sensor replacement.
 
-> High-risk quote: Readiness monitors can be complete, incomplete, disabled, or not available depending on vehicle support and drive-cycle conditions. https://www.obdautodoctor.com/tutorials/obd-readiness-monitors-explained/
+### 5) Check readiness monitors
 
-Practical readiness workflow:
-1. Note monitor state **before** clearing any codes.
-2. After repair and code clear, expect most monitors to return to incomplete.
-3. Run mixed driving (idle/city/steady cruise/decel) and rescan until required monitors complete.
+Before inspection or after repair, record monitor states:
+- complete,
+- incomplete,
+- unsupported.
 
-### 5) Interpret conservatively
+Important: clearing codes resets monitor progress on most ECUs.
 
-- One pending code ≠ guaranteed bad component.
-- Correlate code + freeze-frame + visual checks + known symptom.
-- Prioritize power, ground, connector, and vacuum/air leaks before major parts.
+### 6) Interpret conservatively
 
-### 6) After repairs: clear and re-check
+- A code names a circuit/function, not always a failed part.
+- Verify power/ground/connectors/vacuum leaks before replacing expensive components.
+- Prioritize root-cause faults that can trigger secondary codes.
 
-Only clear codes **after** corrective work.
+### 7) After repair: clear and verify
 
-Then drive enough mixed conditions to allow monitors to run, and rescan.
+Only clear after corrective work.
 
-If a code returns immediately on next key cycle, prioritize:
-- wiring/connector integrity,
-- blown fuse/power feed,
-- sensor circuit fault (open/short) before intermittent-condition diagnosis.
+Then complete mixed driving:
+- idle,
+- city stop/go,
+- steady cruise,
+- decel/coast.
 
-## Torque Specs / Capacities (if applicable)
+Rescan for returning codes and monitor completion.
 
-No torque specs apply for scan-only diagnostics.
+## Quick interpretation cues
+
+- **Pending only, no MIL:** intermittent or early failure criteria.
+- **Stored + immediate return after clear:** hard fault likely (wiring/power/ground/sensor circuit).
+- **Multiple unrelated low-voltage-style codes:** check battery/charging and grounds first.
 
 ## Verification / Post-service checks
 
-- Symptom improved/removed in original failure conditions
-- Pending/stored codes remain clear after drive cycle
-- Readiness monitors appropriate for your inspection/legal requirements
-
-## Uncertainty / Open Questions
-
-- Readiness requirements and allowable “not ready” monitors vary by region/inspection program.
-- Therefore pass/fail inspection assumptions are explicitly deferred to local rules and year/VIN documentation.
-
-## Image Credits
-
-No reusable, clearly licensed NB-specific OBD-II screenshot/diagram assets were retrieved in this run.
+- Original symptom reduced or eliminated
+- No immediate code return after repair
+- Readiness state suitable for local inspection rules
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
-2. OBD Auto Doctor — *OBD2 Readiness Monitors Explained*. Retrieved 2026-03-13. https://www.obdautodoctor.com/tutorials/obd-readiness-monitors-explained/
-3. OBD-Codes.com — *How to Read Freeze Frame Data*. Retrieved 2026-03-13. https://www.obd-codes.com/faq/read-freeze-frame-data.php
+1. MELLENS — *Mazda Miata Factory Service Manuals* (year/VIN diagnostic chart confirmation source). Retrieved 2026-03-14. https://www.mellens.net/mazda/index.html
+2. OBD Auto Doctor — *OBD2 Readiness Monitors Explained* (readiness behavior and reset context). Retrieved 2026-03-14. https://www.obdautodoctor.com/tutorials/obd-readiness-monitors-explained/
+3. OBD-Codes.com — *How to Read Freeze Frame Data* (freeze-frame interpretation context). Retrieved 2026-03-14. https://www.obd-codes.com/faq/read-freeze-frame-data.php
