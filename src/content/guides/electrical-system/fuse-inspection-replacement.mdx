@@ -7,101 +7,116 @@ estimatedTime: "20-45 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "NB fuse troubleshooting guide with box locations, test-light method, and safe same-rating replacement rules."
+summary: "NB fuse troubleshooting with exact test-point method, same-rating replacement rules, and repeat-blow fault isolation before parts guessing."
 tags:
   - "electrical"
   - "fuses"
   - "diagnostics"
-relatedGuides: []
+relatedGuides:
+  - "electrical-system/relay-inspection-testing"
+  - "electrical-system/obd2-scan-basic-diagnostics"
 order: 3
-updatedAt: "2026-03-01"
+updatedAt: "2026-03-14"
 ---
 
 ## Before You Start / Safety
 
+This guide is for **Mazda MX-5 NB (1998-2005)**.
+
+Fuse diagnosis is simple when you test methodically. Replacing random fuses without identifying failure condition often hides wiring/component faults.
+
 - Ignition OFF before pulling/installing fuses.
-- Never bridge contacts with metal tools.
-- Replace only with the **same amperage and fuse type**.
+- Replace only with same **amp rating and same fuse format**.
+- Never bridge fuse contacts with wire/foil.
 
 ## Required Tools
 
-- Fuse puller (or insulated needle-nose pliers)
+- Fuse puller (or insulated pliers)
 - Flashlight
-- Multimeter or test light (recommended)
-- Spare blade fuses: 7.5 A, 10 A, 15 A, 20 A, 30 A
+- Test light or multimeter
+- Small assortment of correct blade fuses (7.5/10/15/20/30 A)
 
-## Where the fuse boxes are on NB
+## Where fuse boxes are on NB
 
 Typical NB layout:
-- **Engine bay fuse/relay box:** left side of bay near battery area/firewall side
-- **Cabin fuse panel:** driver footwell lower dash area (behind trim cover)
+- **Engine bay fuse/relay box** near battery-side bay area
+- **Cabin fuse panel** at lower driver-side dash/footwell area
 
-Always confirm with the diagram inside your own fuse-box cover and year-specific manual.
-
-## Fast blade-fuse color check (backup only)
-
-Read the printed amp number first; color is only a cross-check:
-- Brown 7.5 A
-- Red 10 A
-- Blue 15 A
-- Yellow 20 A
-- Green 30 A
+Use your fuse-box lid legend first, then year/VIN documentation for exact assignment.
 
 ## Step-by-Step Procedure
 
-### 1) Confirm the exact failed function
+### 1) Define the failed function precisely
 
-Write down precisely what fails (e.g., left low beam, horn, cabin blower speed 1-2-3, etc.).
-This reduces random fuse pulling.
+Write exact symptom before touching fuses:
+- “left low beam out,”
+- “blower works on 4 only,”
+- “horn inoperative,” etc.
 
-### 2) Find the circuit fuse from cover legend/manual
+Precise symptom = faster circuit mapping.
 
-Use your cover chart and manual page for your market/year. Some slot assignments vary by year/options.
+### 2) Identify likely fuse from legend
 
-### 3) Pull and inspect suspect fuse
+Use cover legend/manual circuit list to find correct cavity.
 
-Remove fuse and inspect the element:
-- intact bridge = likely okay,
-- broken/blackened bridge = blown.
+NB variants can differ by market/options; confirm cavity name, not just approximate position.
 
-### 4) Verify with a meter/test light (best practice)
+### 3) Visual check (quick screen)
 
-With circuit energized as needed:
-- power on both test points = fuse likely good,
-- power on one side only = blown fuse.
+Pull suspect fuse and inspect metal bridge:
+- intact bridge: not immediately failed,
+- broken/blackened bridge: blown.
 
-### 5) Install exact replacement
+Visual checks miss hairline failures—always confirm electrically when possible.
 
-Install same blade size and same amperage.
+### 4) In-circuit test-point method (best practice)
 
-**Do not up-rate** (e.g., replacing 15 A with 20 A). Over-fusing can overheat wiring.
+Most blade fuses have exposed test pads on top.
 
-### 6) Re-test and decide next action
+With circuit energized as appropriate:
+- voltage on **both** pads -> fuse likely good,
+- voltage on **one pad only** -> fuse blown,
+- voltage on **neither pad** -> upstream supply/control issue.
 
-If the new fuse blows again quickly:
-- stop replacing repeatedly,
-- inspect downstream load/wiring for short,
-- unplug suspected component and retest.
+This avoids pulling multiple fuses unnecessarily.
 
-## Quick repeat-failure triage
+### 5) Replace with exact equivalent
 
-If fuse blows instantly on key ON:
-- suspect short to ground on supply side/component.
+Install replacement with:
+- same amp rating,
+- same physical blade type.
 
-If fuse blows only when activating one function:
-- suspect that actuator/device (motor, lamp holder, relay output).
+Color is backup only; printed amp number is final authority.
 
-If fuse survives static but blows over bumps:
-- suspect harness chafe/intermittent contact.
+### 6) Re-test and observe failure timing
+
+- If function returns and fuse survives repeated cycles: likely resolved.
+- If fuse blows again, note *when* it blows (key-on, function activation, bumps, heat).
+
+Failure timing is a strong diagnostic clue.
+
+## Quick repeat-blow fault isolation
+
+- **Blows immediately at key ON:** likely hard short on feed/circuit.
+- **Blows only when specific switch used:** likely failed load/device on that branch.
+- **Blows intermittently over bumps:** likely harness chafe/loose terminal.
+
+If repeat-blowing, stop replacing fuses and inspect wiring/load path.
+
+## Common mistakes to avoid
+
+- Up-rating fuse (e.g., 15 A -> 20 A) to "make it stop blowing".
+- Mixing fuse sizes/types that fit poorly.
+- Assuming relay/component is bad before proving fuse feed/output state.
 
 ## Verification / Post-service checks
 
-- Failed function restored
-- Fuse remains intact after 2-3 operation cycles
-- No burning smell, heat discoloration, or repeat trip
+- Function operates normally across 2-3 cycles
+- Fuse remains intact after short drive/vibration
+- No burning smell or heat-discolored fuse/socket
 
 ## Sources
 
-1. MELLENS — Mazda Miata factory service manual archive (NB year-specific fuse/circuit documentation index). Retrieved 2026-03-01. https://www.mellens.net/mazda/
-2. 2CarPros — Fuse testing method and same-rating replacement safety guidance. Retrieved 2026-03-01. https://www.2carpros.com/articles/how-to-check-a-car-fuse
-3. Wikipedia — Automotive blade-fuse standards and common color coding reference. Retrieved 2026-03-01. https://en.wikipedia.org/wiki/Automotive_fuse
+1. MELLENS — *Mazda Miata factory service manual archive* (NB fuse/circuit references by year). Retrieved 2026-03-14. https://www.mellens.net/mazda/
+2. 2CarPros — *How to Check a Car Fuse* (test-light method and replacement safety context). Retrieved 2026-03-14. https://www.2carpros.com/articles/how-to-check-a-car-fuse
+3. Wikipedia — *Automotive fuse* (blade fuse families and color-code background). Retrieved 2026-03-14. https://en.wikipedia.org/wiki/Automotive_fuse
