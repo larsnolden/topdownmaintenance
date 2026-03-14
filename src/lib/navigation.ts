@@ -668,6 +668,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Wheel lug nut torque check',
         slug: 'wheel-lug-nut-torque-check',
         guideSlug: 'tires-wheels/wheel-lug-nut-torque-check'
+      },
+      {
+        label: 'Wheel stud replacement',
+        slug: 'wheel-stud-replacement',
+        guideSlug: 'tires-wheels/wheel-stud-replacement'
       }
     ]
   },
