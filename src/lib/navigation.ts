@@ -755,6 +755,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Wheel arch liner removal & rust inspection',
         slug: 'wheel-arch-liner-rust-inspection',
         guideSlug: 'rust-prevention/wheel-arch-liner-rust-inspection'
+      },
+      {
+        label: 'Battery tray rust inspection & treatment',
+        slug: 'battery-tray-rust-inspection-treatment',
+        guideSlug: 'rust-prevention/battery-tray-rust-inspection-treatment'
       }
     ]
   },
