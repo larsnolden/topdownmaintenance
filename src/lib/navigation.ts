@@ -765,6 +765,11 @@ export const menuSections: MenuSectionDefinition[] = [
         label: 'Paint chip touch-up & small rust spot treatment',
         slug: 'paint-chip-touchup-rust-spot-treatment',
         guideSlug: 'rust-prevention/paint-chip-touchup-rust-spot-treatment'
+      },
+      {
+        label: 'Winter salt wash routine (underbody/arches)',
+        slug: 'winter-salt-wash-routine',
+        guideSlug: 'rust-prevention/winter-salt-wash-routine'
       }
     ]
   },
