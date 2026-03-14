@@ -7,7 +7,7 @@ estimatedTime: "30-90 minutes"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "NB wiper/washer service workflow covering pump operation checks, hose/nozzle inspection, and basic nozzle aiming without over-diagnosing motor faults."
+summary: "NB wiper/washer service guide with concrete reservoir/pump/nozzle checks, seasonal fluid selection, and spray-pattern setup for real-world visibility."
 tags:
   - "electrical"
   - "wipers"
@@ -16,131 +16,113 @@ tags:
 relatedGuides:
   - "electrical-system/relay-inspection-testing"
   - "electrical-system/fuse-inspection-replacement"
-  - "electrical-system/exterior-bulb-replacement"
 order: 12
-updatedAt: "2026-03-13"
+updatedAt: "2026-03-14"
 ---
 
 ## Before You Start / Safety
 
-This guide is for **Mazda MX-5 NB (1998-2005)** only.
+This guide is for **Mazda MX-5 NB (1998-2005)**.
 
-Wiper/washer faults are safety-relevant because poor visibility can make driving hazardous in rain/spray conditions.
+Washer faults are safety-critical because poor spray plus weak wiping can leave the screen effectively blind in rain/road film.
 
-> Warning: Keep hands clear of wiper linkage and blades during powered tests. https://www.2carpros.com/articles/windshield-washer-not-working
-
-> High-risk quote: A no-spray symptom can come from low fluid, clogged nozzles/hoses, blown fuse, or failed pump—verify each path before replacing parts. https://www.2carpros.com/articles/windshield-washer-not-working
-
-> Manual-reference quote: Mellens indexes NB-era factory manuals (1999-2001 and 2005), so exact fuse/relay locations, harness routing, and washer circuit details must be confirmed by year/VIN. https://www.mellens.net/mazda/index.html
+- Keep hands clear of wiper arms/linkage during powered tests.
+- Do not probe electrical connectors with oversized tools.
+- Use proper washer fluid, not long-term plain water.
 
 ## Required Tools
 
-- Trim-safe pry tool/small screwdriver
+- Small trim tool/screwdriver
 - Multimeter or test light
-- Needle/probe for nozzle clearing (gently used)
-- Small hose clamp or pinch tool (optional)
+- Thin nozzle-cleaning pin (used gently)
+- Small pliers for hose clips
 
 ## Required Parts / Fluids
 
-- Windshield washer fluid suitable for climate
-- Replacement pump/nozzle/hose segments as needed
-- Replacement grommet/seal if pump interface leaks
+- Washer fluid appropriate for your climate
+- Replacement hose, nozzle, or pump as needed
+- New pump grommet/seal if seepage is present at tank interface
 
-### Practical fluid guidance
+### Practical washer-fluid guidance
 
-- Do not use plain water long-term (freezing, algae, poor cleaning).
-- Use a seasonal washer mix rated for expected ambient temperature.
-- Fill reservoir to near MAX and test spray; keep at least ~1/4 tank in winter to reduce freeze risk.
+Choose fluid by freeze protection rating on label:
+- summer-only mixes for warm weather,
+- winter mixes rated below your local minimum temperature.
 
-## Model-specific notes (NB1 vs NB2)
+Example products commonly used by owners (market-dependent):
+- Sonax/Carlube/Comma screenwash concentrates,
+- Prestone or Rain-X premix variants with freeze protection.
 
-### NB1 (1998-2000)
-- Washer hose routing and nozzle style can differ by market and prior repairs.
+Mix concentrates exactly to label ratio; over-dilution can freeze lines/nozzles.
 
-### NB2 (2001-2005)
-- Same caution: aftermarket hood/nozzle hardware may alter spray pattern and service access.
+## Where components are on NB
 
-Verify actual hose/nozzle hardware on your car before ordering parts; many NB cars have mixed aftermarket components.
+On NB cars, washer components are typically arranged as:
+- reservoir at front corner of engine bay,
+- electric pump in lower portion of reservoir,
+- hose running from pump outlet toward hood nozzles,
+- two spray nozzles mounted on hood.
+
+Before diagnosis, trace entire hose route once so you know where leaks can appear.
 
 ## Step-by-Step Procedure
 
-### 0) Identify washer reservoir, pump, and nozzle path on NB
+### 1) Classify symptom first
 
-On NB models, the washer reservoir/pump assembly is at the front corner of the engine-bay area, with hoses routed to hood nozzles.
-
-Before testing:
-- identify reservoir fill neck and cap,
-- identify pump electrical connector and outlet hose,
-- trace hose route toward hood nozzles for obvious disconnections.
-
-### 1) Confirm symptom type
-
-Differentiate:
+Identify one of these patterns:
 - wipers move but no spray,
-- spray weak/uneven,
-- pump runs but no fluid at nozzles,
-- no pump sound at all.
+- weak spray,
+- one nozzle sprays and the other does not,
+- pump silent,
+- pump audible with no output.
 
-### 2) Basic supply checks first
+### 2) Basic checks (fast wins)
 
-- Verify washer reservoir fluid level and condition.
-- Check for frozen fluid (seasonal).
-- Confirm fuse state before touching pump wiring.
+- Verify reservoir has fluid.
+- Confirm fluid is not frozen/gelled.
+- Check washer fuse before deeper electrical work.
 
-### 3) Pump operation check
+### 3) Pump command test
 
-- Command washer and listen for pump.
-- If silent, check voltage/ground at pump connector during switch command.
-- If powered but silent, pump is likely failed.
+- Activate washer switch and listen at reservoir area.
+- If silent: check voltage/ground at pump connector during command.
+- If voltage present but pump silent: pump likely failed.
 
-### 4) Hose and leak-path inspection
+### 4) Hose leak/block check
 
-- Inspect hoses from reservoir to nozzles for splits/disconnects.
-- Look for fluid leak under hood/tray area during activation.
-- Re-seat or replace brittle hose sections.
+- Inspect hose joints from pump to hood for splits or disconnects.
+- Command washer while observing for under-hood spray/leaks.
+- Repair brittle hose sections and ensure snug push-fit at joints.
 
-### 5) Nozzle inspection and aiming
+### 5) Nozzle clearing and aiming
 
-- Clear nozzle deposits gently.
-- Aim stream to hit windshield in useful sweep area (not over-roof or below blade path).
-- Re-test with engine running and vehicle level.
+- Clear nozzle gently (do not enlarge orifice).
+- Aim each stream so it lands in lower-to-middle wipe path at standstill.
+- Road airflow pushes spray upward at speed, so avoid aiming too high at rest.
 
-Practical aiming target:
-- At standstill, set streams to land roughly in the lower-to-middle wipe zone so airflow at speed does not push spray over the roof.
+### 6) Paired wipe-quality validation
 
-### 6) Wiper functional check (paired system validation)
+After spray is restored:
+- verify blade condition and contact pattern,
+- ensure fluid is removed cleanly without chatter/streaking,
+- replace blades if wash works but wipe remains poor.
 
-- Verify blade condition and wipe quality.
-- Confirm washers and wipers operate together as expected.
-- If wash works but wipe is poor, service blades/arms/linkage separately.
+## Practical fault split (quick reference)
 
-Quick diagnosis split:
-- pump audible + no spray => likely hose disconnect/blockage/leak,
-- no pump sound + no pump voltage => likely fuse/switch/control-side fault,
-- pump powered + silent => likely failed pump motor.
-
-## Torque Specs / Capacities (if applicable)
-
-No major torque specs apply for basic washer/nozzle service.
+- **Pump audible + no spray:** blockage, disconnected hose, or major leak.
+- **No pump sound + no voltage at pump:** fuse/switch/relay/control path fault.
+- **Pump has voltage + silent:** pump motor fault.
+- **One nozzle weak only:** localized nozzle blockage or kinked branch hose.
 
 ## Verification / Post-service checks
 
-- Pump runs reliably on command
-- Spray pattern reaches correct windshield area
-- No fluid leaks along hose path or pump seal
-- Wipers clear fluid effectively without chatter/streaking
-
-## Uncertainty / Open Questions
-
-- NB-specific nozzle aiming dimensions and exact relay/fuse maps vary by market/year.
-- Therefore exact electrical map details are explicitly deferred to year/VIN FSM documentation.
-
-## Image Credits
-
-No reusable, clearly licensed NB-specific washer hose/nozzle routing diagrams were retrieved in this run.
+- Strong, consistent spray from both nozzles
+- No leaks at pump grommet or hose joints
+- Wipers clear sprayed fluid in 1-2 passes
+- Washer works repeatedly without pump fade
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
-2. 2CarPros — *Windshield Washer Not Working? Here’s How to Fix It*. Retrieved 2026-03-13. https://www.2carpros.com/articles/windshield-washer-not-working
-3. AutoZone — *Advice & How-To's* (general visibility/electrical service context). Retrieved 2026-03-13. https://www.autozone.com/diy
+1. MELLENS — *Mazda Miata Factory Service Manuals* (year/VIN washer-circuit confirmation source). Retrieved 2026-03-14. https://www.mellens.net/mazda/index.html
+2. 2CarPros — *Windshield Washer Not Working? Here’s How to Fix It* (diagnostic sequence context). Retrieved 2026-03-14. https://www.2carpros.com/articles/windshield-washer-not-working
+3. AutoZone — *Advice & How-To's* (general visibility and service context). Retrieved 2026-03-14. https://www.autozone.com/diy
