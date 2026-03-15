@@ -7,95 +7,107 @@ estimatedTime: "15-30 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "NB tire-pressure procedure with cold-pressure method, practical correction workflow, and leak-triage checks."
+summary: "NB tire-pressure workflow with cold-measure method, door-label prioritization, practical adjustment steps, and leak-triage thresholds."
 tags:
   - "tires"
   - "pressure"
   - "safety"
-relatedGuides: []
+relatedGuides:
+  - "tires-wheels/wheel-lug-nut-torque-check"
 order: 1
-updatedAt: "2026-03-12"
+updatedAt: "2026-03-15"
 ---
 
 ## Before You Start / Safety
 
-- Tire pressures must be set from **cold** values (car parked several hours or driven very short distance only).
-- Do not use sidewall max-pressure text as your operating target.
-- Refit valve caps after adjustment to keep dirt/moisture out of valve cores.
+- Always set pressure from **cold** values.
+- Do not use sidewall max pressure as daily operating target.
+- Reinstall valve caps after service.
 
 ## Required Tools
 
 - Reliable pressure gauge (digital preferred)
 - Air source (compressor/pump)
-- Valve-cap tool/spare caps (optional)
-- Notebook/phone to record FL/FR/RL/RR readings
+- Notepad/phone for FL/FR/RL/RR logging
 
-Tip: keep one known-good gauge in the glovebox and use it consistently. Mixed gauges can differ by several psi and create false troubleshooting signals.
+## Label-first rule (critical)
 
-## Where to find the correct target on NB
+Use this order of authority:
 
-Use this order of priority:
-1. Driver-door-jamb pressure label (primary)
-2. Owner manual pressure table for your wheel/tire size
-3. Tire-shop setup sheet only if it matches (1) or (2)
+1. Driver-door-jamb tire-pressure label (primary)
+2. Owner manual for your exact tire size/market
+3. Workshop setup sheet only if it matches (1) or (2)
 
-NB cars often run multiple wheel sizes depending on market/options, so one internet number is not sufficient.
+NBs often run mixed wheel/tire sizes over their lifetime, so one universal internet pressure value is not reliable.
+
+## Practical NB pressure context
+
+Mazda owner-manual family references commonly show around **200 kPa / 29 psi front and rear** for many stock-size road setups.
+
+Treat this as context only—your door label wins if different.
 
 ## Step-by-Step Procedure
 
 ### 1) Measure all four tires cold
 
-Remove each valve cap and press gauge squarely on valve stem for a clean seal.
-Record each corner before adding/releasing air.
+- Remove valve cap.
+- Press gauge squarely on valve stem until hiss stops.
+- Record each corner before adjusting.
 
-If you hear a continuous hiss while measuring, reseat the gauge and measure again—bad gauge angle can under-read pressure.
+If gauge angle is poor, readings can be low and inconsistent.
 
-### 2) Compare against your label target
-
-Adjust each tire to its specified front/rear cold value.
+### 2) Adjust to target pressures
 
 - Add air in short bursts.
 - Recheck after each burst.
 - If overfilled, bleed briefly and remeasure.
-- Keep left/right pressures equal on the same axle unless the factory label specifies otherwise.
+- Keep left/right equal on same axle unless label specifies otherwise.
 
-### 3) Include spare (if fitted)
+### 3) Check spare too
 
-If your NB has a temporary spare, check and maintain it separately so it is usable when needed.
+A flat spare is a failed roadside plan.
 
-### 4) Hot-tire fallback rule (if you cannot wait)
+- Temporary spare: follow spare sidewall target (often high pressure).
+- Full-size spare: use same cold target as road tires.
 
-If tires are warm from driving, set a temporary value and then **recheck cold later**.
-Industry guidance commonly uses about **+4 psi** as a temporary warm adjustment reference before final cold correction.
+### 4) If tires are warm (fallback only)
 
-Example: if door label says 29 psi cold and tires are hot, set around 33 psi temporarily, then reset to 29 psi at next true cold check.
+If you cannot wait for true-cold setting, apply a temporary correction and reset later when cold.
 
-### 5) Leak triage if one corner drops repeatedly
+Common practical rule: warm reading can be around **+4 psi** above cold target.
 
-If one tire repeatedly loses pressure faster than others, inspect:
-- puncture in tread,
-- valve core leakage,
-- cracked valve stem,
-- bead/rim corrosion leak.
+Example:
+- target 29 psi cold,
+- warm temporary set ~33 psi,
+- then reset to true cold target later.
 
-Do not just top up repeatedly without finding the leak.
+### 5) Leak triage if one corner keeps dropping
 
-## Practical pressure-management notes
+If one tire loses pressure faster than others, inspect:
+- tread puncture,
+- valve core/stem leak,
+- bead/rim corrosion leak,
+- wheel crack damage.
 
-- Seasonal temperature swings change measured pressure significantly; check monthly and before long trips.
-- Rule of thumb: tire pressure changes roughly 1 psi per ~10°F (about 6°C) ambient change.
-- Aim for consistency side-to-side on each axle unless your label specifies different values.
-- If steering pulls after pressure correction, inspect alignment/tires rather than adding random PSI offsets.
+Repeated top-ups without diagnosis are not a fix.
+
+## Maintenance interval
+
+- Check at least monthly.
+- Check before long trips.
+- Recheck after large ambient temperature swings.
+
+Rule of thumb: about **1 psi change per ~10°F (6°C)** ambient change.
 
 ## Verification / Post-service checks
 
-- All four tires match target values when cold
-- Valve caps reinstalled
-- No TPMS-style warning behavior (if retrofit/aftermarket system present)
-- Straight tracking and even steering feel on short road check
+- All 4 corners at target when cold
+- Valve caps installed
+- Car tracks straight with stable steering feel
+- No recurring low corner at next weekly check
 
 ## Sources
 
-1. Bridgestone — *How to Check Tire Pressure with a Tire Pressure Gauge* (cold-tire method and hot-tire correction context). Retrieved 2026-03-12. https://tires.bridgestone.com/en-us/learn/tire-maintenance/how-to-check-tire-pressure
-2. Michelin — *Car tire pressure guide* (pressure safety rationale and maintenance intervals). Retrieved 2026-03-12. https://www.michelinman.com/auto/auto-tips-and-advice/tire-pressure
-3. MELLENS — Mazda Miata factory service manual archive (NB year-specific spec source index). Retrieved 2026-03-12. https://www.mellens.net/mazda/
+1. Mazda Owners Manual (MX-5 family tire page) — pressure table context and tire-spec format (includes 200 kPa / 29 psi examples for standard fitments). Retrieved 2026-03-15. https://owners-manual.mazda.com/gen/en/mx-5/mx-5_8gg1ee17j/contents/10020109.html
+2. Bridgestone — *How to Check Tire Pressure with a Tire Pressure Gauge* (cold-tire method and maintenance rationale). Retrieved 2026-03-15. https://tires.bridgestone.com/en-us/learn/tire-maintenance/how-to-check-tire-pressure
+3. MELLENS — *Mazda Miata Factory Service Manual archive* (year/VIN NB reference source). Retrieved 2026-03-15. https://www.mellens.net/mazda/

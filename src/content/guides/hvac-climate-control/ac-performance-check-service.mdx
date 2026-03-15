@@ -7,116 +7,133 @@ estimatedTime: "30-90 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "Diagnose weak or non-cooling A/C on Mazda MX-5 NB with DIY-safe checks first, then decide when certified refrigerant service is required."
+summary: "NB A/C diagnostic workflow with concrete location checks, vent-temperature method, compressor/fan verification, and clear DIY-vs-certified-service decision points."
 tags:
   - "hvac"
   - "air-conditioning"
   - "diagnostics"
-relatedGuides: []
+relatedGuides:
+  - "cooling-system/cooling-fan-operation-check"
 order: 1
-updatedAt: "2026-03-14"
+updatedAt: "2026-03-15"
 ---
 
 ## Before You Start / Safety
 
-This is a **decision guide** for safe diagnostics. It is not a full refrigerant recovery/recharge procedure.
+This is a **diagnostic and decision guide**, not a full recovery/recharge procedure.
 
-> Warning: "Section 608 of the Clean Air Act prohibits the intentional release (venting) of any refrigerant" https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing
+- Venting refrigerant is prohibited.
+- Wear eye/hand protection.
+- Keep hands clear of fans/belts during live checks.
 
-> Warning: "Always wear safety glasses and gloves when charging the A/C system." https://www.autozone.com/diy/climate-control/how-to-recharge-car-ac
+If you do not know refrigerant type or system history, stop at diagnosis and use a certified A/C shop.
 
 ## Required Tools
 
+- Digital thermometer (for center vent readings)
 - Flashlight
-- Thermometer (vent temperature check)
 - Basic hand tools
-- Optional: low-side gauge/recharge kit for basic pressure indication
-- Optional: manifold gauge set (better diagnosis than single gauge)
+- Optional: manifold gauge set (preferred)
+- Optional: UV light/glasses for leak-trace checks
 
 ## Required Parts / Fluids
 
-- Correct refrigerant type for your NB setup (verify label/manual)
-- UV dye / leak-test consumables only if you have the right procedure and tools
+- None for diagnosis-only workflow
+- If serviced: refrigerant/oil type must match under-hood label and service equipment
 
-## Model-specific notes (NB1 vs NB2)
+## Where to look on an NB (quick orientation)
 
-- NB1 and NB2 share similar A/C diagnostic logic (compressor request, condenser airflow, refrigerant condition, leakage state).
-- Because many NB cars now have mixed parts/retrofits, verify what refrigerant fittings and components are actually installed.
+With hood open:
 
-> Manual-reference quote: "1999-2001 Mazda Miata Service Repair Manual" and "2005 Mazda Miata Service Repair Manual" are listed in the Miata factory manual index. https://www.mellens.net/mazda/
+1. **A/C compressor**: front/lower area of engine, belt-driven.
+2. **Condenser**: in front of the radiator.
+3. **Receiver/drier and lines**: front area near condenser plumbing.
+4. **Service ports**:
+   - low side is on the suction/return side (larger line),
+   - high side is on the discharge side (smaller line).
+
+Do not force couplers—R134a quick-connect fittings are intentionally different between high and low side.
 
 ## Step-by-Step Procedure
 
-### 1) Baseline test: is the system cooling at all?
+### 1) Standardized cabin test setup (do this exactly)
 
-Engine warm, A/C ON, fan high, recirc on. Record vent temperature and observe whether cooling is stable or cycles warm/cold.
+To get repeatable results:
 
-### 2) Check compressor behavior and fan operation
+- engine fully warmed,
+- blower high,
+- temperature set full cold,
+- recirculation ON,
+- windows open (prevents cabin cycling from skewing readings),
+- hold 1,500 rpm for 60-90 seconds, then idle check.
 
-A/C performance depends on compressor engagement and condenser airflow.
+Measure center-vent outlet temperature and note ambient temperature.
 
-> High-risk quote: "Anytime the air conditioner is on the radiator/condenser fan must run" https://www.2carpros.com/articles/car-air-conditioner-not-working-or-is-weak
+### 2) Confirm basic mechanical/electrical operation
 
-### 3) Check likely low-charge symptoms
+Check these first because they are common non-refrigerant faults:
 
-Short-cycling compressor clutch and weak cooling often indicate low refrigerant due to leakage.
+- compressor clutch engages when A/C requested,
+- condenser/radiator fan operation with A/C command,
+- no belt slip/squeal,
+- no obvious blown A/C fuse/relay issue.
 
-> High-risk quote: "Low refrigerant levels ... are the most common problems associated with a poorly performing AC system." https://www.familyhandyman.com/article/car-ac-not-blowing-cold-air/
+No fan or no clutch engagement means recharge is not the first step.
 
-### 4) Verify refrigerant type and service-port style before touching recharge cans
+### 3) Visual leak and contamination check
 
-Do not mix refrigerants or assume the system type from model year alone.
+Inspect condenser face, hose crimps, compressor body, and service-port caps for:
 
-> Community quote: "you can confirm with the type of charging connector ... r12 has external threads ... r134 is more like an air hose quick connector" https://www.reddit.com/r/Miata/comments/1jqqg5v/.json
+- oily wet film,
+- dirt-stuck oil traces,
+- stone-impact condenser damage.
 
-### 5) If charge is low, decide DIY top-off vs pro service
+Oily residue at a component is a strong leak clue.
 
-DIY top-off is only a temporary step if a leak is present. If cooling drops again, schedule proper leak detection and repair.
+### 4) Pressure diagnosis approach (if you have gauges)
 
-> Community confirmation quote: "the system had zero pressure when I got the car" https://www.reddit.com/r/Miata/comments/1qeq18z/.json
+Use manifold gauges, not single low-side “top-up” logic.
 
-### 6) Escalate immediately when these apply
+- Read static equalized pressure with engine off.
+- Read dynamic high/low relationship with A/C running.
+- Use pressure relationship + vent temperature + compressor behavior together.
 
-- system repeatedly loses cooling after recharge,
-- compressor noise/rattle or belt slip,
-- obvious oil/refrigerant stains on condenser/lines,
-- unknown retrofit state or uncertain refrigerant type.
+Single-gauge charging can hide dangerous overcharge/high-side issues.
 
-### 7) After any service, verify performance and stability
+### 5) DIY vs pro service decision
 
-Re-check vent temp after a road test and at idle with fans running.
+DIY-safe scope:
+- airflow/fan/relay/fuse checks,
+- vent-temp baseline,
+- visual leak screening.
 
-## Torque Specs / Capacities
+Professional service recommended when:
+- unknown refrigerant history,
+- repeated loss of cooling,
+- compressor noise,
+- very abnormal high/low pressure relationship,
+- suspected major leak requiring recovery, vacuum, and weighted recharge.
 
-- This guide intentionally does **not** publish universal NB A/C charge quantity or pressure targets because system state and hardware history vary widely.
-- Use year/VIN FSM values and certified service procedures for full recharge/recovery.
+### 6) Post-service verification checklist
 
-## Verification / Post-service checks
+After any repair or recharge:
 
-- Vent temperature drops consistently
-- Compressor engagement is stable (no rapid short-cycling)
-- Condenser fans operate with A/C request
-- Cooling remains acceptable after several drive cycles
+- repeat the standardized vent test,
+- verify stable cooling at idle and 1,500 rpm,
+- verify no rapid clutch short-cycling,
+- verify condenser fan behavior remains correct,
+- recheck for fresh oily traces after several days.
 
-## Uncertainty / Open Questions
+## Practical notes that prevent expensive mistakes
 
-- Many NB cars now have mixed-market or retrofit A/C parts; exact recharge specs and compatible components can differ from factory baseline.
-- Source access was uneven for some external pages this run; recommendations prioritize retrievable EPA safety/regulatory guidance plus conservative diagnostic practice.
-
-## Images
-
-No reusable, clearly licensed NB-specific A/C diagnostic images were added in this run.
-
-## Image Credits
-
-- No images used.
+- Do not add refrigerant “by feel” from a can.
+- Do not assume low charge is the only cause of poor cooling.
+- Do not mix refrigerant types or unknown oils.
+- If system was open to atmosphere, evacuation and proper charge-by-weight are mandatory.
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-14. https://www.mellens.net/mazda/
-2. U.S. Environmental Protection Agency — *Regulatory Requirements for MVAC System Servicing*. Retrieved 2026-03-14. https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing
-3. AutoZone — *How to Recharge Your Car's AC*. Retrieved 2026-03-14. https://www.autozone.com/diy/climate-control/how-to-recharge-car-ac
-4. 2CarPros — *Car Air Conditioner Not Working or Is Weak*. Retrieved 2026-03-14. https://www.2carpros.com/articles/car-air-conditioner-not-working-or-is-weak
-5. Family Handyman — *Why Isn't My Car AC Blowing Cold Air?*. Retrieved 2026-03-14. https://www.familyhandyman.com/article/car-ac-not-blowing-cold-air/
-6. Reddit r/Miata — *1999 NB AC Problem* (JSON endpoint). Retrieved 2026-03-14. https://www.reddit.com/r/Miata/comments/1jqqg5v/.json
-7. Reddit r/Miata — *NB Miata AC Help* (JSON endpoint). Retrieved 2026-03-14. https://www.reddit.com/r/Miata/comments/1qeq18z/.json
+1. U.S. EPA — *Regulatory Requirements for MVAC System Servicing* (venting prohibition and compliance framework). Retrieved 2026-03-15. https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing
+2. AGCO Automotive — *What to do when an air conditioner stops cooling* (diagnostic workflow, high/low-side relationship logic, and warning against low-side-only charging). Retrieved 2026-03-15. https://www.agcoauto.com/content/news/p2_articleid/257
+3. AutoZone — *How to Recharge Your Car's AC* (DIY safety baseline, PPE emphasis). Retrieved 2026-03-15. https://www.autozone.com/diy/climate-control/how-to-recharge-car-ac
+4. MELLENS — *Mazda Miata Factory Service Manual archive* (year/VIN-specific NB A/C component and service-spec confirmation source). Retrieved 2026-03-15. https://www.mellens.net/mazda/
