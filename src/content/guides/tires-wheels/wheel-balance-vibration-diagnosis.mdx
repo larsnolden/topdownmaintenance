@@ -7,7 +7,7 @@ estimatedTime: "45-120 minutes"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "NB wheel-balance and speed-vibration diagnostic workflow to separate tire/wheel imbalance from bent wheels, bearing faults, and driveline issues."
+summary: "NB speed-vibration diagnostic workflow to separate wheel/tire imbalance from alignment, wheel-bearing, brake, and driveline causes before replacing parts."
 tags:
   - "tires"
   - "wheel-balance"
@@ -18,114 +18,100 @@ relatedGuides:
   - "suspension/wheel-bearing-inspection-replacement"
   - "steering-alignment/wheel-alignment-check"
 order: 4
-updatedAt: "2026-03-13"
+updatedAt: "2026-03-15"
 ---
 
 ## Before You Start / Safety
 
-This guide is for **Mazda MX-5 NB (1998-2005)** only.
+This guide is for **Mazda MX-5 NB (1998-2005)**.
 
-Speed-dependent vibration is often blamed on wheel balance, but root causes can include tire defects, bent wheels, wheel-bearing play, alignment issues, or driveline faults.
+Vibration diagnosis fails when multiple parts are changed at once. Use a repeatable test route and one-change-at-a-time logic.
 
-> Warning: Perform test drives only on safe roads and legal speeds; do not exceed speed limits to “chase” vibration. https://www.tirerack.com/upgrade-garage/how-to-diagnose-a-vibration-issue
-
-> High-risk quote: Vibration diagnosis should isolate whether the disturbance comes from tire/wheel assembly, vehicle speed range, and steering input response before replacing parts. https://www.tirerack.com/upgrade-garage/how-to-diagnose-a-vibration-issue
-
-> Manual-reference quote: Mellens indexes NB-era manuals (1999-2001 and 2005), so wheel/tire specs, runout checks, and chassis torque data should be confirmed by exact year/VIN. https://www.mellens.net/mazda/index.html
+- Use safe roads and legal speeds.
+- Confirm wheel nuts are torqued correctly before testing.
+- Stop if vibration becomes severe or steering feels unsafe.
 
 ## Required Tools
 
 - Tire pressure gauge
 - Tread depth gauge
 - Flashlight
-- Jack + stands (for play/runout checks)
-- Access to a modern wheel balancer (road-force capability preferred)
+- Jack + stands
+- Dial indicator (optional but useful for runout)
+- Access to a quality dynamic balancer (road-force capable preferred)
 
-## Required Parts / Fluids
+## Step 1 — Characterize the symptom precisely
 
-- None for diagnosis-only work
-- Wheel weights, tire service, or wheel repair/replacement as indicated by test results
+Record this before touching anything:
 
-## Model-specific notes (NB1 vs NB2)
+1. Speed where vibration starts/peaks (example: 85-105 km/h).
+2. Where it is felt most:
+   - steering wheel,
+   - seat/floor,
+   - whole body.
+3. Whether braking changes it.
+4. Whether throttle-on/coast changes it.
 
-### NB1 (1998-2000)
-- Many cars run non-stock wheel/tire sizes; baseline assumptions from OEM setup may not apply.
+Quick interpretation:
+- **Steering-wheel dominant**: often front wheel/tire or front suspension influence.
+- **Seat/floor dominant**: often rear wheel/tire or driveline influence.
+- **Only while braking**: prioritize brake runout/deposit checks before balance work.
 
-### NB2 (2001-2005)
-- Same caution: mixed wheel offsets, lowered ride height, and bushing wear can amplify otherwise minor imbalance.
+## Step 2 — Baseline tire/wheel checks first
 
-High-speed vibration rarely has a single universal fix; diagnose in sequence to avoid replacing good parts.
+- Set all four cold pressures to door-label targets.
+- Inspect for flat spots, bulges, belt-shift signs, severe cupping.
+- Verify wheel-nut torque and correct seat type.
+- Inspect for missing/loose wheel weights.
 
-## Step-by-Step Procedure
+Many “balance issues” are actually pressure mismatch or tire condition faults.
 
-### 1) Characterize vibration precisely
+## Step 3 — Rotation as a diagnostic tool (not just maintenance)
 
-Record:
-- speed range where vibration starts/peaks,
-- whether felt in steering wheel, seat, or whole body,
-- whether braking/turning/load changes it.
+Rotate front ↔ rear if your setup allows.
 
-Quick interpretation guide:
-- mostly steering-wheel shake: often front tire/wheel or front suspension influence,
-- mostly seat/floor shake: often rear tire/wheel or driveline influence,
-- vibration only under braking: prioritize rotor/runout/brake diagnosis before balance work.
+- If vibration **moves** (wheel to seat, or speed band changes), tire/wheel assembly is strongly implicated.
+- If vibration **does not move**, investigate hub/bearing/suspension/driveline more aggressively.
 
-### 2) Basic tire checks first
+## Step 4 — Balance correctly
 
-- Set cold tire pressures to correct baseline.
-- Inspect for uneven wear, cupping, bulges, flat spots.
-- Check lug torque and obvious wheel damage.
+Request a proper rebalance procedure:
 
-### 3) Rotate wheel positions as a diagnostic step
+1. Remove old weights.
+2. Balance from zero.
+3. Confirm correct wheel centering method on balancer.
+4. If available, run road-force test for hidden uniformity issues.
 
-If vibration location changes after front/rear rotation, tire/wheel assembly is strongly implicated.
+If a wheel repeatedly needs large correction, inspect for bent wheel or tire structural defect.
 
-### 4) Perform balance check (road force preferred)
+## Step 5 — Rule out look-alike faults
 
-Use dynamic balancing, and if available, road-force measurement for better diagnosis of tire/wheel uniformity issues.
+If vibration remains after good balance:
 
-Practical shop instructions to request:
-- remove old weights and rebalance from zero,
-- ensure wheel is mounted on balancer with correct centering method,
-- use road-force result to decide match-mounting or tire/wheel replacement if needed.
+- Check wheel-bearing play/roughness.
+- Check wheel and hub runout.
+- Check alignment and worn suspension joints.
+- If vibration changes with throttle load (not just speed), inspect driveline path (prop/driveshaft, mounts, PPF alignment context).
 
-> High-risk quote: Road-force balancing can reveal uniformity problems a basic spin balance may miss. https://www.hunter.com/media-center/road-force-balancing-explained/
+## Step 6 — Confirmation test
 
-### 5) Rule out look-alike faults
+After each correction, run the same route and speed band.
 
-If vibration persists after proper balance:
-- inspect wheel bearing play/roughness,
-- inspect bent wheel runout,
-- inspect suspension joints/bushings,
-- inspect driveline sources if vibration is load-dependent.
+Success criteria:
+- vibration amplitude reduced or eliminated in original speed window,
+- no new steering shake,
+- no new abnormal tire wear on follow-up checks.
 
-### 6) Re-test and verify repair path
+## Practical thresholds to escalate quickly
 
-After each corrective action, re-test on same route/speed band to confirm change.
-
-Use one-change-at-a-time testing so you can attribute improvement to a specific repair step.
-
-## Torque Specs / Capacities (if applicable)
-
-- Wheel lug torque: follow NB year/VIN specification (see FSM and wheel-lug guide).
-
-## Verification / Post-service checks
-
-- Vibration reduced/eliminated in previously affected speed range
-- Steering wheel no longer oscillates abnormally
-- No abnormal tire wear progression after follow-up checks
-
-## Uncertainty / Open Questions
-
-- Exact vibration thresholds and acceptable road-force values depend on wheel/tire setup and shop equipment.
-- Therefore final pass/fail values are intentionally conservative and deferred to qualified measurement + year/VIN specs.
-
-## Image Credits
-
-No reusable, clearly licensed NB-specific wheel-balance diagnostic diagrams were retrieved in this run.
+Escalate to advanced shop diagnostics when:
+- vibration is severe enough to blur mirrors at moderate speed,
+- repeated rebalancing gives only short-lived improvement,
+- tire shows visible radial/lateral distortion,
+- one wheel repeatedly throws weights.
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-13. https://www.mellens.net/mazda/index.html
-2. Tire Rack — *How to Diagnose a Vibration Issue*. Retrieved 2026-03-13. https://www.tirerack.com/upgrade-garage/how-to-diagnose-a-vibration-issue
-3. Hunter Engineering — *Road Force Balancing Explained*. Retrieved 2026-03-13. https://www.hunter.com/media-center/road-force-balancing-explained/
+1. Goodyear — *What is the Proper Tire Rotation Pattern?* (pattern constraints used in move-the-problem diagnostic logic for directional/staggered limitations). Retrieved 2026-03-15. https://www.goodyear.com/en_US/tire-rotation.html
+2. Bridgestone — *Tire Rotation: How and Why to Rotate Your Tires* (rotation interval/pattern rationale and inspection opportunities). Retrieved 2026-03-15. https://tires.bridgestone.com/en-us/learn/tire-maintenance/tire-rotation
+3. MELLENS — *Mazda Miata Factory Service Manual archive* (year/VIN NB verification source for wheel, suspension, and driveline inspection references). Retrieved 2026-03-15. https://www.mellens.net/mazda/
