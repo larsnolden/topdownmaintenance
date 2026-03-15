@@ -7,128 +7,127 @@ estimatedTime: "20-40 min setup, 2-5 min per service entry"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "Practical maintenance log templates for MX-5 NB ownership, so service intervals, parts, fluids, and follow-up checks are consistently documented."
+summary: "A practical MX-5 NB logging system with specific fields, interval tracking, and fault-history structure so maintenance decisions are evidence-based rather than guesswork."
 tags:
   - "appendix"
   - "maintenance-log"
   - "planning"
-relatedGuides: []
+relatedGuides:
+  - "appendices/fluids-consumables"
+  - "rust-prevention/winter-salt-wash-routine"
+  - "cooling-system/coolant-flush-refill"
 order: 1
-updatedAt: "2026-03-13"
+updatedAt: "2026-03-15"
 ---
 
-## Before You Start / Safety
+## Why this matters on NB cars
 
-- A log sheet is not a replacement for safety inspection or workshop diagnosis.
-- Record work **immediately after completion** to avoid missed details.
-- Keep receipts/photos with each entry for traceability.
+NBs are now old enough that service history is often partial or inconsistent. A clean log gives you:
 
-> Warning: "Consistency matters more than complexity. A simple spreadsheet updated regularly outperforms an advanced system used sporadically." https://autosist.com/blog/free-vehicle-maintenance-log-template-excel-download/
+- better troubleshooting (what changed, when),
+- safer interval planning,
+- higher resale confidence,
+- fewer repeated jobs from poor handover notes.
+
+If you only do one admin task, do this one.
 
 ## Required Tools
 
-- Notebook, spreadsheet, or printable PDF log
-- Odometer reading (or trip logger)
-- Phone camera for invoices/part labels
-- Folder/cloud storage for evidence
+- Spreadsheet (Google Sheets/Excel) or printed binder
+- Odometer reading at each service
+- Phone camera for parts labels/invoices
+- Folder/cloud storage for receipts and photos
 
-## Required Parts / Fluids
+## One-time setup (recommended columns)
 
-- Not applicable (logging-only appendix)
+Use these exact columns:
 
-## Model-specific notes (NB1 vs NB2)
+1. Date
+2. Odometer (km/mi)
+3. Job type (**Baseline / Interval / Corrective / Inspection**)
+4. System (engine, cooling, brakes, rust, etc.)
+5. Work performed
+6. Parts/fluids used (full product name)
+7. Spec + quantity
+8. Labor notes (DIY/shop)
+9. Cost
+10. Next due (date + odometer)
+11. Evidence link (invoice/photo ID)
+12. Result/observations
 
-- Keep one log per car and include exact model/year (NB1 1998–2000, NB2 2001–2005 market-dependent naming).
-- NB cars often have mixed aftermarket parts; record brand/part number every time.
+This structure prevents vague entries like “service done.”
 
-> Manual-reference quote: "1999-2001 Mazda Miata Service Repair Manual ... 2005 Mazda Miata Service Repair Manual" https://www.mellens.net/mazda/
+## NB-specific fields worth adding
 
-> NB ownership reality: many cars have mixed aftermarket/OEM parts, so recording exact part number + date is often more valuable than a generic checklist.
+Add these extra columns for high-value NB ownership:
 
-## Step-by-Step Procedure
+- Rust check status (sills / rear arches / underbody)
+- Convertible drain status (clear / slow / blocked)
+- Alignment + tire wear notes (inside edge wear, pull, vibration)
+- Cooling behavior notes (fan cycling normal, temp stability)
+- Oil consumption (ml per 1,000 km)
 
-### 1) Set up your core log fields once
+## Interval planning table (conservative owner baseline)
 
-Minimum columns:
-- Date
-- Odometer (km/mi)
-- Service performed
-- Parts/fluids used
-- Quantity/spec
-- Cost
-- Next due (date + odometer)
-- Notes/issues found
+Use this as a planning layer, then refine by your usage.
 
-> High-risk quote: "It has all the requested features, including columns for the date of service, work performed, mileage at service, and cost." https://www.vertex42.com/ExcelTemplates/vehicle-maintenance-log.html
+| Item | Conservative check/change baseline | Log trigger to add |
+|---|---|---|
+| Engine oil + filter | 8,000-10,000 km or 12 months | exact oil grade, filter part no., drain-plug washer used |
+| Brake fluid | every 2 years | bleed order + fluid batch/date |
+| Coolant | 3-5 years (by coolant type) | coolant chemistry + final mix estimate |
+| Manual gearbox oil | 40,000-60,000 km | shift feel before/after |
+| Differential oil | 40,000-60,000 km | magnet debris notes |
+| Power steering fluid | annual check / flush by condition | pump noise before/after |
+| Drain cleaning (soft-top cars) | every 3-6 months | left/right flow status |
+| Rust inspection | every 6 months + pre/post winter | photos of known rust-prone points |
 
-### 2) Add NB-specific fields
+## Entry quality rules (simple and strict)
 
-Recommended extra columns for MX-5 NB:
-- Rust check result (sills/arches/underbody)
-- Drain status (clear/slow/blocked)
-- Top condition notes (if soft-top)
-- Alignment/tire wear notes
+- One completed action = one row.
+- Always record **exact** product names/specs from label.
+- Every major job needs at least one evidence item (photo or invoice).
+- If a task is deferred, create a row with reason and next target.
 
-### 3) Use one row per completed action
+## Fault-history block (high diagnostic value)
 
-Do not batch vague notes like “service done.”
+Create a second tab called **Fault History** with:
 
-Good: “Engine oil + filter, 10W-40 API SL, 3.8 qt, filter Mazda B6Y1-14-302A-equivalent, no leaks.”
+- first seen date/odometer,
+- symptom description,
+- trigger conditions,
+- tests done,
+- resolution,
+- recurrence date (if any).
 
-### 4) Link proof to every major entry
+This avoids repeating the same diagnosis every season.
 
-Attach invoice number, photo, or worksheet reference.
+## Printable quick template (copy/paste)
 
-> High-risk quote: "I made some cosmetic changes, added an invoice column for recording an invoice or receipt #..." https://www.vertex42.com/ExcelTemplates/vehicle-maintenance-log.html
+| Date | Odometer | Job Type | System | Work Performed | Parts/Fluids (Spec + Qty) | Cost | Next Due | Evidence Ref | Result/Notes |
+|---|---:|---|---|---|---|---:|---|---|---|
+| 2026-03-15 | 154,120 km | Interval | Engine | Oil + filter | 5W-30 API SP, 3.6 L, filter XYZ | €68 | 2026-09 / 162,000 km | INV-017 | No leaks |
+| 2026-03-15 | 154,120 km | Inspection | Rust | Rear arch + sill check | N/A | €0 | 2026-09 / 160,000 km | IMG-331 | Light surface only |
+| 2026-03-15 | 154,120 km | Corrective | Cooling | Replaced radiator cap | 1.1 bar cap | €14 | monitor next 3 heat cycles | IMG-332 | Overflow stable |
 
-### 5) Add a recurring review checkpoint
+## Monthly review (5-minute routine)
 
-Review log monthly (or every 1,000 km / 600 mi) to spot overdue items.
+Once per month:
 
-### 6) Track baseline and interval work distinctly
-
-Tag entries as:
-- **Baseline** (newly purchased car catch-up)
-- **Interval** (scheduled repeat service)
-- **Corrective** (fault-related repair)
-
-> Community confirmation quote: "Google sheets Maintenance Logs" https://www.reddit.com/r/Miata/search/?q=maintenance+log+NB&restrict_sr=1
-
-## Torque Specs / Capacities
-
-- This appendix does not provide torque/capacity values.
-- Pull those values from the relevant NB service guide and copy them into your log entry notes when work is completed.
+1. Sort by next-due odometer/date.
+2. Mark overdue rows in red.
+3. Add parts-to-buy list for next month.
+4. Check for repeated faults not truly resolved.
 
 ## Verification / Post-service checks
 
-- Confirm each performed service has: date, odometer, parts/fluid details, and next-due target.
-- Confirm major services include evidence (invoice/photo).
-- Confirm there are no “unknown last service” items remaining.
-
-## Uncertainty / Open Questions
-
-- Publicly accessible sources in this run strongly support structured maintenance logging, but there is no single Mazda NB factory “owner log format” extract available in this environment.
-- Use this appendix template as a practical framework and adapt fields to your climate/use-case (track days, winter salt exposure, short-trip duty).
-
-## Printable Log Template (copy/paste)
-
-| Date | Odometer | Category | Work Performed | Parts/Fluids (Spec + Qty) | Cost | Next Due (Date/Odo) | Evidence Ref | Notes |
-|---|---:|---|---|---|---:|---|---|---|
-| 2026-02-28 | 152,340 km | Interval | Engine oil + filter | 10W-40 API SL, 3.8 qt, Mazda B6Y1-14-302A-equiv filter | €72 | 2026-08 / 160,000 km | INV-0012 | No leaks |
-| 2026-02-28 | 152,340 km | Inspection | Sill/arch rust check | N/A | €0 | 2026-05 / 155,000 km | IMG-042 | Surface only |
-| 2026-02-28 | 152,340 km | Interval | Drain clearing | N/A | €0 | 2026-05 / 155,000 km | IMG-043 | Flow restored |
-
-## Images
-
-No reusable, clearly licensed NB-specific images were added in this run.
-
-## Image Credits
-
-- No images used.
+- No "unknown last service" items remain
+- Every major service has date, odo, exact spec, and evidence
+- Next-due plan exists for all interval jobs
+- Fault-history tab is up to date
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-02-28. https://www.mellens.net/mazda/
-2. Vertex42 — *Free Vehicle Maintenance Log Template*. Retrieved 2026-02-28. https://www.vertex42.com/ExcelTemplates/vehicle-maintenance-log.html
-3. AUTOsist — *Free Vehicle Maintenance Log Template (Excel Download)*. Retrieved 2026-02-28. https://autosist.com/blog/free-vehicle-maintenance-log-template-excel-download/
-4. Miata.net Forum — *showthread.php?t=640833*. Retrieved 2026-02-28. https://forum.miata.net/vb/showthread.php?t=640833
+1. MELLENS — *Mazda Miata Factory Service Manual archive* (year-index source for NB service categories and proper terminology alignment). Retrieved 2026-03-15. https://www.mellens.net/mazda/
+2. Vertex42 — *Vehicle Maintenance Log Template* (structured logging field practices). Retrieved 2026-03-15. https://www.vertex42.com/ExcelTemplates/vehicle-maintenance-log.html
+3. AUTOsist — *Free Vehicle Maintenance Log Template* (record-keeping workflow rationale for repeatable maintenance tracking). Retrieved 2026-03-15. https://autosist.com/blog/free-vehicle-maintenance-log-template-excel-download/
