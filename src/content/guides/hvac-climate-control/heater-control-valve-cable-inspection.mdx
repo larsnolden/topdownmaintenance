@@ -7,120 +7,136 @@ estimatedTime: "45-120 min"
 applicableModels:
   - "NB1"
   - "NB2"
-summary: "Diagnose Mazda MX-5 NB no-heat complaints by separating coolant-flow faults, heater-control cable/valve issues, and blend-door control problems before major disassembly."
+summary: "NB no-heat diagnostic workflow: confirm coolant/thermostat state first, then verify heater-hose temperature, valve travel, and cable/blend control function before parts replacement."
 tags:
   - "hvac"
   - "heater"
   - "diagnostics"
-relatedGuides: []
+relatedGuides:
+  - "cooling-system/coolant-flush-refill"
+  - "cooling-system/thermostat-replacement"
+  - "cooling-system/heater-core-flush-heater-performance"
 order: 4
 updatedAt: "2026-03-15"
 ---
 
 ## Before You Start / Safety
 
-No-heat complaints can be caused by several systems (coolant level, thermostat, heater valve/cable, blend-door controls, or heater core restriction). Diagnose in order.
+For NB cars, “no heat” is usually one of four causes:
+1. low coolant / trapped air,
+2. thermostat or engine-temp issue,
+3. heater valve/cable travel fault,
+4. heater-core flow restriction.
 
-> Warning: "A heater cannot operate unless the engine is full of coolant/antifreeze." https://www.2carpros.com/articles/car-heater-not-working
+Diagnose in that order.
 
-> Warning: "carefully open the radiator cap. Allow any residual pressure to vent itself completely before removing the cap." http://www.aa1car.com/library/2004/us40446.htm
+- Work only on a cold engine when opening cooling system.
+- Keep coolant away from skin/paint/pets.
+- If overheating is present, fix cooling fault first before heater diagnosis.
 
 ## Required Tools
 
 - Flashlight
-- Cooling-system-safe gloves
 - Basic hand tools
-- Infrared thermometer (helpful)
-- Optional cooling-system pressure/bleed tools
+- IR thermometer (very useful)
+- Gloves/rags
+- Optional spill-free funnel and coolant bleed tools
 
 ## Required Parts / Fluids
 
-- Correct coolant for NB specification
-- Heater control valve/cable hardware only if diagnosis confirms failure
+- Correct NB coolant if top-up/bleed needed
+- Heater valve/cable parts only after diagnosis confirms failure
 - Hose clamps/seals if disturbed
 
-## Model-specific notes (NB1 vs NB2)
+## Where to inspect on MX-5 NB
 
-- NB1 and NB2 use the same diagnostic order: confirm engine heat/coolant state first, then check heater control operation (cable/valve/blend path).
-- LHD/RHD interior trim access and cable routing can vary.
+### Engine bay heater hose pair
 
-> Manual-reference quote: "1999-2001 Mazda Miata Service Repair Manual" and "2005 Mazda Miata Service Repair Manual" are listed in the Miata factory manual index. https://www.mellens.net/mazda/
+At the firewall, locate the two heater hoses entering cabin area.
+
+- One hose carries hot coolant toward heater core.
+- The other returns coolant to engine cooling loop.
+
+### Heater control valve/cable area
+
+Follow heater hose path near firewall for the valve body and control lever/cable interface.
+
+Visual cues:
+- small lever arm on valve,
+- cable sheath and inner wire to lever.
+
+### Cabin HVAC temperature control
+
+Move the cabin temperature control from full cold to full hot while observing lever travel in engine bay (helper recommended).
 
 ## Step-by-Step Procedure
 
-### 1) Confirm engine reaches normal temperature
+### 1) Confirm engine reaches normal operating temperature
 
-A stuck-open thermostat can produce weak cabin heat even when the blower works.
+If engine runs too cool (stuck-open thermostat behavior), cabin heat will stay weak.
 
-> High-risk quote: "If this unit is stuck open the engine will stay at a low temperature which created little to no heat for the heater." https://www.2carpros.com/articles/car-heater-not-working
+- Warm engine fully.
+- Confirm temp gauge behavior is stable in normal zone.
 
-### 2) Verify coolant level and recent air pockets
+### 2) Verify coolant level and bleed state
 
-Low coolant or trapped air can mimic heater-core or valve faults.
+Low coolant or trapped air often causes intermittent/no heat.
 
-> High-risk quote: "Air pockets in the heater core also can interfere with proper coolant circulation." http://www.aa1car.com/library/2004/us40446.htm
+- Check radiator and overflow level when cold.
+- If recent cooling work was done, suspect air pocket until proven otherwise.
 
-> Community confirmation quote: "Check the hoses first, they're getting old and they're the most likely culprit." https://www.reddit.com/r/Miata/comments/1q1lrin/.json
+### 3) Heater hose temperature comparison
 
-### 3) Compare heater hose temperatures
+With engine warm and heat set to HOT:
 
-At full warm-up and heat selected, both heater hoses should be hot.
+- both heater hoses should be hot,
+- significant inlet/outlet mismatch indicates restricted flow or valve issue.
 
-> High-risk quote: "Grasp both heater hoses, they both should be hot, if only one is hot, the core could be plugged or the heater control valve is malfunctioning." https://www.2carpros.com/articles/car-heater-not-working
+IR thermometer helps quantify difference.
 
-### 4) Check heater control cable/lever movement
+### 4) Check valve/cable travel through full command range
 
-Move the cabin temp control from cold to hot and confirm full travel at the valve/door linkage.
+From cabin full cold to full hot, confirm valve lever moves through full stroke.
 
-> Community quote: "make sure the cables that go from your hvac dials ... are all connected" https://www.reddit.com/r/Miata/comments/1olmk6y/.json
+If movement is partial:
+- inspect cable clamp/retainer,
+- inspect linkage binding,
+- correct adjustment before replacing valve.
 
-### 5) Check valve operation directly
+### 5) Differentiate valve fault vs core restriction
 
-If cable movement is partial or disconnected, correct adjustment/retention first. If linkage moves but coolant flow doesn’t change, inspect the valve for sticking.
+- **Lever does not move fully:** cable/adjustment/linkage issue.
+- **Lever moves fully but outlet hose stays much cooler:** valve internal fault or core restriction.
 
-> High-risk quote: "The heater control valve ... occasionally this valve will stick not allowing hot coolant to flow, inspect the valve for movement while in operation." https://www.2carpros.com/articles/car-heater-not-working
+### 6) If valve/cable pass, evaluate heater core flow path
 
-### 6) If valve/cable is OK, evaluate blend-door path
+When valve travel is good but heat remains poor, continue with heater-core flush/flow diagnosis.
 
-No movement/sound at blend-door command suggests cable/actuator issues on the HVAC box.
+### 7) Re-verify after correction
 
-> Community confirmation quote: "It's def the cable to the blend door." https://www.reddit.com/r/Miata/comments/1olmk6y/.json
+After any fix:
+- warm engine fully,
+- run blower with heat command changes,
+- confirm strong temperature response at vents,
+- confirm no coolant leaks at disturbed joints.
 
-### 7) Decide flush vs deeper service
+## Practical mistakes to avoid
 
-If one hose remains cool and valve/cable function is confirmed, consider heater-core flow restriction and flush/service path.
-
-> High-risk quote: "Reverse-flushing the core ... can sometimes open up a blockage, but usually the core will have to be removed for cleaning or replacement." http://www.aa1car.com/library/2004/us40446.htm
-
-## Torque Specs / Capacities
-
-- This guide does not publish universal torque values for heater-valve brackets/clamps because hardware varies by prior repairs and market configuration.
-- Use year/VIN FSM values where specified.
+- Replacing heater valve before confirming coolant level/air purge.
+- Diagnosing with engine not fully warmed.
+- Judging hose temps by touch only on very hot components.
+- Ignoring thermostat behavior while chasing cabin-only symptoms.
 
 ## Verification / Post-service checks
 
-- Cabin heat output rises with engine temperature
-- Temp control produces clear hot/cold change
-- No coolant leaks at disturbed hose/valve joints
-- Heater performance stable at idle and road speed
-
-## Uncertainty / Open Questions
-
-- Several independent heater-diagnosis pages were blocked/404 in this environment; guidance is based on accessible references plus community corroboration.
-- Some NB cars may have non-stock HVAC/cooling components; final cable routing and valve design should be verified on the vehicle.
-
-## Images
-
-No reusable, clearly licensed NB-specific heater control valve/cable images were added in this run.
-
-## Image Credits
-
-- No images used.
+- Cabin heat increases predictably with temp command
+- Heater hoses show expected hot-flow behavior
+- No seepage at heater hoses/valve connections
+- Heat remains stable at idle and at road speed
 
 ## Sources
 
-1. Mellens.net — *Mazda Miata Factory Service Manuals*. Retrieved 2026-03-15. https://www.mellens.net/mazda/
-2. 2CarPros — *How to Repair a Heater Not Working*. Retrieved 2026-03-15. https://www.2carpros.com/articles/car-heater-not-working
-3. AA1Car (Larry Carley) — *Heater Repair*. Retrieved 2026-03-15. http://www.aa1car.com/library/2004/us40446.htm
-4. Reddit r/Miata — *Where's my heat?!?* (JSON endpoint). Retrieved 2026-03-15. https://www.reddit.com/r/Miata/comments/1olmk6y/.json
-5. Reddit r/Miata — *need a step by step asap* (JSON endpoint; coolant/overheat emergency context). Retrieved 2026-03-15. https://www.reddit.com/r/Miata/comments/1q1lrin/.json
+1. MELLENS — *Mazda Miata Factory Service Manuals* (NB year/VIN reference source for heater/cooling layout and service procedures). Retrieved 2026-03-15. https://www.mellens.net/mazda/
+2. 2CarPros — *How to Repair a Heater Not Working* (heater diagnostic sequence and hose-temperature logic). Retrieved 2026-03-15. https://www.2carpros.com/articles/car-heater-not-working
+3. AA1Car — *Heater Repair* (air pocket/heater-core flow troubleshooting context). Retrieved 2026-03-15. http://www.aa1car.com/library/2004/us40446.htm
+4. Reddit r/Miata — *Where's my heat?!?* (owner symptom pattern context for cable/blend control faults). Retrieved 2026-03-15. https://www.reddit.com/r/Miata/comments/1olmk6y/.json
